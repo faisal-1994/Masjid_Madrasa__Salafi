@@ -342,4 +342,10 @@ select option{
 	background-color: red;
 }
 
+/* submit_button */
+#submitBtn{
+position:absolute;
+right: 30px;
+top: 242px;
 
+}

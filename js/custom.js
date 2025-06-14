@@ -224,7 +224,7 @@ function day() {
 }
 
 
-// search option
+// search option to found data
 
 
   document.getElementById("searchInput").addEventListener("keyup", function () {
@@ -245,4 +245,15 @@ function day() {
     });
   });
 
+  // //
 
+
+
+  let sendMail = ()=>{
+    let sentItem = {
+        name: document.getElementById("orgInput").value,
+        address: document.getElementById("addressInput").value,
+        number: document.getElementById("contactInput").value
+    }
+    emailjs.send("service_sf01pgf", "template_wh0vhvt",sentItem).then(alert("sent successfully"))
+  }

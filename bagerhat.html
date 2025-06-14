@@ -189,13 +189,49 @@
 
             <div id="table" class="table">
 
-                
-                <div id = "headingRowID" class="row headingRow">
-		             <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-		             <div class="headingDiv headingDiv2 ">নাম</div>
-		             <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-		             <div class="headingDiv headingDiv4 ">মানচিত্র</div>
-	            </div>
+
+<!-- 🟢 Textarea Input Row (use your rowDiv structure)
+<div id="headingRowID" class="row rowInput mb-2">
+<div class="headingDiv headingDiv1 "></div>
+  <div class="col-3 rowDiv">
+    <textarea id="orgInput" class="form-control " rows="1" placeholder=" নাম"></textarea>
+  </div>
+  <div class="col-3 rowDiv">
+    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা"></textarea>
+  </div>
+  <div class="col-3 rowDiv">
+    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার"></textarea>
+  </div> 
+  
+</div>
+-->
+
+
+
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
+
+
 
                         
                 <div class="row">
@@ -281,637 +317,8 @@
                     <div class='col-3 rowDiv'  > </div>
                     <div class='col-3 rowDiv'  > </div>
                 </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                Here are the rows from ২১ to ৪০, with each row containing a number in the first `div`:
 
-                ```html
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ২৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৩৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                ```
-                
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৪৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৫০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                ```
 
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 51</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 52</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 53</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 54</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 55</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 56</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 57</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 58</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 59</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > 60</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৬৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৭৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৮৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯১</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯২</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৩</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৪</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৫</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৬</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৭</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৮</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ৯৯</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  > ১০০</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-
-                <div class="row" id="bottom">
-                    <div class='col-3 rowDiv'  > last</div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  > </div>
-                </div>
-                
 
                 
             
@@ -930,6 +337,20 @@
             <div class="page thirdPage"><a href="demo3.html">3</a></div>
             <div class="page fourthPage"><a href="demo4.html">4</a></div>
         </div>
+<!-- ✅ Must be included in your HTML before JS runs -->
+
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                (function(){
+                emailjs.init({
+                publicKey: "TghekllL5hZiZEKWi",
+                });
+                })();
+            </script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+
 
         <script src="js/bootstrap.bundle.min.js"></script>	
         <script   script src="js/custom.js"></script>
