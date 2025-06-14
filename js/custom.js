@@ -245,8 +245,16 @@ function day() {
     });
   });
 
-  // //
+                    //sent data //
 
+  //emailjs init //
+
+
+    (function(){
+    emailjs.init({
+    publicKey: "TghekllL5hZiZEKWi",
+    });
+    })();
 
 
   let sendMail = ()=>{
