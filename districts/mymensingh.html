@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mymensingh</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&family=Open+Sans:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+	
+<body id="body">
+
+    <div class="container">
+        
+        <nav id="navBar" class="navbar bg-body-tertiary fixed-top">
+    
+            <div class="container">
+    
+                <a id="nav_title" class="navbar-brand m-auto d-inline" href="#"><h1 id="h1Title text-dark">আহলে হাদীস মসজিদ ও মাদরাসা</h1></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                    <div   div class="offcanvas-header">
+    
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ahle Hadis Masjid and Madrasa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+                    </div>
+    
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        
+                        <li class="nav-item">
+                            <button onclick="location='index.html'">Home</button>
+                        </li>
+        
+                        
+                        <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a> -->
+        
+                
+        
+                        <select onchange="location = this.value;">
+                            <option value="#">Dhaka </option>
+                            <option value="dhaka.html">Dhaka</option>
+                            <option value="faridpur.html">Faridpur</option>
+                            <option value="gazipur.html">Gazipur</option>
+                            <option value="gopalganj.html">Gopalganj</option>
+                            <option value="kishoreganj.html">Kishoreganj</option>
+                            <option value="madaripur.html">Madaripur</option>
+                            <option value="manikganj.html">Manikganj</option>
+                            <option value="munshiganj.html">Munshiganj</option>
+                            <option value="narayanganj.html">Narayanganj</option>
+                            <option value="narsingdi.html">Narsingdi</option>
+                            <option value="rajbari.html">Rajbari</option>
+                            <option value="shariatpur.html">Shariatpur</option>
+                            <option value="tangail.html">Tangail</option>
+                        </select>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                            <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+        
+                            <select onchange="location = this.value;">
+                                <option value="#">Barishal </option>
+                                <option value="barguna.html">Barguna</option>
+                                <option value="barishal.html">Barishal</option>
+                                <option value="bhola.html">Bhola</option>
+                                <option value="jhalokati.html">Jhalokati</option>
+                                <option value="patuakhali.html">Patuakhali</option>
+                                <option value="pirojpur.html">Pirojpur</option>
+                            </select>
+        
+                        </li>
+        
+                        <li class="nav-item">
+        
+                            <select onchange="location = this.value;">
+                                <option value="#">Chattogram </option>
+                                <option value="bandarban.html">Bandarban</option>
+                                <option value="brahmanbaria.html">Brahmanbaria</option>
+                                <option value="chandpur.html">Chandpur</option>
+                                <option value="chattogram.html">Chattogram</option>
+                                <option value="cumilla.html">Cumilla</option>
+                                <option value="coxsbazar.html">Cox's Bazar</option>
+                                <option value="feni.html">Feni</option>
+                                <option value="khagrachhari.html">Khagrachhari</option>
+                                <option value="lakshmipur.html">Lakshmipur</option>
+                                <option value="noakhali.html">Noakhali</option>
+                                <option value="rangamati.html">Rangamati</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Khulna </option>
+                                <option value="bagerhat.html">Bagerhat</option>
+                                <option value="chuadanga.html">Chuadanga</option>
+                                <option value="jashore.html">Jashore</option>
+                                <option value="jhenaidah.html">Jhenaidah</option>
+                                <option value="khulna.html">Khulna</option>
+                                <option value="kushtia.html">Kushtia</option>
+                                <option value="magura.html">Magura</option>
+                                <option value="meherpur.html">Meherpur</option>
+                                <option value="narail.html">Narail</option>
+                                <option value="satkhira.html">Satkhira</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Mymensingh </option>
+                                <option value="jamalpur.html">Jamalpur</option>
+                                <option value="mymensingh.html">Mymensingh</option>
+                                <option value="netrokona.html">Netrokona</option>
+                                <option value="sherpur.html">Sherpur</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Rajshahi </option>
+                                <option value="bogura.html">Bogura</option>
+                                <option value="jaipurhat.html">Jaipurhat</option>
+                                <option value="naogaon.html">Naogaon</option>
+                                <option value="natore.html">Natore</option>
+                                <option value="chapainawabganj.html">Chapainawabganj </option>
+                                <option value="pabna.html">Pabna</option>
+                                <option value="rajshahi.html">Rajshahi</option>
+                                <option value="sirajganj.html">Sirajganj</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Rangpur </option>
+                                <option value="dinajpur.html">Dinajpur</option>
+                                <option value="gaibandha.html">Gaibandha</option>
+                                <option value="kurigram.html">Kurigram</option>
+                                <option value="lalmonirhat.html">Lalmonirhat</option>
+                                <option value="nilphamari.html">Nilphamari</option>
+                                <option value="panchagarh.html">Panchagarh</option>
+                                <option value="rangpur.html">Rangpur</option>
+                                <option value="thakurgaon.html">Thakurgaon</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Sylhet </option>
+                                <option value="habiganj.html">Habiganj</option>
+                                <option value="moulvibazar.html">Moulvibazar</option>
+                                <option value="sunamganj.html">Sunamganj</option>
+                                <option value="sylhet.html">Sylhet</option>
+                            </select>
+                        </li>
+        
+        
+                        </ul>
+        
+                    </div>
+                </div>
+    
+                <button id="night" class="mode me-5 bg-dark" onclick="night()">🌚</button>
+                <button id="day" class="mode2 d-none " onclick="day()">☀ </button>
+                
+            </div>
+        </nav>
+          
+        <h2 id="header" class="text-center header">ময়মনসিংহ</h2>
+    
+        <div id="table" class="table">
+        
+            <div id = "headingRowID" class="row headingRow">
+                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
+                         <div class="headingDiv headingDiv2 ">নাম</div>
+                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
+                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১</div>
+                <div class='col-3 rowDiv' > মাদ্রাসাতুত তাওহীদ আস-সালাফিয়্যাহ</div>
+                <div class='col-3 rowDiv' >  সানাদিয়া, পরাগগঞ্জ, সদর ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' > 01734670661, 01719229398</div>
+            </div>
+            <div class="row">
+                <div class='col-3 rowDiv' > ২</div>
+                <div class='col-3 rowDiv' > ইমাম বুখারী (রহঃ) মাদ্রাসা (বালক/বালিকা) </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' > 01727-909909</div>
+            </div>
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩</div>
+                <div class='col-3 rowDiv' >  আল জামিয়া আর রহমানিয়া মাদ্রাসা</div>
+                <div class='col-3 rowDiv' >  বাটাজোর, ভালুকা, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' >  01791923992, 01718800184</div>
+            </div>
+           
+            <div class="row">
+                <div class='col-3 rowDiv' > ৪</div>
+                <div class='col-3 rowDiv' > মাদ্রাসা আল ফাহাদ আল ইসলামী  </div>
+                <div class='col-3 rowDiv' > গোলপুকুরপাড,  ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' >  01751821434, 01967179041, 01719885884</div>
+            </div>
+        
+            <div class="row">
+                <div class='col-3 rowDiv' > ৫</div>
+                <div class='col-3 rowDiv' > মধ্য আন্ধারিয়াপাড়া আয়েশা সিদ্দীকা (রাঃ) মডেল মহিলা মাদ্রাসা</div>
+                <div class='col-3 rowDiv' > ফুলবাড়িয়া, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' >  01941837735, 01930170255</div>
+            </div>
+        
+            <div class="row">
+                <div class='col-3 rowDiv' > ৬</div>
+                <div class='col-3 rowDiv' > জোরাবাড়িয়া কোনাপাড়া, দারুস সুন্নাহ রহমানিয়া মাদরাসা (আবাসিক/অনাবাসিক) </div>
+                <div class='col-3 rowDiv' > ফুলবাড়িয়া, ময়মনসিংহ। </div>
+                <div class='col-3 rowDiv' > 01777647206, 01865444634, 01714712773, 01715669288</div>
+            </div>
+        
+            <div class="row">
+                <div class='col-3 rowDiv' > ৭</div>
+                <div class='col-3 rowDiv' > আবু হুরাইরা (রা) মাদ্রাসা কমপ্লেক্স</div>
+                <div class='col-3 rowDiv' > ৮নং দাওগাও ইউনিয়ন, কাঁঠালিয়া,মুক্তাগাছা, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > 01711-109641</div>
+            </div>
+        
+            <div class="row">
+                <div class='col-3 rowDiv' > ৮</div>
+                <div class='col-3 rowDiv' >  দারুল হাদিস সালাফিয়্যাহ মহিলা মাদরাসা। </div> 
+                <div class='col-3 rowDiv' > চরকামানিরপাড়, নকলা, শেরপুর, ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' >  01782-191064</div>
+            </div>
+        
+            <div class="row">
+                <div class='col-3 rowDiv' > ৯</div>
+                <div class='col-3 rowDiv' >  বড়চালা তালেব আলী মাস্টার আস সালাফিয়া মহিলা মাদ্রাসা </div>
+                <div class='col-3 rowDiv' > বড়চালা মোড়, ডাকাতিয়া, ভালুকা, ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' > 01730-974931, 01730-843242, 01761-292603</div>
+            </div>
+        
+            <div class="row">
+                <div class='col-3 rowDiv' > ১০</div>
+                <div class='col-3 rowDiv' >  সালাফিয়া ক্যাডেট মাদরাসা।  </div>
+                <div class='col-3 rowDiv' > গুজিয়াম, কাঁঠালীবদ (মুন্সীবাড়ী) সাইনবোর্ড, ত্রিশাল, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > 01568911183, 01401546848</div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১১</div>
+                <div class='col-3 rowDiv' > ইমাম বুখারি (রহঃ) মাদ্রাসা (বালক/বালিকা)</div>
+                <div class='col-3 rowDiv' > পাড়াইল,সদর,ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > 01727909909, যোগাযোগ-পরিচালকঃ আব্দুল্লাহ মাসুম ফরাজি </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১২</div>
+                <div class='col-3 rowDiv' > খাঘাটি জামতলী কেন্দ্রীয় আহলে হাদীস মসজিদ</div>
+                <div class='col-3 rowDiv' > ত্রিশাল, ময়মনসিংহ (ঢাকা-ময়মনসিংহ মহাসড়ক বানারপাড় হতে দেড় কিলোমিটার পশ্চিমে)</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৩</div>
+                <div class='col-3 rowDiv' > দারুল হাদীস সালাফীয়্যাহ  মাদ্রাসা</div>
+                <div class='col-3 rowDiv' > মুক্তাগাছা, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' >01757-608823 </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৪</div>
+                <div class='col-3 rowDiv' > বায়তুল হামদ সালাফি জামে মসজিদ ও মাদ্রাসা কমপ্লেক্স</div>
+                <div class='col-3 rowDiv' > চর কোমরভাঙ্গা, নান্দাইল, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+        </div>
+
+    </div>
+<script src="js/bootstrap.bundle.min.js"></script>	
+<script src="js/custom.js"></script>
+</body>
+</html>

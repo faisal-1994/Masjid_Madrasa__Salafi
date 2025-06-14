@@ -1,0 +1,248 @@
+// let body = document.getElementById("body");
+// let firstBtn =document.getElementById("night");
+// let secondBtn = document.getElementById("day");
+// let navBar = document.getElementById("navBar");
+// let titleRow = document.getElementById("headingRowID")
+// let header = document.getElementById("header")
+// let nav_title = document.getElementById("h1Title")
+// let tableBody = document.getElementById("table");
+
+
+
+
+
+
+// function night (){
+//     // body.classList.add("bg-dark");
+//     body.style.backgroundColor="rgb(54, 47, 47)"
+//     nav_title.classList.add("text-light");
+//     firstBtn.classList.add("d-none");
+//     secondBtn.classList.remove("d-none");
+//     header.style.color="white";
+//     secondBtn.style.marginRight="50px"
+//     navBar.style.backgroundColor="green";
+//     navBar.classList.remove('bg-info');
+//     body.classList.remove("text-dark");
+//     body.classList.add("text-light");
+//     tableBody.style.backgroundColor="green";
+//     tableBody.classList.add("text-light");
+//     tableBody.classList.remove("text-dark");
+//     titleRow.style.backgroundColor="rgba(37, 32, 32, .5)";
+//     titleRow.style.color="white"
+    
+
+// }
+
+// function day (){
+//     // body.classList.remove("bg-dark");
+//     body.style.backgroundColor="rgb(195, 216, 221)"
+//      nav_title.classList.remove("text-light");
+//     firstBtn.classList.remove("d-none");
+//     secondBtn.classList.add("d-none");
+//     header.style.color="black";
+//     navBar.classList.add('bg-info');
+//     body.classList.remove("text-light");
+//     body.classList.add("text-dark");
+//     tableBody.style.backgroundColor="rgba(10,200, 400, .7)";
+//     tableBody.classList.remove("text-light")
+//     tableBody.classList.add("text-dark");
+//     titleRow.style.backgroundColor="rgba(255, 255, 255, .5)"
+//     titleRow.style.color="black"
+
+
+// }
+
+let seeBtn = document.getElementById("seeBtn");
+let closeBtn = document.getElementById("closeBtn");
+let detailsP = document.getElementById("detailsP");
+
+function seem() {
+    detailsP.classList.remove("d-none");
+    seeBtn.classList.add("d-none");
+    closeBtn.classList.remove("d-none");
+    
+
+  }
+
+  function seel(){
+      detailsP.classList.add("d-none");
+      seeBtn.classList.remove("d-none");
+      closeBtn.classList.add("d-none");
+     
+  }
+
+  //for another -2
+
+  let seeBtn2 = document.getElementById("seeBtn2");
+  let closeBtn2 = document.getElementById("closeBtn2")
+  let detailsP2 = document.getElementById("detailsP2");
+  
+  function seem2() {
+      detailsP2.classList.remove("d-none");
+      seeBtn2.classList.add("d-none");
+      closeBtn2.classList.remove("d-none");
+  
+    }
+  
+    function seel2(){
+        detailsP2.classList.add("d-none");
+        seeBtn2.classList.remove("d-none");
+        closeBtn2.classList.add("d-none")
+    }
+  
+
+//for another -3
+
+let seeBtn3 = document.getElementById("seeBtn3");
+let closeBtn3 = document.getElementById("closeBtn3")
+let detailsP3 = document.getElementById("detailsP3");
+
+function seem3() {
+    detailsP3.classList.remove("d-none");
+    seeBtn3.classList.add("d-none");
+    closeBtn3.classList.remove("d-none");
+
+  }
+
+  function seel3(){
+      detailsP3.classList.add("d-none");
+      seeBtn3.classList.remove("d-none");
+      closeBtn3.classList.add("d-none")
+  }
+
+
+let seeBtn4 = document.getElementById("seeBtn4");
+let closeBtn4 = document.getElementById("closeBtn4")
+let detailsP4 = document.getElementById("detailsP4");
+
+function seem4() {
+    detailsP4.classList.remove("d-none");
+    seeBtn4.classList.add("d-none");
+    closeBtn4.classList.remove("d-none");
+
+  }
+
+  function seel4(){
+      detailsP4.classList.add("d-none");
+      seeBtn4.classList.remove("d-none");
+      closeBtn4.classList.add("d-none")
+  }
+
+
+
+
+
+
+let rowDivs = document.getElementsByClassName("rowDiv");
+let tables = document.getElementsByClassName('table');
+let nightButtons = document.getElementsByClassName("mode");
+let dayButtons = document.getElementsByClassName("mode2");
+let navBar = document.getElementById("navBar");
+let h1Title =document.getElementById("nav_title");
+let header =document.getElementById("header");
+let body = document.getElementsByTagName("body")[0];
+
+
+
+function night() {
+    // Set background color for rowDivs
+    for (let i = 0; i < rowDivs.length; i++) {
+        rowDivs[i].style.backgroundColor = "green";
+    }
+    
+    // Set text color for tables
+    for (let i = 0; i < tables.length; i++) {
+        tables[i].style.color = "white";
+    }
+    
+    // Hide night buttons and show day buttons
+    for (let i = 0; i < nightButtons.length; i++) {
+        nightButtons[i].classList.add("d-none");
+    }
+    
+    for (let i = 0; i < dayButtons.length; i++) {
+        dayButtons[i].classList.remove("d-none");
+    }
+
+    if(navBar){
+        navBar.style.backgroundColor = "green";
+    }
+
+    if (h1Title) {
+        h1Title.style.color = "white";
+    }
+
+    if (header) {
+        header.style.color = "white";
+    }
+
+    if (body) {
+
+        body.style.backgroundColor="black"
+    }
+
+    // Set background color for titleRow
+
+}
+
+function day() {
+    // Set background color for rowDivs
+    for (let i = 0; i < rowDivs.length; i++) {
+        rowDivs[i].style.backgroundColor = "rgba(10,200, 400, 1)";
+    }
+    
+    // Set text color for tables back to default (optional)
+    for (let i = 0; i < tables.length; i++) {
+        tables[i].style.color = ""; // assuming the default color
+    }
+    
+    // Hide day buttons and show night buttons
+    for (let i = 0; i < dayButtons.length; i++) {
+        dayButtons[i].classList.add("d-none");
+    }
+    
+    for (let i = 0; i < nightButtons.length; i++) {
+        nightButtons[i].classList.remove("d-none");
+    }
+
+    if(navBar){
+        navBar.style.backgroundColor = "rgba(10,200, 400, 1)";
+    }
+    if (h1Title) {
+        h1Title.style.color = "black";
+    }
+
+    if (header) {
+        header.style.color = "black";
+    }
+
+    if (body) {
+        body.style.backgroundColor = "rgba(195, 216, 221, 1)";
+    }
+    // Set background color for titleRow
+
+}
+
+
+// search option
+
+
+  document.getElementById("searchInput").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase();
+    let rows = document.querySelectorAll("#table .row");
+
+    rows.forEach((row, index) => {
+      // Skip the heading row
+      if (row.id === "headingRowID" || row.id === "bottom") return;
+
+      let text = row.innerText.toLowerCase();
+
+      if (text.includes(filter)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+
+

@@ -1,0 +1,1431 @@
+@media (min-width: 200px) and (max-width: 250px){
+
+    
+    #offcanvasNavbar{
+        width: 60%;
+  
+    }
+
+    .nav-item button{
+        width: 90px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+
+    .offcanvas-title{
+        font-size: 11px;
+        float: left;
+    }
+
+
+    select{
+        width: 90px;
+        height:20px;
+        line-height: 20px;
+        border-radius:5px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+        
+    select option{
+        font-weight: 700;
+        background-color: rgb(61, 5, 126);
+        color: white;
+
+    }
+
+    .navbar a{
+        font-size: 10px;
+        font-weight: 900;
+        position: absolute;
+        left: 14%;
+        top: 27%;
+    }
+
+    .show{
+        font-size: 5px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: -2px;
+        top: 33px;
+    }
+    
+    .navbar-toggler {
+        height: 24px;
+        width: 26px;    
+        position: fixed;
+        right: 6px;
+        top: 18px;
+    }
+
+    .navbar-toggler-icon{ 
+        height: 12px;
+        width: 10px;
+        margin-left:-5px;
+        margin-bottom:11px      
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+    
+    .mode,.mode2{
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+        top:35px;
+        left:4px;
+        margin-top: 7px;
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+   }
+
+   .row div{
+    font-size: 7px;
+    font-weight: 700;
+    text-align: center;  
+    background-color: rgba(10,200, 400, 1); 
+}
+
+    #headingRowID .headingDiv{
+    font-size:7px;
+    background-color: rgba(10,200, 400, .5);
+    font-size: 900;
+    }
+
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+
+    .row > div:nth-child(1) {
+        flex: 0 0 12%;
+        max-width: 12%; 
+    }
+
+    .row > div:nth-child(2) {
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 28%;
+        max-width: 28%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .header{
+        font-size:9px;
+        font-weight:700;
+    }
+
+    #navBar a h1{
+        font-size: 8px;
+        font-weight: 700; 
+        margin-left: 13px;  
+    }
+
+    .topScroll{
+        visibility: hidden;
+    }
+
+    .bottomScroll{
+        visibility: hidden;
+
+    }
+
+    .page{
+        height:14px;
+        width: 14px;
+        line-height: 14px;
+        font-size: 8px;
+        color:red
+    }
+    .page a{
+        font-size: 8px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+    .mode,.mode2{
+        height: 28px;
+        width: 28px;
+        top:8px
+    }
+
+    #seeBtn, #seeBtn2, #seeBtn3{
+        font-size: 5px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+
+    #closeBtn, #closeBtn2, #closeBtn3{
+        font-size: 5px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+
+
+} 
+
+/*  */
+
+
+
+
+                                                /*!  */    /*!  */    /*!  */
+
+
+@media (min-width: 251px) and (max-width: 337px){
+    #offcanvasNavbar{
+        width: 60%;
+  
+    }
+    .nav-item button{
+        width: 90px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .offcanvas-title{
+        font-size: 11px;
+        float: left;
+    }
+
+
+    select{
+        width: 90px;
+        height:20px;
+        line-height: 20px;
+        border-radius:5px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+        
+    select option{
+        font-weight: 700;
+        background-color: rgb(165, 231, 231);
+    }
+
+    .navbar a{
+        font-size: 12px;
+        font-weight: 900;
+        position: absolute;
+        left: 13%;
+        top: 15px;
+    }
+
+        
+    #navBar a h1{
+        font-size: 10px;
+        font-weight: 700; 
+        margin-left: 15px;  
+    }
+    
+
+    .show{
+        font-size: 6px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: -2px;
+        top: 33px;
+    }
+    
+    .navbar-toggler {
+        height: 26px;
+        width: 30px;   
+        position: fixed;
+        right: 10px;
+        top: 15px; 
+    }
+
+    .navbar-toggler-icon{ 
+        height: 14px;
+        width: 10px;
+        margin-left:-3px;
+        margin-top:-7px      
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+    
+    .mode{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+    
+    .mode2{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+   }
+
+   .rowDiv{
+    background: rgba(10,200, 400, 1);
+    font-size: 6px;
+    font-weight: 700;
+    text-align: center;
+   }
+
+    #headingRowID .headingDiv{
+        font-size:7px;
+        background-color: rgba(10,200, 400, .5);
+        font-size: 900;
+    }
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .header{
+        font-size:10px;
+        font-weight:700;
+    }
+
+    .topScroll{
+        visibility: hidden;
+    }
+    
+    .bottomScroll{
+        visibility: hidden;
+    
+    }
+
+    .page{
+        height:16px;
+        width: 16px;
+        line-height: 16px;
+
+    }
+    .page a{
+        font-size: 8px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+    .mode,.mode2{
+        height: 30px;
+        width: 30px;
+        top:8px
+    }
+
+    #seeBtn, #seeBtn2, #seeBtn3{
+        font-size: 5px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+    
+    #closeBtn, #closeBtn2, #closeBtn3{
+        font-size: 5px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+
+}
+
+/*  */
+
+
+
+
+@media (min-width: 338px) and (max-width: 575px){
+    #offcanvasNavbar{
+        width: 60%;
+  
+    }
+    .nav-item button{
+        width: 90px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .offcanvas-title{
+        font-size: 12px;
+        float: left;
+    }
+
+
+    select{
+        width: 90px;
+        height:20px;
+        line-height: 20px;
+        border-radius:5px;
+        font-size: 11px;
+        font-weight: 700;
+    }
+        
+    select option{
+        font-weight: 700;
+        background-color: rgb(165, 231, 231);
+    }
+
+    .navbar a{
+    font-size: 14px;
+    position: absolute;
+    left: 22%;
+    top: 10px;
+    }
+    #navBar a{
+        align-content: center;
+    }
+    #navBar a h1{
+        font-size: 13px;
+        font-weight: 900;
+        /* margin-top: 7px;
+        margin-left: 9%; */
+        margin: auto;
+        
+    }
+        
+        
+    .show{
+        font-size: 7px;
+        font-weight: 700px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: 7px;
+        top: 35px;
+    }
+    
+    .navbar-toggler {
+        height: 30px;
+        width: 35px; 
+        position: fixed;
+        right: 20px;
+        top: 15px;   
+    }
+
+    .navbar-toggler-icon{ 
+        height: 18px;
+        width: 12px;
+        margin-left:-2px;
+        margin-top:-7px      
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+
+    .mode,.mode2{
+        position:absolute;
+        left: 25px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+   }
+    .row{
+        margin-left: 3px;
+    }
+   .rowDiv{
+    background: rgba(10,200, 400, 1);
+    font-size: 7px;
+    font-weight: 700;
+    text-align: center;
+ 
+   }
+
+    #headingRowID .headingDiv{
+        font-size:8px;
+        background-color: rgba(10,200, 400, .5);
+        font-size: 900;
+
+    }
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .header{
+        font-size:14px;
+        font-weight:700;
+    }
+    .topScroll{
+        visibility: hidden;
+    }
+    
+    .bottomScroll{
+        visibility: hidden;
+    
+    }
+
+    .page{
+        height:18px;
+        width: 18px;
+        line-height: 18px;
+
+    }
+    .page a{
+        font-size: 8px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+    .mode,.mode2{
+        height: 32px;
+        width: 32px;
+        top:8px
+    }
+
+    #seeBtn, #seeBtn2, #seeBtn3{
+        font-size: 5px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+    
+    #closeBtn, #closeBtn2, #closeBtn3{
+        font-size: 5px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+
+}
+
+/*  */
+
+                                             /*!  */  /*!  */  /*!  */
+@media (min-width: 576px) and (max-width: 767px){
+    
+    #offcanvasNavbar{
+        width: 60%;
+  
+    }
+    .nav-item button{
+        width: 100px;
+        height: 20px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .offcanvas-title{
+        font-size: 13px;
+        float: left;
+    }
+
+
+    select{
+        width: 100px;
+        height:20px;
+        line-height: 20px;
+        border-radius:5px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+        
+    select option{
+        font-weight: 700;
+        background-color: rgb(165, 231, 231);
+    }
+
+    .navbar a{
+        position: absolute;
+        left: 30%;
+        top: 10px;
+        font-size: 18px;
+
+    }
+
+    #navBar a h1{
+        font-size: 13px;
+        font-weight: 900;
+    }
+
+    .show{
+        font-size: 8px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: 2%;
+        top: 35px;
+    }
+    
+    .navbar-toggler {
+        height: 30px;
+        width: 35px; 
+        position: fixed;
+        right: 5%;
+        top: 15px;   
+    }
+
+    .navbar-toggler-icon{ 
+        height: 18px;
+        width: 12px;
+        margin-left:-2px;
+        margin-top:-7px      
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+    
+    .mode{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+    
+    .mode2{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+   }
+
+   .rowDiv{
+    background: rgba(10,200, 400, 1);
+    font-size: 8px;
+    font-weight: 700;
+    text-align: center;
+   }
+
+    #headingRowID .headingDiv{
+        font-size:9px;
+        background-color: rgba(10,200, 400, .5);
+        font-size: 900;
+    }
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    h1{
+        font-size: 11px;
+        font-weight: 700;
+        
+    }
+    
+    .header{
+        font-size:18px;
+        font-weight:700;
+    }
+
+    
+    .topScroll{
+        visibility: hidden;
+    }
+    
+    .bottomScroll{
+        visibility: hidden;
+    
+    }
+
+    .page{
+        height:20px;
+        width: 20px;
+        line-height: 20px;
+
+    }
+    .page a{
+        font-size: 8px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+
+    .mode,.mode2{
+        height: 35px;
+        width: 35px;
+        top:8px
+    }
+
+    #seeBtn, #seeBtn2, #seeBtn3{
+        font-size: 6px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+    
+    #closeBtn, #closeBtn2, #closeBtn3{
+        font-size: 6px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+
+}
+
+
+                                                /*!  */  /*!  */  /*!  */
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    #offcanvasNavbar{
+        width: 40%;
+  
+    }
+    .nav-item button{
+        width: 110px;
+        height: 23px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .offcanvas-title{
+        font-size: 15px;
+        float: left;
+    }
+
+
+    select{
+        width: 110px;
+        height:23px;
+        line-height: 20px;
+        border-radius:5px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+        
+    select option{
+        font-weight: 700;
+        background-color: rgb(165, 231, 231);
+    }
+
+    .navbar a{
+        font-size: 24px;
+        font-weight: 900;
+        position: absolute;
+        left: 30%;
+        top: 10px;
+    }
+
+    .show{
+        font-size: 12px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: -2px;
+        top: 35px;
+    }
+    
+    .navbar-toggler {
+        height: 34px;
+        width: 42px;    
+        position: fixed;
+        right: 25px;
+        top: 10px;
+    }
+
+    .navbar-toggler-icon{ 
+        height: 20px;
+        width: 14px;
+        margin-left:-1px;
+        margin-top:-7px      
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+
+    .navbar a h1{
+        font-size: 9px;
+        font-weight: 700;
+    }
+    
+    .mode{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+    
+    .mode2{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+   }
+
+   .rowDiv{
+    background: rgba(10,200, 400, 1);
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+   }
+
+    #headingRowID .headingDiv{
+        font-size:12px;
+        background-color: rgba(10,200, 400, .5);
+        font-size: 900;
+    }
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    h1{
+        font-size: 11px;
+        font-weight: 700;
+        
+    }
+    
+    .header{
+        font-size:24px;
+        font-weight:700;
+    }
+
+    #navBar a h1{
+        font-size: 24px;
+        font-weight: 700;   
+    }
+    
+    .topScroll{
+        visibility: hidden;
+    }
+    
+    .bottomScroll{
+        visibility: hidden;
+    }
+
+    .page{
+        height:24px;
+        width: 24px;
+        line-height: 24px;
+    }
+    .page a{
+        font-size: 8px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+    .mode,.mode2{
+        height: 35px;
+        width: 35px;
+        top:8px
+    }
+
+    #seeBtn, #seeBtn2, #seeBtn3{
+        font-size: 7px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    }
+    
+    #closeBtn, #closeBtn2, #closeBtn3{
+        font-size: 7px;
+        position: relative;
+        bottom: 5px;
+        width: 50px;
+        height: 5px;
+        line-height: 5px;
+        margin-top: 0;
+    
+
+}
+
+}                                              /*!  */  /*!  */  /*!  */
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .nav-item button{
+        
+        line-height: 70%;
+    }
+
+    .navbar a{
+        font-size: 26px;
+        font-weight: 900;
+        position: fixed;
+        left: 35%;
+    }
+
+    .show{
+        font-size: 12px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: 20px;
+        top: 33px;
+    }
+
+
+    .navbar-toggler {
+        height: 38px;
+        width: 45px;    
+        position: fixed;
+        right: 40px;
+        top: 5px;
+    }
+
+    .navbar-toggler-icon{ 
+        height: 22px;
+        width: 16px;
+        margin-left:-1px;
+        margin-top:-5px      
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+
+    .navbar a h1{
+        font-size: 9px;
+        font-weight: 700;
+    }
+    
+    .mode{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+    
+    .mode2{
+        position:absolute;
+        left: 5px;
+        top: 2vh;
+        height:25px;
+        width:25px;
+        line-height:25px;
+        margin-top:5px;
+
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+   }
+
+   .rowDiv{
+    background: rgba(10,200, 400, 1);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+   }
+
+    #headingRowID .headingDiv{
+    font-size:18px;
+    background-color: rgba(10,200, 400, .5);
+    font-size: 900;
+    }
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    h1{
+        font-size: 11px;
+        font-weight: 700;
+        
+    }
+    
+    .header{
+        font-size:28px;
+        font-weight:700;
+    }
+
+    #navBar a h1{
+        font-size: 28px;
+        font-weight: 700;   
+    }
+    
+    .topScroll{
+        visibility: hidden;
+    }
+    
+    .bottomScroll{
+        visibility: hidden;
+    
+    }
+
+    .page{
+        height:26px;
+        width: 26px;
+        line-height: 26px;
+
+    }
+    .page a{
+        font-size: 14px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+    .mode,.mode2{
+        height: 38px;
+        width: 38px;
+        top:8px
+    }
+
+
+}
+
+                                              /*!  */  /*!  */  /*!  */
+
+@media (min-width: 1200px) and (max-width:1399px){
+
+
+    .navbar a{
+        font-size: 26px;
+        font-weight: 900;
+        position: fixed;
+        left: 35%;
+        margin-top: 7px;
+    }
+
+    .show{
+        font-size: 12px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: 20px;
+        top: 35px;
+    }
+
+
+    .navbar-toggler {
+        height: 38px;
+        width: 45px;    
+        position: fixed;
+        right: 40px;
+        top: 5px;
+    }
+
+    .navbar{
+        visibility: visible;
+    }
+
+    .navbar-toggler-icon{ 
+        height: 25px;
+        width: 20px;
+        margin-left:-2px;
+        margin-top:0px      
+    }
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+    }
+
+    .rowDiv{
+        background: rgba(10,200, 400, 1);
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #headingRowID .headingDiv{
+        font-size:20px;
+        background-color: rgba(10,200, 400, .5);
+        font-size: 900;
+    }
+
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .header{
+        font-size:28px;
+        font-weight:700;
+    }
+
+    #navBar a h1{
+        font-size: 28px;
+        font-weight: 700;   
+    }
+
+
+    .page{
+        height:28px;
+        width: 28px;
+        line-height: 28px;
+
+    }
+    .page a{
+        font-size: 16px;
+    }
+
+    .pageHolder{
+        height: 20px;
+        width:100vw;
+        background-color: transparent;
+    }
+
+    .mode,.mode2{
+        height: 40px;
+        width: 40px;
+        top:10px
+    }
+
+
+}
+
+                                                                               /*!  */  /*!  */  /*!  */
+
+
+@media (min-width: 1400px){
+
+    .navbar a{
+        font-size: 28px;
+        font-weight: 900;
+        position: fixed;
+        left: 35%;
+    }
+
+    .show{
+        font-size: 12px;
+        font-weight: 600px;
+        text-align: center;
+        margin-right: 10px;
+        font-weight: 600;
+        position: fixed;
+        right: 20px;
+        top: 35px;
+    }
+
+
+    .navbar-toggler {
+        height: 42px;
+        width: 50px;    
+        position: fixed;
+        right: 40px;
+        top: 3px;
+    }
+
+    .navbar-toggler-icon{ 
+        height: 25px;
+        width: 20px;
+        margin-left:-2px;
+        margin-top:2px      
+    }
+    
+    .navbar{
+        visibility: visible;
+    }
+
+    .navbar a h1{
+        font-size: 26px;
+        font-weight: 900;
+    }
+
+
+    #table{
+        background-color: transparent;
+        margin-top: 10vh;
+        padding: 0px 10px 0px 9px;
+        border:1px solid transparent;    
+    }
+
+    .rowDiv{
+        background: rgba(10,200, 400, 1);
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #headingRowID .headingDiv{
+        font-size:26px;
+        background-color: rgba(10,200, 400, .5);
+        font-size: 900;
+    }
+    /* nav */
+    .menu{
+        visibility: hidden;
+    }
+
+    .row > div:nth-child(1) {
+        flex: 0 0 11%;
+        max-width: 11%; 
+    }
+    .row > div:nth-child(2) {
+        flex: 0 0 33%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(3) {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .row > div:nth-child(4) {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .header{
+        font-size:32px;
+        font-weight:700;
+    }
+
+    #navBar a h1{
+        font-size: 34px;
+        font-weight: 700;   
+    }
+
+    .mode,.mode2{
+        height: 45px;
+        width: 45px;
+        top:10px
+    }
+
+
+}
+
+

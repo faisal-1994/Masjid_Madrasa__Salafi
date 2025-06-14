@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gazipur</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&family=Open+Sans:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+    </head>
+	
+    <body id="body" class="text-dark">
+                                              <!-- to scroll down -->
+        <div class="topScroll">
+            <a class="top" href="#bottom">🔻</a>
+        </div>
+
+        <div class="container mt-4">
+                                            <!--header part start-->
+
+            <nav id="navBar" class="navbar bg-body-tertiary fixed-top">
+
+                <div class="container">
+
+                    <a id="nav_title" class="navbar-brand m-auto d-inline" href="#"><h1 id="h1Title text-dark">আহলে হাদীস মসজিদ ও মাদরাসা</h1></a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                        <div   div class="offcanvas-header">
+        
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ahle Hadis Masjid and Madrasa</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        
+                        </div>
+        
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                            <li class="nav-item">
+                                <button onclick="location='index.html'">Home</button>
+                            </li>
+            
+                            
+                            <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a> -->
+
+            
+                            <select onchange="location = this.value;">
+                                <option value="#">Dhaka </option>
+                                <option value="dhaka.html">Dhaka</option>
+                                <option value="faridpur.html">Faridpur</option>
+                                <option value="gazipur.html">Gazipur</option>
+                                <option value="gopalganj.html">Gopalganj</option>
+                                <option value="kishoreganj.html">Kishoreganj</option>
+                                <option value="madaripur.html">Madaripur</option>
+                                <option value="manikganj.html">Manikganj</option>
+                                <option value="munshiganj.html">Munshiganj</option>
+                                <option value="narayanganj.html">Narayanganj</option>
+                                <option value="narsingdi.html">Narsingdi</option>
+                                <option value="rajbari.html">Rajbari</option>
+                                <option value="shariatpur.html">Shariatpur</option>
+                                <option value="tangail.html">Tangail</option>
+                            </select>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+            
+                                <select onchange="location = this.value;">
+                                    <option value="#">Barishal </option>
+                                    <option value="barguna.html">Barguna</option>
+                                    <option value="barishal.html">Barishal</option>
+                                    <option value="bhola.html">Bhola</option>
+                                    <option value="jhalokati.html">Jhalokati</option>
+                                    <option value="patuakhali.html">Patuakhali</option>
+                                    <option value="pirojpur.html">Pirojpur</option>
+                                </select>
+            
+                            </li>
+            
+                            <li class="nav-item">
+            
+                                <select onchange="location = this.value;">
+                                    <option value="#">Chattogram </option>
+                                    <option value="bandarban.html">Bandarban</option>
+                                    <option value="brahmanbaria.html">Brahmanbaria</option>
+                                    <option value="chandpur.html">Chandpur</option>
+                                    <option value="chattogram.html">Chattogram</option>
+                                    <option value="cumilla.html">Cumilla</option>
+                                    <option value="coxsbazar.html">Cox's Bazar</option>
+                                    <option value="feni.html">Feni</option>
+                                    <option value="khagrachhari.html">Khagrachhari</option>
+                                    <option value="lakshmipur.html">Lakshmipur</option>
+                                    <option value="noakhali.html">Noakhali</option>
+                                    <option value="rangamati.html">Rangamati</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Khulna </option>
+                                    <option value="bagerhat.html">Bagerhat</option>
+                                    <option value="chuadanga.html">Chuadanga</option>
+                                    <option value="jashore.html">Jashore</option>
+                                    <option value="jhenaidah.html">Jhenaidah</option>
+                                    <option value="khulna.html">Khulna</option>
+                                    <option value="kushtia.html">Kushtia</option>
+                                    <option value="magura.html">Magura</option>
+                                    <option value="meherpur.html">Meherpur</option>
+                                    <option value="narail.html">Narail</option>
+                                    <option value="satkhira.html">Satkhira</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Mymensingh </option>
+                                    <option value="jamalpur.html">Jamalpur</option>
+                                    <option value="mymensingh.html">Mymensingh</option>
+                                    <option value="netrokona.html">Netrokona</option>
+                                    <option value="sherpur.html">Sherpur</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Rajshahi </option>
+                                    <option value="bogura.html">Bogura</option>
+                                    <option value="jaipurhat.html">Jaipurhat</option>
+                                    <option value="naogaon.html">Naogaon</option>
+                                    <option value="natore.html">Natore</option>
+                                    <option value="chapainawabganj.html">Chapainawabganj </option>
+                                    <option value="pabna.html">Pabna</option>
+                                    <option value="rajshahi.html">Rajshahi</option>
+                                    <option value="sirajganj.html">Sirajganj</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Rangpur </option>
+                                    <option value="dinajpur.html">Dinajpur</option>
+                                    <option value="gaibandha.html">Gaibandha</option>
+                                    <option value="kurigram.html">Kurigram</option>
+                                    <option value="lalmonirhat.html">Lalmonirhat</option>
+                                    <option value="nilphamari.html">Nilphamari</option>
+                                    <option value="panchagarh.html">Panchagarh</option>
+                                    <option value="rangpur.html">Rangpur</option>
+                                    <option value="thakurgaon.html">Thakurgaon</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Sylhet </option>
+                                    <option value="habiganj.html">Habiganj</option>
+                                    <option value="moulvibazar.html">Moulvibazar</option>
+                                    <option value="sunamganj.html">Sunamganj</option>
+                                    <option value="sylhet.html">Sylhet</option>
+                                </select>
+                            </li>
+            
+            
+                            </ul>
+            
+                        </div>
+                    </div>
+
+                    <button id="night" class="mode me-5 bg-dark" onclick="night()">🌚</button>
+                    <button id="day" class="mode2 d-none " onclick="day()">☀ </button>
+                    
+                </div>
+
+            </nav>
+
+            <!-- search option -->
+         
+            <div class="input-group mb-3 mt-5">
+                    <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+            </div>
+          
+
+            
+            <h2 id="header" class="text-center header">গাজীপুর</h2>
+
+            <div id="table" class="table">
+
+
+                <div id = "headingRowID" class="row headingRow">
+                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
+                         <div class="headingDiv headingDiv2 ">নাম</div>
+                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
+                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
+                </div> 
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১</div>
+                    <div class='col-3 rowDiv' > উমর বিন খাত্তাব (রাঃ) মডেল মাদ্রাসা</div>
+                    <div class='col-3 rowDiv' >  গ্রেটওয়াল সিটি, চান্দনা চৌরাস্তা, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > 01712-193992, 01933-558813</div>
+                </div>
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২</div>
+                    <div class='col-3 rowDiv' > জামিআ দারুল হাদীস আল-আরাবিয়া (আবাসিক/অনাবাসিক) (শাইখ হারুন হুসাইন কর্তৃক পরিচালিত)</div>
+                    <div class='col-3 rowDiv' > বাড়ী নং ৩১২, কাথোরা মাদরাসা মোড়, আইইউটি-ইছর রোড, বোর্ডবাজার, গাজীপুর মহানগর</div>
+                    <div class='col-3 rowDiv' > 01761-897076, 01798-475070</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৩</div>
+                    <div class='col-3 rowDiv' > ইমাম বুখারী (রহ.) মসজিদ ও মাদ্রাসা কমপ্লেক্স </div>
+                    <div class=" col-3 rowDiv">বরাবো, মৌচাক, কালিয়াকৈর, গাজীপুর  <div id="detailsP" class="d-none">কোনাবাড়ি থেকে আরামবাগ রোড হয়ে নছের মার্কেট থেকে দুলাল মার্কেট ৫০০ গজ পশ্চিমে, আব্দুল হক সাহেবের বাড়ির দক্ষিণে মসজিদটি অবস্থিত।</div> <button class="seeBtn" id="seeBtn" onclick="seem()">see more</button> <button class="closeBtn d-none" id="closeBtn" onclick="seel()">see less</button> </div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৪</div>
+                    <div class='col-3 rowDiv' >  জামিয়া ইসলামিয়া মাদ্রাসা</div>
+                    <div class='col-3 rowDiv' >  টোক নগর আলিম মাদ্রাসার পশ্চিমে,  টোক নগর মধ্যপাড়া, কাপাসিয়া, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > 01646778427, 01975917608</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৫</div>
+                    <div class='col-3 rowDiv' >  কামারজুরী সালাফিয়্যাহ মসজিদ ও মাদরাসা কমপ্লেক্স</div>
+                    <div class='col-3 rowDiv' > ৩৬নং ওয়ার্ড। মাষ্টারবাড়ী রোড। কামারজুরী, গাজীপুর</div>
+                    <div class='col-3 rowDiv' >  01712-854883</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৬</div>
+                    <div class='col-3 rowDiv' > চকপাড়া খানবাড়ি সালাফিয়্যাহ মাদ্রাসা ও এতিমখানা</div>
+                    <div class='col-3 rowDiv' >  চকপাড়া মাওনা, শ্রীপুর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > 01716-531294, 01623-751652, 01737-121192</div>
+                </div>
+                
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৭</div>
+                    <div class='col-3 rowDiv' > মাদরাসা মানারুল হুদা</div>
+                    <div class='col-3 rowDiv' > ভুলুরখোলা, নেয়ামত সড়ক, বাসষ্ট্যান্ড সংলগ্ন, জয়দেবপুর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > 01933-558813, 01731-077883</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৮</div>
+                    <div class='col-3 rowDiv' > আত-তাকওয়া জামে মসজিদ (আহলে হাদিস)</div>
+                    <div class='col-3 rowDiv' > হায়দারাবাদ, গাজীপুর।</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৯</div>
+                    <div class='col-3 rowDiv' > বায়তুল ইলাহ জামে মসজিদ (জুমা)</div>
+                    <div class='col-3 rowDiv' > পাইনশাইল দক্ষিণ নামাপাড়া,ভাওয়াল মির্জাপুর, গাজীপুর সদর, গাজীপুর।</div>
+                    <div class='col-3 rowDiv' > 01711-511905, 01686-775744</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১০</div>
+                    <div class='col-3 rowDiv' > পিরুজালি সিকদারপাড়া আহলে হাদীস জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' > পিরুজালি, সিকদারপাড়া, গাজীপুর।</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১১</div>
+                    <div class='col-3 rowDiv' > পিরুজালী সিকদার পাড়া মডেল মাদ্রাসা</div>
+                    <div class='col-3 rowDiv' > পিরুজালি, সিকদারপাড়া, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১২</div>
+                    <div class='col-3 rowDiv' > আহলে হাদীস তাবলীগে ইসলাম কেন্দ্রীয় জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' > পোড়াবাড়ী, বাজার, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৩</div>
+                    <div class='col-3 rowDiv' > কামারজুরী সালাফিয়্যাহ মসজিদ ও মাদরাসা কমপ্লেক্স </div>
+                    <div class='col-3 rowDiv' > মাষ্টার বাড়ী রোড, কামারজুরি, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > 01712-854883</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৪</div>
+                    <div class='col-3 rowDiv' > বায়তুন নূর জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > টোক বাজার, কাপাসিয়া, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৫</div>
+                    <div class='col-3 rowDiv' > আত তাওহীদ জামে মসজিদ এন্ড ইসলামিক কমপ্লেক্স</div>
+                    <div class='col-3 rowDiv' >  দেওয়ালিয়া বাড়ি, জরুন রোড কাশিমপুর কেন্দ্রীয় কারাগার সংলগ্ন, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > 01912-010465</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৬</div>
+                    <div class='col-3 rowDiv' >  বাইতুল আমান জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' > পিরুজালী, সদর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৭</div>
+                    <div class='col-3 rowDiv' > বায়তুল আকরাম আহলে হাদিস জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > সারদাগঞ্জ, আলতাফ নগর, কাশিমপুর, সদর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>           
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৮</div>
+                    <div class='col-3 rowDiv' > বায়তুল আকসা আহলে হাদিস জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > সারদাগঞ্জ, কাশিমপুর, সদর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ১৯</div>
+                    <div class='col-3 rowDiv' > বায়তুল ইনসাফ আহলে হাদিস জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > সারদাগঞ্জ (গাজী বাড়ী মহল্লা), কাশিমপুর, সদর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২০</div>
+                    <div class='col-3 rowDiv' >  আত তাক্বওয়া জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' > হায়দারাবাদ, ৩৯ নং ওয়ার্ড, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২১</div>
+                    <div class='col-3 rowDiv' > গাছবাড়ি খানবাড়ি জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > বোয়ালি, কালিয়াকৈর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২২</div>
+                    <div class='col-3 rowDiv' >  গাছবাড়ি মাদ্রাসা জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' >  বোয়ালি, কালিয়াকৈর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২৩</div>
+                    <div class='col-3 rowDiv' > গাছবাড়ি উত্তরপাড়া জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > বোয়ালি, কালিয়াকৈর, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                
+        
+                <div class="row" id="bottom">
+                    <div class='col-3 rowDiv' > ২৪</div>
+                    <div class='col-3 rowDiv' >  বায়তুর রহমান জামে মসজিদ </div>
+                    <div class='col-3 rowDiv' > কালিয়াকৈর, গাজীপুর <div id="detailsP2" class="d-none">মৃধাবাড়ি সংলগ্ন, সালাফি কমপ্লেক্স, কালামপুর, কালিয়াকৈর, গাজীপুর</div> <button class="seeBtn" id="seeBtn2" onclick="seem2()">see more</button> <button class="closeBtn d-none" id="closeBtn2" onclick="seel2()">see less</button></div>
+                    <div class='col-3 rowDiv' > 01772-867898, 01615-355577, 01944-721139</div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২৫</div>
+                    <div class='col-3 rowDiv' > বড় কয়ের জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' > পূবাইল, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+                
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২৬</div>
+                    <div class='col-3 rowDiv' > টঙ্গী বাজার আহলে হাদীস  জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' > টঙ্গী, গাজীপুর</div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+        
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২৭</div>
+                    <div class='col-3 rowDiv' > দারুস সুন্নাহ মজিদীয়া মাদরাসা (পৃথক বালক ও বালিকা শাখা)</div>
+                    <div class='col-3 rowDiv' >  উত্তর বিলাশপুর, গাজীপুর মহানগর <div id="detailsP3" class="d-none">মসজিদে আছিয়া ক্যামপাস, ব্লক আই ২২০, উত্তর বিলাশপুর, গাজীপুর মহানগর ১৭০০। । গাজীপুর (জয়দেবপুর মাছবাজার সংলগ্ন উত্তর পশ্চিম পাশে)</div> <button class="seeBtn" id="seeBtn3" onclick="seem3()">see more</button> <button class="closeBtn d-none" id="closeBtn3" onclick="seel3()">see less</button></div>
+                    <div class='col-3 rowDiv' > 01933558813, 01711243636</div>
+                </div>
+                
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২৮</div>
+                    <div class='col-3 rowDiv' > আত-তাওহীদ জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' >বাড়িয়া ইউনিয়ন, দড়িবলধা, সদর গাজীপুর </div>
+                    <div class='col-3 rowDiv' >01925-454400 </div>
+                </div>
+                
+                <div class="row">
+                    <div class='col-3 rowDiv' > ২৯</div>
+                    <div class='col-3 rowDiv' >জৈনাবাজার আহলে হাদীস  জামে মসজিদ</div>
+                    <div class='col-3 rowDiv' >  শ্রীপুর, গাজীপুর </div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+                
+                <div class="row">
+                    <div class='col-3 rowDiv' > ৩০</div>
+                    <div class='col-3 rowDiv' > </div>
+                    <div class='col-3 rowDiv' > </div>
+                    <div class='col-3 rowDiv' > </div>
+                </div>
+
+            </div>
+                
+
+        </div>
+
+            
+
+
+        </div>
+
+        <div class="bottomScroll">
+            <a class="bottom" onclick="bottom()" href="#headingRowID">🔺</a>
+        </div>
+
+
+
+        <!-- <div class="pageHolder" id="bottom">
+            <div class="page bg-dark firtstPage"><p class="text-light" href="dhaka.html">1</p></div>
+            <div class="page secondPage"><a href="dhaka2.html">2</a></div>
+            <div class="page thirdPage"><a href="dhaka3.html">3</a></div>
+            <div class="page fourthPage"><a href="dhaka4.html">4</a></div>
+            <div class="page fifthPage"><a href="dhaka5.html">5</a></div> 
+        </div> -->
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>	
+        <script src="js/custom.js"></script>
+       
+       
+
+    </body>
+
+</html>

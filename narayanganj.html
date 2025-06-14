@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Narayanganj</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&family=Open+Sans:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+	
+<body id="body">
+
+    <div class="container">
+        
+        <nav id="navBar" class="navbar bg-body-tertiary fixed-top">
+    
+            <div class="container">
+    
+                <a id="nav_title" class="navbar-brand m-auto d-inline" href="#"><h1 id="h1Title text-dark">আহলে হাদীস মসজিদ ও মাদরাসা</h1></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                    <div   div class="offcanvas-header">
+    
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ahle Hadis Masjid and Madrasa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+                    </div>
+    
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        
+                        <li class="nav-item">
+                            <button onclick="location='index.html'">Home</button>
+                        </li>
+        
+                        
+                        <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a> -->
+        
+                
+        
+                        <select onchange="location = this.value;">
+                            <option value="#">Dhaka </option>
+                            <option value="dhaka.html">Dhaka</option>
+                            <option value="faridpur.html">Faridpur</option>
+                            <option value="gazipur.html">Gazipur</option>
+                            <option value="gopalganj.html">Gopalganj</option>
+                            <option value="kishoreganj.html">Kishoreganj</option>
+                            <option value="madaripur.html">Madaripur</option>
+                            <option value="manikganj.html">Manikganj</option>
+                            <option value="munshiganj.html">Munshiganj</option>
+                            <option value="narayanganj.html">Narayanganj</option>
+                            <option value="narsingdi.html">Narsingdi</option>
+                            <option value="rajbari.html">Rajbari</option>
+                            <option value="shariatpur.html">Shariatpur</option>
+                            <option value="tangail.html">Tangail</option>
+                        </select>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                            <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+        
+                            <select onchange="location = this.value;">
+                                <option value="#">Barishal </option>
+                                <option value="barguna.html">Barguna</option>
+                                <option value="barishal.html">Barishal</option>
+                                <option value="bhola.html">Bhola</option>
+                                <option value="jhalokati.html">Jhalokati</option>
+                                <option value="patuakhali.html">Patuakhali</option>
+                                <option value="pirojpur.html">Pirojpur</option>
+                            </select>
+        
+                        </li>
+        
+                        <li class="nav-item">
+        
+                            <select onchange="location = this.value;">
+                                <option value="#">Chattogram </option>
+                                <option value="bandarban.html">Bandarban</option>
+                                <option value="brahmanbaria.html">Brahmanbaria</option>
+                                <option value="chandpur.html">Chandpur</option>
+                                <option value="chattogram.html">Chattogram</option>
+                                <option value="cumilla.html">Cumilla</option>
+                                <option value="coxsbazar.html">Cox's Bazar</option>
+                                <option value="feni.html">Feni</option>
+                                <option value="khagrachhari.html">Khagrachhari</option>
+                                <option value="lakshmipur.html">Lakshmipur</option>
+                                <option value="noakhali.html">Noakhali</option>
+                                <option value="rangamati.html">Rangamati</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Khulna </option>
+                                <option value="bagerhat.html">Bagerhat</option>
+                                <option value="chuadanga.html">Chuadanga</option>
+                                <option value="jashore.html">Jashore</option>
+                                <option value="jhenaidah.html">Jhenaidah</option>
+                                <option value="khulna.html">Khulna</option>
+                                <option value="kushtia.html">Kushtia</option>
+                                <option value="magura.html">Magura</option>
+                                <option value="meherpur.html">Meherpur</option>
+                                <option value="narail.html">Narail</option>
+                                <option value="satkhira.html">Satkhira</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Mymensingh </option>
+                                <option value="jamalpur.html">Jamalpur</option>
+                                <option value="mymensingh.html">Mymensingh</option>
+                                <option value="netrokona.html">Netrokona</option>
+                                <option value="sherpur.html">Sherpur</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Rajshahi </option>
+                                <option value="bogura.html">Bogura</option>
+                                <option value="jaipurhat.html">Jaipurhat</option>
+                                <option value="naogaon.html">Naogaon</option>
+                                <option value="natore.html">Natore</option>
+                                <option value="chapainawabganj.html">Chapainawabganj </option>
+                                <option value="pabna.html">Pabna</option>
+                                <option value="rajshahi.html">Rajshahi</option>
+                                <option value="sirajganj.html">Sirajganj</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Rangpur </option>
+                                <option value="dinajpur.html">Dinajpur</option>
+                                <option value="gaibandha.html">Gaibandha</option>
+                                <option value="kurigram.html">Kurigram</option>
+                                <option value="lalmonirhat.html">Lalmonirhat</option>
+                                <option value="nilphamari.html">Nilphamari</option>
+                                <option value="panchagarh.html">Panchagarh</option>
+                                <option value="rangpur.html">Rangpur</option>
+                                <option value="thakurgaon.html">Thakurgaon</option>
+                            </select>
+                        </li>
+        
+                        <li class="nav-item">
+                            <select onchange="location = this.value;">
+                                <option value="#">Sylhet </option>
+                                <option value="habiganj.html">Habiganj</option>
+                                <option value="moulvibazar.html">Moulvibazar</option>
+                                <option value="sunamganj.html">Sunamganj</option>
+                                <option value="sylhet.html">Sylhet</option>
+                            </select>
+                        </li>
+        
+        
+                        </ul>
+        
+                    </div>
+                </div>
+    
+                <button id="night" class="mode me-5 bg-dark" onclick="night()">🌚</button>
+                <button id="day" class="mode2 d-none " onclick="day()">☀ </button>
+                
+            </div>
+        </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+          
+      
+        <h2 id="header" class="text-center header">নারায়ণগঞ্জ</h2>
+        
+        <div id="table" class="table">
+            
+            <div id = "headingRowID" class="row headingRow">
+		             <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
+		             <div class="headingDiv headingDiv2 ">নাম</div>
+		             <div class="headingDiv headingDiv3 ">ঠিকানা</div>
+		             <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
+	        </div>
+
+                     
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১</div>
+                <div class='col-3 rowDiv' >  মাদরাসা দারুল হাদীস সালাফিইয়াহ জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > পাঁচরুখী, আড়াইহাজার, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ২</div>
+                <div class='col-3 rowDiv' > ফরাজিকান্দা বড় জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > ফরাজিকান্দা, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01711-274269</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩</div>
+                <div class='col-3 rowDiv' > ফরাজিকান্দা দক্ষিণ পাড়া জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > ফরাজিকান্দা, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৪</div>
+                <div class='col-3 rowDiv' > রোহিলা আল-আক্বসা জামে মসজিদ  </div>
+                <div class='col-3 rowDiv' > রূপগঞ্জ, ঢাকা পূর্বাচল উপশহর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01717-809512</div>
+            </div>           
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৫</div>
+                <div class='col-3 rowDiv' >  হোসনে আরা সামাদ আহলে হাদিস জামে মাসজিদ  ও মাদরাসা কমপ্লেক্স</div>
+                <div class='col-3 rowDiv' > চাঁন্দেরপাড়া, বারদী, সোনারগাঁও, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01751-716651</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৬</div>
+                <div class='col-3 rowDiv' > মাদরাসাতুল মাদিনাহ </div>
+                <div class='col-3 rowDiv' > সাবদী বাজার, সাবদী, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01937-822752, 01928-846609, 0199-0559040</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৭</div>
+                <div class='col-3 rowDiv' > আল জামিয়াহ আস সালাফিয়াহ (আঃ রাজ্জাক বিন ইউসুফ কর্তৃক পরিচালিত)</div>
+                <div class='col-3 rowDiv' > রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01947-905570, 01726-59764, 01738-560698,<div id="detailsP" class="d-none">01763-144524, 01717-088967, 01407-021825, 01407-021826</div> <button class="seeBtn" id="seeBtn" onclick="seem()">see more</button> <button class="closeBtn d-none" id="closeBtn"  onclick="seel()">see less</button> </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৯</div>
+                <div class='col-3 rowDiv' > মাদ্রাসা দারুল হাদিস একাডেমী (মসজিদ-জুমা) </div>
+                <div class='col-3 rowDiv' > কাশিপুর বাংলাবাজার, ইব্রাহিমব্রিজ, ফাতুল্লা, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01818-597009, 01827-283767, 01717-833652, 01623-864288</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ৯</div>
+                <div class='col-3 rowDiv' >  জামি'আহ দারুল ইহসান আল-আরাবিয়্যাহ</div>
+                <div class='col-3 rowDiv' > কালনী, গোবিন্দপুর,  রূপগঞ্জ,  নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01726-597646, 01310-330555</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১০</div>
+                <div class='col-3 rowDiv' > কাঞ্চন মৌলভী সোলাইমান দারুল হাদীস সালাফিয়্যাহ মাদরাসা (আবাসিক/অনাবাসিক/ডে কেয়ার)  </div>
+                <div class='col-3 rowDiv' > কাঞ্চন, রুপগঞ্জ, নারায়ণগঞ্জ </div>
+                <div class='col-3 rowDiv' > 01719-066204</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১১</div>
+                <div class='col-3 rowDiv' > মারকাযুস সুন্নাহ আস সালাফিয়্যাহ।  </div>
+                <div class='col-3 rowDiv' > শাহ সাহেব বাড়ি, দরিগুতিয়াব পূর্বাচল নতুন শহর, রুপগঞ্জ, নারায়নগঞ্জ<div id="detailsP2" class="d-none">সেক্টর #৫,  রোড# ৪০৫, হাউজ #৪৫।</div> <button class="seeBtn" id="seeBtn2" onclick="seem2()">see more</button> <button class="closeBtn d-none" id="closeBtn2"  onclick="seel2()">see less</button> </div>
+                <div class='col-3 rowDiv' > 01865-293004, 01319-321201</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১২</div>
+                <div class='col-3 rowDiv' >  বান্টি দারুস সালাম ক্যাডেট মাদরাসা  </div>
+                <div class='col-3 rowDiv' > বান্টি, আড়াইহাজার, নারায়ণগঞ্জ </div>
+                <div class='col-3 rowDiv' > 01818-338126, 01858-247161</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৩</div>
+                <div class='col-3 rowDiv' >  আল-মাদরাসাতুল মাদানিয়্যাতু লিল-বানাত  </div>
+                <div class='col-3 rowDiv' > আজাদ ম্যানশন, ৮৯/২/বি, নিউ চাষারা রোড, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' >  01913-958256, 01937-822752</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৪</div>
+                <div class='col-3 rowDiv' >  চাষাড়া আহলে হাদিস মসজিদ</div>
+                <div class='col-3 rowDiv' > ৬৫ নং উত্তর চাষাড়া, নারায়ণগঞ্জ <div id="detailsP3" class="d-none">চাষাড়া জিয়া হলের পাশে ল্যাবএইড হাসপাতালের গলি (উত্তর চাষাড়া), গলির সোজা হাটলেই 4 তলা বিশিষ্ট সবুজ গম্বুজ ওয়ালা এই মসজিদ</div> <button class="seeBtn" id="seeBtn3" onclick="seem3()">see more</button> <button class="closeBtn d-none" id="closeBtn3"  onclick="seel3()">see less</button> </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৫</div>
+                <div class='col-3 rowDiv' > গিয়াসউদ্দিন এডুকেশন কমপ্লেক্স জামে মসজিদ  </div>
+                <div class='col-3 rowDiv' > হিরাঝিল, চিটাগং রোড, সিদ্ধিরগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01778-806641</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৬</div>
+                <div class='col-3 rowDiv' >  দক্ষিণ বারপাড়া মাস্টার বাড়ী আহলে হাদীস জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > বারপাড়া, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01818-767436, 01967-602855, 01612-546036</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৭</div>
+                <div class='col-3 rowDiv' > নাওড়া পশ্চিমপাড়া আহলেহাদীছ জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01854-731246, 01714-392344</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৮</div>
+                <div class='col-3 rowDiv' > রাণীপুরা বটতলা বাইতুল মা’মুর আহলে হাদীস জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > রাণীপুরা, রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01817-550433</div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৯</div>
+                <div class='col-3 rowDiv' > কেন্দুয়াপাড়া আহলে হাদীস জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২০</div>
+                <div class='col-3 rowDiv' > শিমুলিয়া বাজার কেন্দ্রীয় জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > পূর্বাচল, রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২১</div>
+                <div class='col-3 rowDiv' > নোয়াগাঁও কেন্দ্রীয় আহলে হাদীস  জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > আড়াইহাজার, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২২</div>
+                <div class='col-3 rowDiv' > মুহাম্মাদীয়া তাক্ওয়া জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > ফতুল্লা, নারায়ণগঞ্জ  <div id="detailsP4" class="d-none">মাতুয়াইল থেকে ২ কি. মি. দক্ষিণে, দক্ষিণ ওয়ায়েসকরনী(নুরবাগ পুরাতন সিএনজি স্ট্যান্ড ) কুতুবপুর </div> <button class="seeBtn" id="seeBtn4" onclick="seem4()">see more</button> <button class="closeBtn d-none" id="closeBtn4"  onclick="seel4()">see less</button> </div>
+                <div class='col-3 rowDiv' > 01535-804822</div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৩</div>
+                <div class='col-3 rowDiv' > বায়তুল ফালাহ জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > ভোলাব(গাবতলা বাজার) আতলাপুর, রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৪</div>
+                <div class='col-3 rowDiv' > বায়তুল ফালাহ্ জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > সিটি কর্পোরেশন কবরস্থান সংলগ্ন, মদনগঞ্জ, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01755-514187</div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৫</div>
+                <div class='col-3 rowDiv' > মাসজিদ আল মু’মিনিন</div>
+                <div class='col-3 rowDiv' > ফরাজিকান্দা,মদনগঞ্জ, কবরস্থান রোড, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01814-930581</div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৬</div>
+                <div class='col-3 rowDiv' > মাদরাসাতুল কুরআন ওয়াল হাদিস</div>
+                <div class='col-3 rowDiv' > ফরাজিকান্দা,মদনগঞ্জ, কবরস্থান রোড, বন্দর, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01868260441</div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৭</div>
+                <div class='col-3 rowDiv' > ইমাম বুখারী রহ. মডেল মাদরাসা</div>
+                <div class='col-3 rowDiv' > নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৮</div>
+                <div class='col-3 rowDiv' > দক্ষিণ চৌধুরীপাড়া বাইতুল মামুর জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > চৌধুরীপাড়া, কাঞ্চন, রূপগঞ্জ, নারায়ণগঞ্জ</div>
+                <div class='col-3 rowDiv' > 01727-866339</div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ২৯</div>
+                <div class='col-3 rowDiv' >দামসি আহলে হাদীস জামে মসজিদ </div>
+                <div class='col-3 rowDiv' >(ওয়েস্টার্ন কোম্পানি সংলগ্ন ) ১৮নং সেক্টর  পূর্বাচল </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩০</div>
+                <div class='col-3 rowDiv' > মনিজা-ওয়ারেশ জামে মাসজিদ </div>
+                <div class='col-3 rowDiv' >গাবতলি, ফতুল্লা </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩১</div>
+                <div class='col-3 rowDiv' >মুহাম্মদীয়া তাকওয়া জামে মসজিদ  </div>
+                <div class='col-3 rowDiv' >কুতুবপুর, ফতুল্লা </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩২</div>
+                <div class='col-3 rowDiv' >মাসজিদুল ইমাম আল-বুখারী</div>
+                <div class='col-3 rowDiv' > শিবু মার্কেট, ব্যাংকের মোড়, ফতুল্লা  </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৩</div>
+                <div class='col-3 rowDiv' >সিদ্ধিরগঞ্জ জামে মসজিদ</div>
+                <div class='col-3 rowDiv' >চিটাগাং রোড</div>
+                <div class='col-3 rowDiv' ></div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৪</div>
+                <div class='col-3 rowDiv' >কুলিয়াদী জামি'আতুল ফুরকান আস-সালাফিয়াহ </div>
+                <div class='col-3 rowDiv' >পূর্বাচল, রুপগঞ্জ </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৫</div>
+                <div class='col-3 rowDiv' >ফজুর কান্দী কেন্দ্রীয় আহলে হাদীস জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' >01571707718 </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৬</div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৭</div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৮</div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৩৯</div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-3 rowDiv' > ৪০</div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+        
+
+        </div>
+
+    </div>
+        
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
+
+</body>
+</html>
