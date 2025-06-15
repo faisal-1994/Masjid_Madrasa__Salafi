@@ -1747,11 +1747,15 @@ z-index: 1;
 
     #submitBtn{
         position:absolute;
-        right: 80px;
-        top: 193px;
+        right: 62px;
+        top: 166px;
         color:black;
         background-color: azure;
 
+    }
+    #submitBtn:hover{
+        background-color: rgb(32, 30, 30);
+        color:white;
     }
 
     #mainTitle{
