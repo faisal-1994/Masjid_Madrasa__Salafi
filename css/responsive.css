@@ -1,6 +1,166 @@
 @media (min-width: 200px) and (max-width: 250px){
+    #sMedia img{
+        width: 100%;
+        height: 55%;
+        margin-top: 18px;
+        margin-left: -20px;
+    }
+    .main h2, h6{
+        font-size: 12px;
+    }
 
-    
+    .main_footer h6{
+        font-size: 10px;
+    }
+ 
+    .headingDiv2 textarea {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 27%;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+    .headingDiv3 textarea {
+  position: absolute;
+  top: -20px;
+  left: 29%;
+  width: 27%;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+    .headingDiv4 textarea {
+  position: absolute;
+  top: -20px;
+  left: 58%;
+  width: 27%;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+
+
+    #headingRowID {
+  position: relative;  /* was likely fixed or sticky */
+  z-index: auto;
+}
+
+
+
+ */
+
+    textarea.form-control {
+  position: relative;
+  bottom: -150px;
+  resize: none;          /* optional: prevent resizing */
+  height: auto;          /* or a fixed height if needed */
+}
+
+
+    #submitBtn{
+position: absolute;
+top: -20px;
+right: 0px;
+/* top: 80px; */
+width: 30px;
+height: 18px;
+font-size: 7px;
+font-weight: 800;
+background-color: rgba(10,200, 400, 0);
+border: 1px solid black;
+/* //helps text to center */
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 6px;
+padding:0;
+color: black;
+z-index: 1;
+
+}
+
+ 
+    #searchInput{
+        border-radius: 350px;
+        width: 110px;
+        height: 18px;
+        position: fixed;
+        top:-14px;
+        left: 70px;
+        z-index: 1;
+        text-align: center;
+    }
+    #searchInput::placeholder{
+        font-size: 10px;
+        visibility: hidden;
+      
+    }
+
+    textarea.form-control {
+        min-height: 0;
+    }
+
+    .form-control{
+        height: 10px  ;
+
+    }
+
+
+    .form-control::placeholder{
+        font-size: 5px;
+        visibility: hidden;
+
+
+    }
+
+    #searchInput{
+        border-radius: 350px;
+        width: 100px;
+        height: 22px;
+        position: fixed;
+        top:-16px;
+        left: 65px;
+        z-index: 1;
+      
+       
+    }
+    #searchInput::placeholder{
+        font-size: 11px;
+        visibility: visible;
+    }
+    #h1Title{
+        font-size: 14px;
+    }
+
+    #nav_title{
+        position: fixed;
+        top:15px;
+        left: 46px;
+    }
+
+
+  .form-control{
+        height: 10px;
+   
+    }
+
+    .form-control::placeholder{
+        font-size: 7px;
+        visibility: visible;
+        position: static;
+        bottom: 2px;
+        align-self: center;
+        line-height: 7px;
+
+    }
+
+
     #offcanvasNavbar{
         width: 60%;
   
@@ -35,7 +195,7 @@
 
     }
 
-    .navbar a{
+    #mainTitle{
         font-size: 10px;
         font-weight: 900;
         position: absolute;
@@ -50,7 +210,7 @@
         margin-right: 10px;
         font-weight: 600;
         position: fixed;
-        right: -2px;
+        right: -7px;
         top: 33px;
     }
     
@@ -97,11 +257,12 @@
 }
 
     #headingRowID .headingDiv{
-    font-size:7px;
+    font-size:6px;
     background-color: rgba(10,200, 400, .5);
     font-size: 900;
+    line-height: 8px;
     }
-
+  
     /* nav */
     .menu{
         visibility: hidden;
@@ -194,7 +355,6 @@
 
 } 
 
-/*  */
 
 
 
@@ -203,9 +363,122 @@
 
 
 @media (min-width: 251px) and (max-width: 337px){
+
+    #sMedia img{
+        width: 100%;
+        height: 55%;
+        margin-top: 18px;
+        margin-left: -20px;
+    }
+    .main h2, h6{
+        font-size: 12px;
+    }
+
+    .main_footer h6{
+        font-size: 10px;
+    }
+
+    /* #submitBtn{
+        position:absolute;
+        right: -5px;
+        top: 148px;
+        width: 40px;
+        height: 35px;
+        font-size: 8px;
+        background-color: rgba(10,200, 400, 0);
+        border-color: transparent;
+
+    } */
+
+    #headingRowID {
+  position: relative;
+}
+
+    .headingDiv2 textarea {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 27%;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+    .headingDiv3 textarea {
+  position: absolute;
+  top: -20px;
+  left: 29%;
+  width: 27%;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+    .headingDiv4 textarea {
+  position: absolute;
+  top: -20px;
+  left: 58%;
+  width: 27%;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+    #submitBtn{
+position: absolute;
+top: -20px;
+right: 0px;
+/* top: 80px; */
+width: 30px;
+height: 18px;
+font-size: 7px;
+font-weight: 800;
+background-color: rgba(10,200, 400, 0);
+border: 1px solid black;
+/* //helps text to center */
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 6px;
+padding:0;
+color: black;
+z-index: 1;
+
+}
+
+    #searchInput{
+        border-radius: 350px;
+        width: 110px;
+        height: 18px;
+        position: fixed;
+        top:-14px;
+        left: 70px;
+        z-index: 1;
+        text-align: center;
+    }
+    #searchInput::placeholder{
+        font-size: 10px;
+      
+    }
+
+    textarea.form-control {
+        min-height: 0;
+    
+    }
+
+    .form-control{
+        height: 10px;
+    }
+
+    .form-control::placeholder{
+        font-size: 5px;
+       /* visibility: hidden; */
+
+    }
+
     #offcanvasNavbar{
         width: 60%;
-  
     }
     .nav-item button{
         width: 90px;
@@ -234,7 +507,7 @@
         background-color: rgb(165, 231, 231);
     }
 
-    .navbar a{
+    #mainTitle{
         font-size: 12px;
         font-weight: 900;
         position: absolute;
@@ -409,6 +682,139 @@
 
 
 @media (min-width: 338px) and (max-width: 575px){
+
+
+    #sMedia img{
+        width: 70%;
+        height: 70%;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .main h2, h6{
+        font-size: 13px;
+    }
+
+    .main_footer h6{
+        font-size: 11px;
+    }
+
+    
+    .headingDiv2 textarea {
+        position: absolute;
+        top: -29px;
+        left: 0;
+        width: 27%;
+        z-index: 1;
+        border: 1px solid black;
+        border-radius: 25px;
+        height: 7px;           /* <-- set desired height */
+        font-size: 8px;         /* adjust text size */
+        line-height: 10px;      /* helps with vertical text centering */
+        padding: 0 4px;
+        resize: none; 
+}
+
+    .headingDiv3 textarea {
+        position: absolute;
+        top: -29px;
+        left: 29%;
+        width: 27%;
+        z-index: 1;
+        border: 1px solid black;
+        border-radius: 25px;
+        height: 7px;           /* <-- set desired height */
+        font-size: 8px;         /* adjust text size */
+        line-height: 10px;      /* helps with vertical text centering */
+        padding: 0 4px;
+        resize: none; 
+}
+
+    .headingDiv4 textarea {
+        position: absolute;
+        top: -29px;
+        left: 58%;
+        width: 27%;
+        z-index: 1;
+        border: 1px solid black;
+        border-radius: 25px;
+        height: 7px;           /* <-- set desired height */
+        font-size: 8px;         /* adjust text size */
+        line-height: 10px;      /* helps with vertical text centering */
+        padding: 0 4px;
+        resize: none;  
+}
+
+
+
+
+
+
+    #headingRowID {
+        position: relative;  /* was likely fixed or sticky */
+        z-index: auto;
+}
+
+
+    #submitBtn{
+position: absolute;
+top: -28px;
+right: 10px;
+/* top: 80px; */
+border-radius: 8px;
+
+width: 30px;
+height: 25px;
+font-size: 7px;
+font-weight: 800;
+background-color: rgba(10,200, 400, 0);
+border: 1px solid black;
+/* //helps text to center */
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 6px;
+padding:0;
+color: black;
+z-index: 1;
+
+}
+
+    #searchInput{
+        border-radius: 350px;
+        width: 110px;
+        height: 22px;
+        position: fixed;
+        top:-16px;
+        z-index: 1;
+        text-align: center;
+    }
+    #searchInput::placeholder{
+        font-size: 12px;
+    }
+
+    #h1Title{
+        font-size: 14px;
+        position: fixed;
+        top:25px;
+    }
+    #nav_title{
+        position: fixed;
+        top:10px;
+        left: 77px;
+
+    }
+
+    .form-control{
+        height: 10px;
+   
+    }
+
+    .form-control::placeholder{
+        font-size: 8px;
+
+    }
+
     #offcanvasNavbar{
         width: 60%;
   
@@ -440,11 +846,11 @@
         background-color: rgb(165, 231, 231);
     }
 
-    .navbar a{
-    font-size: 14px;
-    position: absolute;
-    left: 22%;
-    top: 10px;
+    #mainTitle{
+        font-size: 14px;
+        position: absolute;
+        left: 22%;
+        top: 10px;
     }
     #navBar a{
         align-content: center;
@@ -510,10 +916,10 @@
         margin-left: 3px;
     }
    .rowDiv{
-    background: rgba(10,200, 400, 1);
-    font-size: 7px;
-    font-weight: 700;
-    text-align: center;
+        background: rgba(10,200, 400, 1);
+        font-size: 7px;
+        font-weight: 700;
+        text-align: center;
  
    }
 
@@ -550,6 +956,7 @@
     .header{
         font-size:14px;
         font-weight:700;
+        margin-bottom: 20px;
     }
     .topScroll{
         visibility: hidden;
@@ -608,6 +1015,60 @@
 
                                              /*!  */  /*!  */  /*!  */
 @media (min-width: 576px) and (max-width: 767px){
+
+
+    #sMedia img{
+        width: 75%;
+        height: 75%;
+        margin-top: 12px;
+        margin-left: 5px;
+    }
+    .main h2, h6{
+        font-size: 16px;
+    }
+
+    .main_footer h6{
+        font-size: 13px;
+    }
+
+    #searchInput{
+        position: fixed;
+        left: 380px;
+        width: 24%;
+
+    }
+
+    #h1Title{
+        font-size: 14px;
+        position: fixed;
+        top:25px;
+  
+    }
+    #nav_title{
+        position: fixed;
+        top:20px;
+        color:black;
+
+    }
+
+    #submitBtn{
+        position:absolute;
+        right: -15px;
+        top: 134px;
+        color:black;
+        background-color: azure;
+        font-size: 10px;
+
+    }
+
+    .form-control{
+        height: 0px;
+   
+    }
+    .form-control::placeholder{
+        font-size: 10px;
+
+    }
     
     #offcanvasNavbar{
         width: 60%;
@@ -640,7 +1101,7 @@
         background-color: rgb(165, 231, 231);
     }
 
-    .navbar a{
+    #mainTitle{
         position: absolute;
         left: 30%;
         top: 10px;
@@ -656,12 +1117,9 @@
     .show{
         font-size: 8px;
         font-weight: 600px;
-        text-align: center;
         margin-right: 10px;
         font-weight: 600;
-        position: fixed;
-        right: 2%;
-        top: 35px;
+        
     }
     
     .navbar-toggler {
@@ -819,6 +1277,39 @@
 
 
 @media (min-width: 768px) and (max-width: 991px){
+
+    #sMedia img{
+        width: 75%;
+        height: 75%;
+        margin-top: 13px;
+        margin-left: 5px;
+    }
+    .main h2, h6{
+        font-size: 23px;
+    }
+
+    .main_footer h6{
+        font-size: 15px;
+    }
+
+    #searchInput{
+        position: fixed;
+        left: 480px;
+        width: 27%;
+
+    }
+
+
+    #submitBtn{
+        position:absolute;
+        right: -30px;
+        top: 145px;
+        color:black;
+        background-color: azure;
+
+    }
+
+    
     
     #offcanvasNavbar{
         width: 40%;
@@ -851,22 +1342,22 @@
         background-color: rgb(165, 231, 231);
     }
 
-    .navbar a{
-        font-size: 24px;
+    #mainTitle{
+        font-size: 23px;
         font-weight: 900;
         position: absolute;
         left: 30%;
         top: 10px;
+        color: black;
     }
 
     .show{
         font-size: 12px;
         font-weight: 600px;
         text-align: center;
-        margin-right: 10px;
         font-weight: 600;
         position: fixed;
-        right: -2px;
+        right: 0px;
         top: 35px;
     }
     
@@ -889,7 +1380,7 @@
         visibility: visible;
     }
 
-    .navbar a h1{
+    #mainTitle h1{
         font-size: 9px;
         font-weight: 700;
     }
@@ -1030,12 +1521,44 @@
 
 @media (min-width: 992px) and (max-width: 1199px){
 
+    #sMedia img{
+        width: 83%;
+        height: 83%;
+        margin-top: 11px;
+        margin-left: 5px;
+    }
+    .main h2, .main h6{
+        font-size: 27px;
+        margin-bottom: -50px;
+        line-height: 100px;
+    }
+
+    .main_footer h6{
+        font-size: 18px;
+    }
+
+    #searchInput{
+        position: fixed;
+        left: 550px;
+        width: 37%;
+
+    }
+
+    #submitBtn{
+        position:absolute;
+        right: -25px;
+        top: 173px;
+        color:black;
+        background-color: azure;
+
+    }
+
     .nav-item button{
         
         line-height: 70%;
     }
 
-    .navbar a{
+    #mainTitle{
         font-size: 26px;
         font-weight: 900;
         position: fixed;
@@ -1073,7 +1596,7 @@
         visibility: visible;
     }
 
-    .navbar a h1{
+    #mainTitle h1{
         font-size: 9px;
         font-weight: 700;
     }
@@ -1197,8 +1720,41 @@
 
 @media (min-width: 1200px) and (max-width:1399px){
 
+    #sMedia img{
+        width: 88%;
+        height: 88%;
+        margin-top: 11px;
+        margin-left: 5px;
+    }
+    .main h2, .main h6{
+        font-size: 30px;
+        margin-bottom: -50px;
+        line-height: 100px;
+    }
 
-    .navbar a{
+    .main_footer h6{
+        font-size: 18px;
+
+    }
+
+    #searchInput{
+        position: fixed;
+        left: 650px;
+        width: 40%;
+
+    }
+
+
+    #submitBtn{
+        position:absolute;
+        right: 80px;
+        top: 193px;
+        color:black;
+        background-color: azure;
+
+    }
+
+    #mainTitle{
         font-size: 26px;
         font-weight: 900;
         position: fixed;
@@ -1322,11 +1878,47 @@
 
 @media (min-width: 1400px){
 
-    .navbar a{
-        font-size: 28px;
+    #sMedia img{
+        width: 92%;
+        height: 92%;
+        margin-top: 9px;
+        margin-left: 5px;
+    }
+    .main h2, .main h6{
+        font-size: 40px;
+        /* margin-bottom: -50px; */
+        line-height: 100px;
+        margin: auto;
+
+    }
+
+    .main_footer h6{
+        font-size: 20px;
+
+    }
+
+    #searchInput{
+        position: fixed;
+        left: 720px;
+        width: 40%;
+
+    }
+    #submitBtn{
+        position:absolute;
+        right: 17px;
+        top: 206px;
+        color:black;
+        background-color: azure;
+
+    }
+
+
+    #mainTitle{
+        font-size: 35px;
         font-weight: 900;
         position: fixed;
         left: 35%;
+        top: 5px;
     }
 
     .show{
@@ -1360,7 +1952,7 @@
         visibility: visible;
     }
 
-    .navbar a h1{
+    #mainTitle h1{
         font-size: 26px;
         font-weight: 900;
     }
@@ -1427,5 +2019,4 @@
 
 
 }
-
 

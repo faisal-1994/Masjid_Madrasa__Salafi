@@ -248,20 +248,45 @@ function day() {
                     //sent data //
 
   //emailjs init //
-
-
-    (function(){
-    emailjs.init({
+(function () {
+  emailjs.init({
     publicKey: "TghekllL5hZiZEKWi",
-    });
-    })();
+  });
+})();
 
+let sendMail = () => {
+  const nameInput = document.getElementById("orgInput");
+  const addressInput = document.getElementById("addressInput");
+  const numberInput = document.getElementById("contactInput");
 
-  let sendMail = ()=>{
-    let sentItem = {
-        name: document.getElementById("orgInput").value,
-        address: document.getElementById("addressInput").value,
-        number: document.getElementById("contactInput").value
-    }
-    emailjs.send("service_sf01pgf", "template_wh0vhvt",sentItem).then(alert("sent successfully"))
+  const name = nameInput.value.trim();
+  const address = addressInput.value.trim();
+  const number = numberInput.value.trim();
+
+  // ✅ Validation
+  if (!name || !address) {
+    alert("⚠️ প্রতিষ্ঠানের নাম এবং ঠিকানা অবশ্যই দিতে হবে!");
+    return;
   }
+
+  let sentItem = {
+    name: name,
+    address: address,
+    number: number
+  };
+
+  emailjs
+    .send("service_sf01pgf", "template_wh0vhvt", sentItem)
+    .then(() => {
+      alert("✅ তথ্য সফলভাবে পাঠানো হয়েছে!");
+
+      // ✅ Clear input fields
+      nameInput.value = "";
+      addressInput.value = "";
+      numberInput.value = "";
+    })
+    .catch((error) => {
+      alert("❌ ইমেইল পাঠাতে সমস্যা হয়েছে: " + error.text);
+      console.error("EmailJS Error:", error);
+    });
+};

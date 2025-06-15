@@ -346,6 +346,18 @@ select option{
 #submitBtn{
 position:absolute;
 right: 30px;
-top: 242px;
+top: 166px;
 
+}
+
+/* search */
+
+#searchInput{
+	border-radius: 350px;
+	width: 250px;
+	height: 40px;
+	position: fixed;
+	top: -38px;
+	left: 115px;
+	z-index: 1;
 }
