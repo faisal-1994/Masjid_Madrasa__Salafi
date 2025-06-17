@@ -227,27 +227,25 @@ function day() {
 // search option to found data
 
 
-  document.getElementById("searchInput").addEventListener("keyup", function () {
-    let filter = this.value.toLowerCase();
-    let rows = document.querySelectorAll("#table .row");
+  document.getElementById("searchInput").addEventListener("input", function () {
+  let filter = this.value.toLowerCase();
+  let rows = document.querySelectorAll("#table .row");
 
-    rows.forEach((row, index) => {
-      // Skip the heading row
-      if (row.id === "headingRowID" || row.id === "bottom") return;
+  rows.forEach((row) => {
+    if (row.id === "headingRowID" || row.id === "bottom") return;
 
-      let text = row.innerText.toLowerCase();
-
-      if (text.includes(filter)) {
-        row.style.display = "";
-      } else {
-        row.style.display = "none";
-      }
-    });
+    let text = row.innerText.toLowerCase();
+    row.style.display = text.includes(filter) ? "" : "none";
   });
+});
 
-                    //sent data //
 
-  //emailjs init //
+
+
+                     //sent data //
+
+
+// emailjs init //
 (function () {
   emailjs.init({
     publicKey: "TghekllL5hZiZEKWi",
@@ -258,21 +256,43 @@ let sendMail = () => {
   const nameInput = document.getElementById("orgInput");
   const addressInput = document.getElementById("addressInput");
   const numberInput = document.getElementById("contactInput");
+  const searchInput = document.getElementById("searchInput");
 
   const name = nameInput.value.trim();
   const address = addressInput.value.trim();
   const number = numberInput.value.trim();
 
-  // ✅ Validation
+  // Validation
   if (!name || !address) {
     alert("⚠️ প্রতিষ্ঠানের নাম এবং ঠিকানা অবশ্যই দিতে হবে!");
     return;
   }
 
+  // Check existing rows to find if name or address matches
+  let rows = document.querySelectorAll("#table .row");
+  for (let row of rows) {
+    if (row.id === "headingRowID" || row.id === "bottom") continue;
+    let rowText = row.innerText.toLowerCase();
+    if (
+      rowText.includes(name.toLowerCase()) ||
+      rowText.includes(address.toLowerCase())
+    ) {
+      alert("এই তথ্য ইতিমধ্যে আছে!");
+      
+      // Set search input value and trigger input event for filtering
+      searchInput.value = name + " " + address;
+      // Manually dispatch input event to trigger search filter
+      searchInput.dispatchEvent(new Event("input"));
+
+      return; // stop sending email
+    }
+  }
+
+  // If no match, send the email
   let sentItem = {
     name: name,
     address: address,
-    number: number
+    number: number,
   };
 
   emailjs
@@ -280,7 +300,7 @@ let sendMail = () => {
     .then(() => {
       alert("✅ তথ্য সফলভাবে পাঠানো হয়েছে!");
 
-      // ✅ Clear input fields
+      // Clear input fields
       nameInput.value = "";
       addressInput.value = "";
       numberInput.value = "";
