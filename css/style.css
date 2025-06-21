@@ -49,6 +49,30 @@ body{
 	line-height: 35px;
 }
 
+#navBar::after {
+  content: "আপনার পরিচিত সালাফি প্রতিষ্ঠানের নাম যুক্ত করুন";
+  display: block;
+  position: relative;
+  top:55px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: yellow;
+  font-weight: bold;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: marqueeMove 17s linear infinite;
+}
+@keyframes marqueeMove {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+
 #sMedia{
 	position: fixed;
 	/* right: -100; */
@@ -213,6 +237,26 @@ body{
 	text-align: center;
 	margin: auto;
 }
+
+#offcanvasNavbar {
+  z-index: 1060 !important; /* Bootstrap modal default is 1050 */
+  
+}
+
+#headingRowID,
+#orgInput,
+#addressInput,
+#contactInput,
+#submitBtn {
+
+  z-index: 0;
+}
+
+
+
+
+/* Lower z-index of the textareas and button */
+
 
 .btn-close{
 	color:red;
