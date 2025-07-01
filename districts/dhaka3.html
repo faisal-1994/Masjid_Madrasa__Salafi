@@ -188,19 +188,41 @@
                     
                 </div>
             </nav>
+           
+            <!-- search option -->
+         
             <div class="input-group mb-3 mt-5">
-                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+                    <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
             </div>
+
+            
             <h2 id="header" class="text-center header">ঢাকা</h2>
 
             <div id="table" class="table">
 
 
-                <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
+                
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
                 </div>
                        
             
@@ -321,22 +343,22 @@
             
                 <div class="row">
                     <div class='col-3 rowDiv'  > ৯৭</div>
-                    <div class='col-3 rowDiv'  > মসজিদ বায়তুল হক্ব </div>
-                    <div class='col-3 rowDiv'  >  পল্লবী, মিরপুর ১২</div>
+                    <div class='col-3 rowDiv'  > মাসজিদ বায়তুল হাক্ব </div>
+                    <div class='col-3 rowDiv'  > ৬৩১, রোড-৩, ব্লক-ধ, সেকশন-২ পল্লবী, মিরপুর ১২</div>
                     <div class='col-3 rowDiv'  > </div>
                 </div>
             
                 <div class="row">
                     <div class='col-3 rowDiv'  > ৯৮</div>
-                    <div class='col-3 rowDiv'  >  হাজীবাড়ী মোহাম্মাদী জামে মসজিদ </div>
+                    <div class='col-3 rowDiv'  > হাজীবাড়ী মোহাম্মাদী জামে মসজিদ </div>
                     <div class='col-3 rowDiv'  > সরদারপাড়া, দক্ষিণখান </div>
                     <div class='col-3 rowDiv'  > </div>
                 </div>
             
                 <div class="row">
                     <div class='col-3 rowDiv'  > ৯৯</div>
-                    <div class='col-3 rowDiv'  >  পাতিরা পশ্চিম পাড়া জামে মসজিদ</div>
-                    <div class='col-3 rowDiv'  >  খিলক্ষেত</div>
+                    <div class='col-3 rowDiv'  > পাতিরা পশ্চিম পাড়া জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  > খিলক্ষেত</div>
                     <div class='col-3 rowDiv'  > </div>
                 </div>
             
@@ -482,11 +504,12 @@
                 </div>
 
                 <div class="row">
-                    <div class='col-3 rowDiv'  >১২০</div>
-                    <div class='col-3 rowDiv'  > ত্বরিকায়ে মুহাম্মাদী (সা:) জামে মসজিদ</div>
-                    <div class='col-3 rowDiv'  >  ডেমরা, ঢাকা  </div>
-                    <div class='col-3 rowDiv'  > </div>
+                    <div class='col-3 rowDiv'  > ১২০</div>
+                    <div class='col-3 rowDiv'  > আবদুল্লাহিল কাফি কোরাইশি মডেল মাদ্রাসা</div>
+                    <div class='col-3 rowDiv'  > বাইপাল, কাইচবাড়ি, আশুলিয়া, সাভার, ঢাকা</div>
+                    <div class='col-3 rowDiv'  > 01716-102663, 01818-340123, 01743-553865 </div>
                 </div>
+
 
                 <div class="row">
                     <div class='col-3 rowDiv'  >১২১ </div>
@@ -494,6 +517,59 @@
                     <div class='col-3 rowDiv'  >ধরঙ্গারটেক, ওয়ার্ড-৫৩, তুরাগ, উত্তরা </div>
                     <div class='col-3 rowDiv'  > </div>
                 </div>
+                
+                 <div class='row'>
+                       <div   class='col-3 rowDiv'  >১২২ </div>
+                       <div   class='col-3 rowDiv'  > আইন্তা পূর্বপাড়া বাইতুল আবরার আহলে হাদীস জামে মসজিদ </div>
+                       <div   class='col-3 rowDiv'  >আইন্তা পূর্বপাড়া, কেরানীগঞ্জ </div>
+                       <div   class='col-3 rowDiv'  > </div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১২৩</div>
+                    <div class='col-3 rowDiv'  > আশকোনা ইকরা জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  > আশকোনা, আমতলী, দক্ষিণখান </div>
+                    <div class='col-3 rowDiv'  > </div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১২৪</div>
+                    <div class='col-3 rowDiv'  >মুহাম্মাদিয়া জামে মসজিদ   </div>
+                    <div class='col-3 rowDiv'  > গোবিন্দপুর, উত্তরখান, উত্তরা</div>
+                    <div class='col-3 rowDiv'  > 01840-307945, 01748-707430</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১২৫</div>
+                    <div class='col-3 rowDiv'  > কুল্লিয়াতুল কুরআনিল কারীম ওয়াদ-দিরাসাতিল ইসলামিয়্যাহ (আলিম/সানাবিয়্যাহ) </div>
+                    <div class='col-3 rowDiv'  > বাসা-৯, রোড- ৬/এ, সেক্টর- ৫, উত্তরা</div>
+                    <div class='col-3 rowDiv'  > 01834-177765</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১২৬</div>
+                    <div class='col-3 rowDiv'  > নাসিরাবাদ নতুনপাড়া জামে মসজিদ, খিলগাঁও, ঢাকা </div>
+                    <div class='col-3 rowDiv'  > নাসিরাবাদ, খিলগাঁও, ঢাকা</div>
+                    <div class='col-3 rowDiv'  > 01811266184, 01603528114</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১২৭</div>
+                    <div class='col-3 rowDiv'  > বায়তুর রহমান আহলে হাদীস জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  > ধর্মশুর, রুহিতপুর, কেরানীগঞ্জ</div>
+                    <div class='col-3 rowDiv'  > </div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১২৮</div>
+                    <div class='col-3 rowDiv'  > নাসিরাবাদ কেন্দ্রীয় জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  > নাসিরাবাদ, খিলগাঁও, ঢাকা</div>
+                    <div class='col-3 rowDiv'  > </div>
+                </div>
+
+                
+
+                
 
             </div>
             
@@ -517,8 +593,10 @@
 
 
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>	
-        <script src="js/custom.js"></script>
+        <script   script src="js/custom.js"></script>
        
        
 

@@ -183,17 +183,40 @@
                 
             </div>
         </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+          
           
         <h2 id="header" class="text-center header">ময়মনসিংহ</h2>
     
         <div id="table" class="table">
         
-            <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
-            </div>
+            <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ১</div>
@@ -216,17 +239,18 @@
            
             <div class="row">
                 <div class='col-3 rowDiv' > ৪</div>
-                <div class='col-3 rowDiv' > মাদ্রাসা আল ফাহাদ আল ইসলামী  </div>
+                <div class='col-3 rowDiv' > মাদ্রাসা আল মা’হাদ আল ইসলামী  </div>
                 <div class='col-3 rowDiv' > গোলপুকুরপাড,  ময়মনসিংহ</div>
                 <div class='col-3 rowDiv' >  01751821434, 01967179041, 01719885884</div>
             </div>
-        
+
             <div class="row">
                 <div class='col-3 rowDiv' > ৫</div>
-                <div class='col-3 rowDiv' > মধ্য আন্ধারিয়াপাড়া আয়েশা সিদ্দীকা (রাঃ) মডেল মহিলা মাদ্রাসা</div>
-                <div class='col-3 rowDiv' > ফুলবাড়িয়া, ময়মনসিংহ</div>
-                <div class='col-3 rowDiv' >  01941837735, 01930170255</div>
+                <div class='col-3 rowDiv' > মাসজিদ মোবারক</div>
+                <div class='col-3 rowDiv' > গোলপুকুরপাড,  ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' >  01751821434, 01967179041, 01719885884</div>
             </div>
+        
         
             <div class="row">
                 <div class='col-3 rowDiv' > ৬</div>
@@ -251,14 +275,14 @@
         
             <div class="row">
                 <div class='col-3 rowDiv' > ৯</div>
-                <div class='col-3 rowDiv' >  বড়চালা তালেব আলী মাস্টার আস সালাফিয়া মহিলা মাদ্রাসা </div>
+                <div class='col-3 rowDiv' > বড়চালা তালেব আলী মাস্টার আস সালাফিয়া মহিলা মাদ্রাসা </div>
                 <div class='col-3 rowDiv' > বড়চালা মোড়, ডাকাতিয়া, ভালুকা, ময়মনসিংহ </div>
                 <div class='col-3 rowDiv' > 01730-974931, 01730-843242, 01761-292603</div>
             </div>
         
             <div class="row">
                 <div class='col-3 rowDiv' > ১০</div>
-                <div class='col-3 rowDiv' >  সালাফিয়া ক্যাডেট মাদরাসা।  </div>
+                <div class='col-3 rowDiv' > সালাফিয়া ক্যাডেট মাদরাসা।  </div>
                 <div class='col-3 rowDiv' > গুজিয়াম, কাঁঠালীবদ (মুন্সীবাড়ী) সাইনবোর্ড, ত্রিশাল, ময়মনসিংহ</div>
                 <div class='col-3 rowDiv' > 01568911183, 01401546848</div>
             </div>
@@ -292,6 +316,35 @@
             </div>
     
             <div class="row">
+                <div class='col-3 rowDiv' > ১৫</div>
+                <div class='col-3 rowDiv' >বাইতুল ইসলাহ জামে মসজিদ   </div>
+                <div class='col-3 rowDiv' >মুক্তাগাছা(পুরাতন সাহেব বাজারের দক্ষিণ পাশে ), ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' >01715-474222 </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৬ </div>
+                <div class='col-3 rowDiv' > জোরবাড়িয়া উত্তরপাড়া খান বাড়ী জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > জোরবাড়িয়া উত্তরপাড়া, ফুলাবাড়িয়া, ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' > </div>
+            </div>
+    
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৭</div>
+                <div class='col-3 rowDiv' > ভাটিপাড়া বালাশ্বর উত্তর পাড়া জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > দেওখোলা, ফুলবাড়িয়া, ময়মনসিংহ</div>
+                <div class='col-3 rowDiv' > </div>
+                
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১৮</div>
+                <div class='col-3 rowDiv' > আয়েশা রাঃ  মডেল ও মহিলা মাদরাসা ও মসজিদ কমপ্লেক্স </div>
+                <div class='col-3 rowDiv' > মধ্য আন্ধারিয়াপাড়া, ফুলবাড়ীয়া . ময়মনসিংহ </div>
+                <div class='col-3 rowDiv' >  0133054867, 01941837735, 01930170255</div>
+            </div>
+    
+            <!--<div class="row">
                 <div class='col-3 rowDiv' > </div>
                 <div class='col-3 rowDiv' > </div>
                 <div class='col-3 rowDiv' > ময়মনসিংহ</div>
@@ -310,32 +363,18 @@
                 <div class='col-3 rowDiv' > </div>
                 <div class='col-3 rowDiv' > ময়মনসিংহ</div>
                 <div class='col-3 rowDiv' > </div>
-            </div>
-    
-            <div class="row">
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
-                <div class='col-3 rowDiv' > </div>
-            </div>
-    
-            <div class="row">
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
-                <div class='col-3 rowDiv' > </div>
-            </div>
-    
-            <div class="row">
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > ময়মনসিংহ</div>
-                <div class='col-3 rowDiv' > </div>
-            </div>
+            </div> -->
+
+
+
         </div>
 
     </div>
-<script src="js/bootstrap.bundle.min.js"></script>	
-<script src="js/custom.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
+    
 </body>
 </html>

@@ -183,42 +183,65 @@
                 
             </div>
         </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+          
           
         <h2 id="header" class="text-center header">পাবনা</h2>
     
         <div id="table" class="table">
 
-            <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">মানচিত্র</div>
-            </div>
+            <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ১</div>
                 <div class='col-3 rowDiv' > মাদরাসা দারুল হাদীস</div>
-                <div class='col-3 rowDiv' >  পুরাতন বাঁশ বাজার, আব্দুর রব (বগা মিয়া) সড়ক, শিবরামপুর, পাবনা </div>
+                <div class='col-3 rowDiv' > পুরাতন বাঁশ বাজার, আব্দুর রব (বগা মিয়া) সড়ক, শিবরামপুর, পাবনা </div>
                 <div class='col-3 rowDiv' > 0258884, 01781-352040 </div>
             </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ২</div>
-                <div class='col-3 rowDiv' >  দারুল হাদীস মডেল মাদরাসা</div>
-                <div class='col-3 rowDiv' >  খলিলপুর, আমিনপুর, পাবনা </div>
+                <div class='col-3 rowDiv' > দারুল হাদীস মডেল মাদরাসা</div>
+                <div class='col-3 rowDiv' > খলিলপুর, আমিনপুর, পাবনা </div>
                 <div class='col-3 rowDiv' > 01301-713035 </div>
             </div>
 
             <div class="row">
                 <div class='col-3 rowDiv' > ৩</div>
-                <div class='col-3 rowDiv' >  দারুল হাদীস মডেল জামে মসজিদ কমপ্লেক্স</div>
-                <div class='col-3 rowDiv' >  খলিলপুর, আমিনপুর, পাবনা </div>
+                <div class='col-3 rowDiv' > দারুল হাদীস মডেল জামে মসজিদ কমপ্লেক্স</div>
+                <div class='col-3 rowDiv' > খলিলপুর, আমিনপুর, পাবনা </div>
                 <div class='col-3 rowDiv' > 01301-713035 </div>
             </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ৪</div>
-                <div class='col-3 rowDiv' >   আত্-তাক্বওয়া আহলেহাদীছ কেন্দ্রীয় জামে মসজিদ</div>
+                <div class='col-3 rowDiv' >  আত্-তাক্বওয়া আহলেহাদীছ কেন্দ্রীয় জামে মসজিদ</div>
                 <div class='col-3 rowDiv' >  চরমিরকামারি, ঈশ্বরদী, পাবনা</div>
                 <div class='col-3 rowDiv' >  01718-120315</div>
             </div>
@@ -233,7 +256,7 @@
             <div class="row">
                 <div class='col-3 rowDiv' > ৬</div>
                 <div class='col-3 rowDiv' > মুস’আব ইবনে উমাইর (রাঃ)  মাসজিদ ও মাদরাসা</div>
-                <div class='col-3 rowDiv' > শাহ্পাড়া, বেড়া, পাবনা</div>
+                <div class='col-3 rowDiv' > ডাক বাংলা রোড, শাহ পাড়া, বেড়া, পাবনা</div>
                 <div class='col-3 rowDiv' > </div>
             </div>
             
@@ -246,15 +269,15 @@
             
             <div class="row">
                 <div class='col-3 rowDiv' > ৮</div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > মন্ডতোষ ফাতেমা হক জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > মন্ডতোষ, ভাঙ্গুড়া, পাবনা </div>
+                <div class='col-3 rowDiv' > 01792-692049</div>
             </div>
             
             <div class="row">
                 <div class='col-3 rowDiv' > ৯</div>
                 <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > ডাক বাংলা রোড, শাহ পাড়া, বেড়া, পাবনা</div>
                 <div class='col-3 rowDiv' > </div>
             </div>
             

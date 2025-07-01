@@ -183,18 +183,39 @@
                 
             </div>
         </nav>
+
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
           
         <h2 id="header" class="text-center header">চাঁদপুর</h2>
     
         <div id="table" class="table">
 
 
-            <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
-            </div>
+
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv'  > ১</div>
@@ -247,32 +268,33 @@
             <div class="row">
                 <div class='col-3 rowDiv'  > ৮</div>
                 <div class='col-3 rowDiv'  >মিসবাহুল উলুম মাদ্রাসা, আলগি বাজার। </div>
-                <div class='col-3 rowDiv'  >হাইমচড়, চাঁদপুর </div>
-                <div class='col-3 rowDiv'  >01737-918383, 01925-566538  </div>
+                <div class='col-3 rowDiv'  >পূর্ব চরকৃঞ্চপুর, খান বাড়ি মোড় (মাদ্রাসা রোড ), হাইমচড়, চাঁদপুর </div>
+                <div class='col-3 rowDiv'  >01737-918383, 01925-566538, 01308-711827, 01819-424284, 01834-191264  </div>
             </div>
             
             <div class="row">
                 <div class='col-3 rowDiv'  > ৯</div>
+                <div class='col-3 rowDiv'  > উমর বিন খাত্তাব (রা.) আনহু মসজিদ </div>
+                <div class='col-3 rowDiv'  > পূর্ব চরকৃঞ্চপুর, খান বাড়ি মোড় (মাদ্রাসা রোড ), হাইমচড়, চাঁদপুর </div>
+                <div class='col-3 rowDiv'  > 01308-711827, 01819-424284, 01834-191264 </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv'  > ১০</div>
                 <div class='col-3 rowDiv'  >দারুল ইসলাম কমপ্লেক্স দক্ষিণ তালতলী  </div>
                 <div class='col-3 rowDiv'  > বাগানবাড়ি, মতলব উত্তর, চাঁদপুর</div>
                 <div class='col-3 rowDiv'  > </div>
             </div>
             
-            <div class="row">
-                <div class='col-3 rowDiv'  > ১০</div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
-            </div>
             
-            <!-- <div class="row">
+            <div class="row">
                 <div class='col-3 rowDiv'  > ১১</div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
+                <div class='col-3 rowDiv'  > চাঁদপুর দাওয়াহ সেন্টার</div>
+                <div class='col-3 rowDiv'  > পালপাড়া, চাঁদপুর</div>
+                <div class='col-3 rowDiv'  > 01736998885</div>
             </div>
             
-            <div class="row">
+             <!--<div class="row">
                 <div class='col-3 rowDiv'  > ১২</div>
                 <div class='col-3 rowDiv'  > </div>
                 <div class='col-3 rowDiv'  > </div>
@@ -479,7 +501,10 @@
        
 
     </div>
-<script src="js/bootstrap.bundle.min.js"></script>	
-<script src="js/custom.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
 </body>
 </html>

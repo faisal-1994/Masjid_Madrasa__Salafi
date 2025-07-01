@@ -405,3 +405,27 @@ top: 166px;
 	left: 115px;
 	z-index: 1;
 }
+
+#listInstitute{
+	font-size: 18px;
+	color: white;
+} 
+
+.insLIst {
+	font-size: 15px;
+	color: black;
+	border: 3px solid black;
+	background-color: wheat;
+	display: none;
+}
+
+.insLIst a{
+	font-size: 15px;
+	color: rgb(5, 5, 5);
+
+	
+}
+
+#listInstitute:hover .insLIst{
+	display: block;
+}

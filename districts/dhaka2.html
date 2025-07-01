@@ -188,10 +188,14 @@
                     
                 </div>
             </nav>
+
+            <!-- search option -->
+         
             <div class="input-group mb-3 mt-5">
-                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+                    <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
             </div>
-            </div>
+
+         
 
             <div class="container mt-4">
                 
@@ -201,13 +205,29 @@
                     
                     
         
-                    <div id = "headingRowID" class="row headingRow">
-                        <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                        <div class="headingDiv headingDiv2 ">নাম</div>
-                        <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                        <div class="headingDiv headingDiv4 ">মানচিত্র</div>
+                    
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
                     </div>
-        
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
                     
                     <div class="row">
                         <div class='col-3 rowDiv'  > ৪১</div>
@@ -364,9 +384,9 @@
         
                     <div class="row">
                         <div class='col-3 rowDiv'  > ৬২</div>
-                        <div class='col-3 rowDiv'  > মাদারটেক আহলে হাদীস জামে মসজিদ ও হাফেজিয়া মাদ্রাসা</div>
-                        <div class='col-3 rowDiv'  > প্রজেক্ট মোড়, মাদারটেক,সবুজবাগ, ঢাকা-১২১৪</div>
-                        <div class='col-3 rowDiv'  > </div>
+                        <div class='col-3 rowDiv'  > কুল্লিয়াতুল কুরআনিল কারীম ওয়াদ-দিরাসাতিল ইসলামিয়্যাহ (আলিম/সানাবিয়্যাহ) </div>
+                        <div class='col-3 rowDiv'  > বাসা-৯, রোড- ৬/এ, সেক্টর- ৫, উত্তরা</div>
+                        <div class='col-3 rowDiv'  > 01834-177765</div>
                     </div>
         
                     <div class="row">
@@ -497,7 +517,7 @@
         
                     <div class="row">
                         <div class='col-3 rowDiv'  > ৮০</div>
-                        <div class='col-3 rowDiv'  >  ধামালকোট আহলে হাদিস জামে মসজিদ</div>
+                        <div class='col-3 rowDiv'  > ধামালকোট আহলে হাদিস জামে মসজিদ</div>
                         <div class='col-3 rowDiv'  > আর্মি মার্কেট ক্যান্টনমেন্ট, ভাষানটেক, ঢাকা</div>
                         <div class='col-3 rowDiv'  > </div>
                     </div>
@@ -527,8 +547,10 @@
 
 
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>	
-        <script src="js/custom.js"></script>
+        <script   script src="js/custom.js"></script>
        
        
 

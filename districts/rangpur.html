@@ -183,6 +183,13 @@
                     
                 </div>
             </nav>
+
+            <!-- search option -->
+            
+            <div class="input-group mb-3 mt-5">
+                    <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+            </div>
+          
             <div class="input-group mb-3 mt-5">
                 <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
             </div>  
@@ -191,11 +198,27 @@
             <div id="table" class="table">
 
 
-                <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার </div>
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
                 </div>
     
                         
@@ -243,17 +266,17 @@
                 </div>
                 
                 <div class="row">
-                    <div class='col-3 rowDiv'  >৭</div>
-                    <div class='col-3 rowDiv'  >দারুস সালাম মহিলা মাদ্রাসা (বালিকা)</div>
+                    <div class='col-3 rowDiv'  > ৭</div>
+                    <div class='col-3 rowDiv'  > দারুস সালাম মহিলা মাদ্রাসা (বালিকা)</div>
                     <div class='col-3 rowDiv'  > জলাইডাংঙ্গা, পীরগঞ্জ, রংপুর </div>
-                    <div class='col-3 rowDiv'  >01733-827188</div>
+                    <div class='col-3 rowDiv'  > 01733-827188</div>
                 </div>
                 
                 <div class="row">
-                    <div class='col-3 rowDiv'  >৮</div>
+                    <div class='col-3 rowDiv'  > ৮</div>
                     <div class='col-3 rowDiv'  > দারুল হাদীছ সালাফিইয়াহ মাদ্রাসা (বালিকা) (অনাবাসিক) </div>
-                    <div class='col-3 rowDiv'  >ঘৃলাই, বিঞ্চুপুর, বদরগঞ্জ, রংপুর</div>
-                    <div class='col-3 rowDiv'  >01721-458228</div>
+                    <div class='col-3 rowDiv'  > ঘৃলাই, বিঞ্চুপুর, বদরগঞ্জ, রংপুর</div>
+                    <div class='col-3 rowDiv'  > 01721-458228</div>
                 </div>
                 
                 <div class="row">
@@ -272,21 +295,21 @@
                 
     
                 
-                <!-- <div class="row">
-                    <div class='col-3 rowDiv'  >১১</div>
-                    <div class='col-3 rowDiv'  ></div>
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ১১</div>
+                    <div class='col-3 rowDiv'  > বরিয়া দক্ষিণপাড়া আহলেহাদীছ নতুন জামে মসজিদ </div>
+                    <div class='col-3 rowDiv'  > বরিয়া দক্ষিণপাড়া, পীরগঞ্জ, রংপুর</div>
                     <div class='col-3 rowDiv'  > </div>
-                    <div class='col-3 rowDiv'  ></div>
                 </div>
                 
                 <div class="row">
                     <div class='col-3 rowDiv'  >১২</div>
-                    <div class='col-3 rowDiv'  ></div>
-                    <div class='col-3 rowDiv'  ></div>
+                    <div class='col-3 rowDiv'  >আল মদিনা জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  >গজঘন্টা, রংপুর</div>
                     <div class='col-3 rowDiv'  ></div>
                 </div>
                 
-                <div class="row">
+                <!--<div class="row">
                     <div class='col-3 rowDiv'  >১৩</div>
                     <div class='col-3 rowDiv'  ></div>
                     <div class='col-3 rowDiv'  ></div>
@@ -502,9 +525,10 @@
 
 
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>	
-        <script src="js/custom.js"></script>
-       
+        <script   script src="js/custom.js"></script>
        
 
     </body>

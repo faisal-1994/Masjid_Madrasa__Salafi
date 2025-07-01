@@ -183,6 +183,13 @@
                     
                 </div>
             </nav>
+
+            <!-- search option -->
+         
+            <div class="input-group mb-3 mt-5">
+                    <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+            </div>
+          
             <div class="input-group mb-3 mt-5">
                 <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
             </div>  
@@ -192,12 +199,28 @@
             <div id="table" class="table">
                 
                 
-                <div id = "headingRowID" class="row headingRow">
-		             <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-		             <div class="headingDiv headingDiv2 ">নাম</div>
-		             <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-		             <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
-	            </div>
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
 
                         
                 <div class="row">
@@ -343,49 +366,49 @@
                 <div class="row">
                     <div class='col-3 rowDiv'  >২১</div>
                     <div class='col-3 rowDiv'  > উম্মুল ক্বুরা সালাফিইয়াহ মাদ্রাসা শাগ্রাম মোড় (বালক) (আবাসিক/অনাবাসিক) </div>
-                    <div class='col-3 rowDiv'  >পানিহার, গোদাগাড়ী, রাজশাহী </div>
-                    <div class='col-3 rowDiv'  >01728-166372</div>
+                    <div class='col-3 rowDiv'  > পানিহার, গোদাগাড়ী, রাজশাহী </div>
+                    <div class='col-3 rowDiv'  > 01728-166372</div>
                 </div>
                 
                 <div class="row">
                     <div class='col-3 rowDiv'  >২২</div>
-                    <div class='col-3 rowDiv'  >মসজিদ আবু বকর সিদ্দিক (রাঃ)</div>
+                    <div class='col-3 rowDiv'  > মসজিদ আবু বকর সিদ্দিক (রাঃ)</div>
                     <div class='col-3 rowDiv'  > ডাঁশমারী, উত্তরপাড়া, ২৯ নং ওয়ার্ড, বিনোদপুর বাজার, মতিহার, রাজশাহী </div>
-                    <div class='col-3 rowDiv'  >01705-315144</div>
+                    <div class='col-3 rowDiv'  > 01705-315144</div>
                 </div>
                 
                 <div class="row">
-                    <div class='col-3 rowDiv'  >২৩</div>
-                    <div class='col-3 rowDiv'  >ইয়াসীন আলী সালাফী মাদরাসা ইমামগঞ্জ</div>
-                    <div class='col-3 rowDiv'  >দামকুড়া হাট, গোদাগাড়ী, রাজশাহী</div>
-                    <div class='col-3 rowDiv'  ></div>
-                </div>
-                
-                <div class="row">
-                    <div class='col-3 rowDiv'  >২৪</div>
-                    <div class='col-3 rowDiv'  ></div>
-                    <div class='col-3 rowDiv'  ></div>
+                    <div class='col-3 rowDiv'  > ২৩</div>
+                    <div class='col-3 rowDiv'  > ইয়াসীন আলী সালাফী মাদরাসা ইমামগঞ্জ</div>
+                    <div class='col-3 rowDiv'  > দামকুড়া হাট, গোদাগাড়ী, রাজশাহী</div>
                     <div class='col-3 rowDiv'  ></div>
                 </div>
                 
                 <div class="row">
-                    <div class='col-3 rowDiv'  >২৫</div>
-                    <div class='col-3 rowDiv'  ></div>
-                    <div class='col-3 rowDiv'  ></div>
+                    <div class='col-3 rowDiv'  > ২৪</div>
+                    <div class='col-3 rowDiv'  > কোলা আহলেহাদীছ জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  > কোলা , বাগমারা, রাজশাহী </div>
+                    <div class='col-3 rowDiv'  > 01723-771090</div>
+                </div>
+                
+                <div class="row">
+                    <div class='col-3 rowDiv'  > ২৫</div>
+                    <div class='col-3 rowDiv'  > প্রাণপুর পূর্বপাড়া জামে মসজিদ </div>
+                    <div class='col-3 rowDiv'  > তানোর, রাজশাহী</div>
                     <div class='col-3 rowDiv'  ></div>
                 </div>
                 
                 <div class="row">
                     <div class='col-3 rowDiv'  >২৬</div>
-                    <div class='col-3 rowDiv'  ></div>
-                    <div class='col-3 rowDiv'  ></div>
+                    <div class='col-3 rowDiv'  > উত্তর নওদাপাড়া  জামে মসজিদ, রাজশাহী।</div>
+                    <div class='col-3 rowDiv'  > উত্তর নওদাপাড়া, রাজশাহী।</div>
                     <div class='col-3 rowDiv'  ></div>
                 </div>
                 
                 <div class="row">
                     <div class='col-3 rowDiv'  >২৭</div>
-                    <div class='col-3 rowDiv'  ></div>
-                    <div class='col-3 rowDiv'  ></div>
+                    <div class='col-3 rowDiv'  >নওদাপাড়া কাশিমপুর (হাজিপাড়া) আহলেহাদীছ জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  >নওদাপাড়া,শাহমখদুম, রাজশাহী</div>
                     <div class='col-3 rowDiv'  ></div>
                 </div>
                 
@@ -496,6 +519,8 @@
             <div class="page fourthPage"><a href="demo4.html">4</a></div> -->
         </div>
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>	
         <script   script src="js/custom.js"></script>
 

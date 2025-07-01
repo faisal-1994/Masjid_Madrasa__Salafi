@@ -183,18 +183,41 @@
                 
             </div>
         </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+          
           
         <h2 id="header" class="text-center header">সাতক্ষীরা</h2>
     
         <div id="table" class="table">
            
         
-            <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">মানচিত্র</div>
-            </div>
+<div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv'  >১</div>
@@ -204,16 +227,49 @@
             </div>
     
             <div class="row">
-                <div class='col-3 rowDiv'  ></div>
-                <div class='col-3 rowDiv'  >কাঁদাকাটি হাজির হাট আহলে হাদীছ জামে মসজিদ</div>
+                <div class='col-3 rowDiv'  > ২</div>
+                <div class='col-3 rowDiv'  > কাঁদাকাটি হাজির হাট আহলে হাদীছ জামে মসজিদ</div>
                 <div class='col-3 rowDiv'  > কাঁদাকাটি, সাতক্ষীরা </div>
                 <div class='col-3 rowDiv'  > </div>
             </div>
+
+             <div class='row'>
+                <div   class='col-3 rowDiv'  > ৩ </div>
+                <div   class='col-3 rowDiv'  > উত্তর ভাদিয়ালী কেন্দ্রীয় জামে মসজিদ  </div>
+                <div   class='col-3 rowDiv'  > ভাদিয়ালী, কলোরোয়া, সাতক্ষীরা </div>
+                <div   class='col-3 rowDiv'  > 01724-999771 </div>
+            </div>
+
+             <div class='row'>
+                   <div class='col-3 rowDiv'  > ৪</div>
+                   <div class='col-3 rowDiv'  > মুকুন্দপুর পন্ডিত বাড়ি আহলে হাদিস জামে মসজিদ </div>
+                   <div class='col-3 rowDiv'  > সাতক্ষীরা </div>
+                   <div class='col-3 rowDiv'  > </div>
+            </div>
+
+             <div class='row'>
+                   <div class='col-3 rowDiv'  > ৫</div>
+                   <div class='col-3 rowDiv'  > দারুলহাদীছ আহমাদিয়া সালাফিয়াহ আলিম মাদরাসা </div>
+                   <div class='col-3 rowDiv'  > বাঁকাল ( সাতক্ষীরা মেডিকেল হাসপাতাল সংলগ্ন ), সাতক্ষীরা</div>
+                   <div class='col-3 rowDiv'  > </div>
+            </div>
+
+            <div class='row'>
+                   <div class='col-3 rowDiv'  > ৬</div>
+                   <div class='col-3 rowDiv'  > ছাতিয়ানতলা সরকারি প্রাথমিক বিদ্যালয়  সংলগ্ন আহলে হাদীস জামে মসজিদ</div>
+                   <div class='col-3 rowDiv'  > ছাতিয়ানতলা,  দেবনগন, সাতক্ষীরা </div>
+                   <div class='col-3 rowDiv'  > </div>
+            </div>
+
+            
         </div>
 
        
     </div>
-<script src="js/bootstrap.bundle.min.js"></script>	
-<script src="js/custom.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
 </body>
 </html>

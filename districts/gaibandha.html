@@ -183,17 +183,40 @@
                 
             </div>
         </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
           
         <h2 id="header" class="text-center header">গাইবান্ধা</h2>
         
         <div id="table" class="table">
 
-            <div id = "headingRowID" class="row headingRow">
-                <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                <div class="headingDiv headingDiv2 ">নাম</div>
-                <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বর</div>
-            </div>
+            
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ১</div>
@@ -268,42 +291,36 @@
             <div class="row">
                 <div class='col-3 rowDiv' > ১০</div>
                 <div class='col-3 rowDiv' > দারুল উলুম সালাফিয়্যাহ মাদরাসা </div>
-                <div class='col-3 rowDiv' >কুমেদপুর, গাইবান্ধা </div>
+                <div class='col-3 rowDiv' > কুমেদপুর, গাইবান্ধা </div>
                 <div class='col-3 rowDiv' > </div>
             </div>
             
-            <!-- <div class="row">
+            <div class="row">
                 <div class='col-3 rowDiv' > ১১</div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' >ডিমলা পদুম শহর দক্ষিণপাড়া মন্ডলবাড়ী আহলেহাদীস জামে মসজিদ </div>
+                <div class='col-3 rowDiv' >ডিমলা পদুম শহর , সাঘাটা , গাইবান্ধা  </div>
                 <div class='col-3 rowDiv' > </div>
             </div>
+            
             
             <div class="row">
                 <div class='col-3 rowDiv' > ১২</div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
-            </div>
-            
-            <div class="row">
-                <div class='col-3 rowDiv' > ১৩</div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' >ছয়ঘরিয়া আকন্দপাড়া জামে মসজিদ  </div>
+                <div class='col-3 rowDiv' >মহিমাগঞ্জ, গোবিন্দগঞ্জ, গাইবান্ধা </div>
                 <div class='col-3 rowDiv' > </div>
             </div>
             
             <div class="row">
                 <div class='col-3 rowDiv' > ১৪</div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > গাছাবাড়ী মানিকগঞ্জ বাজার জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > সাঘাটা, গাইবান্ধা</div>
                 <div class='col-3 rowDiv' > </div>
             </div>
             
-            <div class="row">
+             <!--<div class="row">
                 <div class='col-3 rowDiv' > ১৫</div>
-                <div class='col-3 rowDiv' > </div>
-                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' > পূর্ব কুন্দের পাড়া আহলে হাদীস জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > ফুলবাড়ী, গোবন্দগঞ্জ, গাইবান্ধা</div>
                 <div class='col-3 rowDiv' > </div>
             </div>
             
@@ -487,7 +504,10 @@
 
        
     </div>
-<script src="js/bootstrap.bundle.min.js"></script>	
-<script src="js/custom.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
 </body>
 </html>

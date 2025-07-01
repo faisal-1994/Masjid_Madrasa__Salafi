@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dhaka</title>
+        <title>Khulna</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&family=Open+Sans:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
@@ -188,25 +188,46 @@
                     
                 </div>
             </nav>
+
+            <!-- search option -->
+         
             <div class="input-group mb-3 mt-5">
-                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+                    <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
             </div>
-            <h2 id="header" class="text-center header">ঢাকা</h2>
+ 
+            <h2 id="header" class="text-center header">খুলনা</h2>
 
             <div id="table" class="table">
 
-                <div id="headingRowID" class="headingRow row">
+                
+                <div id="headingRowID" class="row headingRow">
                     <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
-                    <div class="headingDiv headingDiv2">নাম</div>
-                    <div class="headingDiv headingDiv3">ঠিকানা</div>
-                    <div class="headingDiv headingDiv4">যোগাযোগের মাধ্যম</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
                 </div>
 
                 <div class="row">
                     <div class="col-3 rowDiv">১</div>
-                    <div class="col-3 rowDiv">পাবলা দারুস সালাম আহলে হাদিস জামে মসজিদ</div>
-                    <div class="col-3 rowDiv">দৌলতপুর, খুলনা</div>
-                    <div class="col-3 rowDiv"></div>
+                    <div class="col-3 rowDiv">দারুস সালাম জামে মসজিদ কমপ্লেক্স </div>
+                    <div class="col-3 rowDiv">পাবলা, দৌলতপুর, খুলনা</div>
+                    <div class="col-3 rowDiv">01736-560060</div>
                 </div>
 
                 <div class="row">
@@ -218,9 +239,9 @@
 
                 <div class="row">
                     <div class="col-3 rowDiv">৩</div>
-                    <div class="col-3 rowDiv">মসজিদ আত-তাওহীদ ও ইসলামী কমপ্লেক্স</div>
-                    <div class="col-3 rowDiv">খুলনা</div>
-                    <div class="col-3 rowDiv"></div>
+                    <div class="col-3 rowDiv"> মাসজিদ আত-তাওহীদ ও ইসলামী কমপ্লেক্স</div>
+                    <div class="col-3 rowDiv"> শাহ্-ই শিরিন সড়ক, খানজাহান নগর, গল্লামারী, খুলনা </div>
+                    <div class="col-3 rowDiv">01910-334803</div>
                 </div>
 
                 <div class="row">
@@ -238,12 +259,43 @@
                 </div>
 
                 <div class="row">
+                    <div class="col-3 rowDiv">৬</div>
+                    <div class="col-3 rowDiv">ইদ্রীস মিঞা সালাফিয়্যাহ মাদরাসা</div>
+                    <div class="col-3 rowDiv">সাচিবুনিয়া,( বিশ্বরোড, টেক্সটাইল কলেজের উত্তর পাশে )গিফারীনগর, লবনচরা , খুলনা</div>
+                    <div class="col-3 rowDiv">01893-615085, 01721-790006</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 rowDiv">৭</div>
+                    <div class="col-3 rowDiv">গোয়ালখালী আহলে হাদিস জামে মাসজিদ </div>
+                    <div class="col-3 rowDiv">খালিশপুর,গোয়ালখালী, খুলনা</div>
                     <div class="col-3 rowDiv"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 rowDiv">৮</div>
+                    <div class="col-3 rowDiv">বায়তুস সালাহ আহলে হাদিস জামে মাসজিদ </div>
+                    <div class="col-3 rowDiv">দিঘলিয়া, খুলনা</div>
                     <div class="col-3 rowDiv"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 rowDiv">৯</div>
+                    <div class="col-3 rowDiv"> মুজগুনী মুহাম্মদীয়া আহলে হাদিস জামে মসজিদ</div>
+                    <div class="col-3 rowDiv"> খালিশপুর, খুলনা</div>
+                    <div class="col-3 rowDiv"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 rowDiv">৯</div>
+                    <div class="col-3 rowDiv"> </div>
                     <div class="col-3 rowDiv"></div>
                     <div class="col-3 rowDiv"></div>
                 </div>
 
+
+
+               
 
            
                 
@@ -267,8 +319,10 @@
 
 
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>	
-        <script src="js/custom.js"></script>
+        <script   script src="js/custom.js"></script>
        
        
 

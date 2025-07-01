@@ -183,21 +183,44 @@
                 
             </div>
         </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+          
           
         <h2 id="header" class="text-center header">নরসিংদী</h2>
     
         <div id="table" class="table">
 
-            <div id = "headingRowID" class="row headingRow">
-                <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                <div class="headingDiv headingDiv2 ">নাম</div>
-                <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার </div>
-            </div>
+            <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ১</div>
-                <div class='col-3 rowDiv' >  পলাশতলী দ:পাড়া জামে মসজিদ</div>
+                <div class='col-3 rowDiv' > পলাশতলী দ:পাড়া জামে মসজিদ</div>
                 <div class='col-3 rowDiv' > রায়পুরা, নরসিংদী</div>
                 <div class='col-3 rowDiv' > 01932-347233</div>
             </div>
@@ -218,15 +241,15 @@
     
             <div class="row">
                 <div class='col-3 rowDiv' > ৪</div>
-                <div class='col-3 rowDiv' >  নজরপু দারুল হাদিস সালাফিয়্যাহ মাদ্রাসা</div>
-                <div class='col-3 rowDiv' >  নজরপু মধ্যপাড়া, নজরপু, নরসিংদী</div>
+                <div class='col-3 rowDiv' > নজরপু দারুল হাদিস সালাফিয়্যাহ মাদ্রাসা</div>
+                <div class='col-3 rowDiv' > নজরপু মধ্যপাড়া, নজরপু, নরসিংদী</div>
                 <div class='col-3 rowDiv' > 01775-247734, 01912-203521</div>
             </div>
     
             <div class="row">
                 <div class='col-3 rowDiv' > ৫</div>
-                <div class='col-3 rowDiv' >  পাঁচদোনা মোড় জামে মসজিদ </div>
-                <div class='col-3 rowDiv' >  পাঁচদোনা, সদর, নরসিংদী</div>
+                <div class='col-3 rowDiv' > পাঁচদোনা মোড় জামে মসজিদ </div>
+                <div class='col-3 rowDiv' > পাঁচদোনা, সদর, নরসিংদী</div>
                 <div class='col-3 rowDiv' > </div>
             </div>
     
@@ -248,6 +271,27 @@
                 <div class='col-3 rowDiv' >৮</div>
                 <div class='col-3 rowDiv' >বায়তুল হামদ জামে মসজিদ, দক্ষিণ চৌয়া ( বড়টেক ) </div>
                 <div class='col-3 rowDiv' >মাধবদী, নরসিংদী</div>
+                <div class='col-3 rowDiv' >01575-579800</div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' >৯</div>
+                <div class='col-3 rowDiv' >মাধবদী জমঈয়তে আহলে হাদীস জামে মসজিদ </div>
+                <div class='col-3 rowDiv' >মাধবদী পুরাতন বাসষ্ট্যান্ড, মাধবদী, নরসিংদী</div>
+                <div class='col-3 rowDiv' ></div>
+            </div>
+
+             <div class="row">
+                <div class='col-3 rowDiv' > ১০</div>
+                <div class='col-3 rowDiv' >ফজুর কান্দী কেন্দ্রীয় আহলে হাদীস জামে মসজিদ </div>
+                <div class='col-3 rowDiv' >ফজুর কান্দী, কাঠালিয়া, নরসিংদী </div>
+                <div class='col-3 rowDiv' >01571707718 </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv' > ১০</div>
+                <div class='col-3 rowDiv' > </div>
+                <div class='col-3 rowDiv' ></div>
                 <div class='col-3 rowDiv' ></div>
             </div>
 
@@ -257,7 +301,11 @@
 
        
     </div>
-<script src="js/bootstrap.bundle.min.js"></script>	
-<script src="js/custom.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
+    
 </body>
 </html>

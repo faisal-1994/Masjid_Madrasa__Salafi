@@ -183,18 +183,41 @@
                 
             </div>
         </nav>
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
           
         <h2 id="header" class="text-center header">চট্টগ্রাম</h2>
     
         <div id="table" class="table">
 
 
-            <div id = "headingRowID" class="row headingRow">
-                         <div class="headingDiv headingDiv1 ">ক্রমিক নাম্বার</div>
-                         <div class="headingDiv headingDiv2 ">নাম</div>
-                         <div class="headingDiv headingDiv3 ">ঠিকানা</div>
-                         <div class="headingDiv headingDiv4 ">যোগাযোগের নাম্বার</div>
-            </div>
+            
+                <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
     
             <div class="row">
                 <div class='col-3 rowDiv'  > ১</div>
@@ -214,7 +237,7 @@
                 <div class='col-3 rowDiv'  > ৩</div>
                 <div class='col-3 rowDiv'  > বাইতুল হিকমাহ জামে মসজিদ ও মাদরাসা কমপ্লেক্স</div>
                 <div class='col-3 rowDiv'  > ৩৯ নং ওয়ার্ড, দক্ষিণ হালিশহর, কাজীর গলির শেষ মাথা(খালপাড়), ইপিজেড, চট্টগ্রাম</div>
-                <div class='col-3 rowDiv'  > 01715-253424, 01329-883839, 01872-472160</div>
+                <div class='col-3 rowDiv'  > 01715-253424, 01329-883839, 01872-472160, 01328600670</div>
             </div>
     
             <div class="row">
@@ -247,7 +270,7 @@
     
             <div class="row">
                 <div class='col-3 rowDiv'  > ৮</div>
-                <div class='col-3 rowDiv'  > দারুস সুন্নাহ মহিলা মাদরাসা </div>
+                <div class='col-3 rowDiv'  > দারুস সুন্নাহ মসজিদ </div>
                 <div class='col-3 rowDiv'  > আকমল আলী রোড, মমতা গলির পশ্চিমে, মোঃ আলী মার্কেট, ইপিজেড, চট্টগ্রাম</div>
                 <div class='col-3 rowDiv'  > 01747-246624</div>
             </div>
@@ -316,17 +339,25 @@
             </div>
             
             <div class="row">
-                <div class='col-3 rowDiv'  > ১৮</div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
+                <div class='col-3 rowDiv' > ১৮</div>
+                <div class='col-3 rowDiv' >সহীহ আক্বীদার ইসলামিক ফাউন্ডেশনের মসজিদ </div>
+                <div class='col-3 rowDiv' > শাপলা আবাসিক, আকবারশাহ, চট্টগ্রাম।  </div>
+                <div class='col-3 rowDiv' >01631-774257 </div>
             </div>
             
             <div class="row">
                 <div class='col-3 rowDiv'  > ১৯</div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
-                <div class='col-3 rowDiv'  > </div>
+                <div class='col-3 rowDiv'  >বাইতুল মামুর জামে মসজিদ কমপ্লেক্স  </div>
+                <div class='col-3 rowDiv'  > জোরারগঞ্জ, মিরসরাই, চট্টগ্রাম </div>
+                <div class='col-3 rowDiv'  >01763-834336 </div>
+            </div>
+
+            <div class="row">
+                <div class='col-3 rowDiv'  > ২০</div>
+                <div class='col-3 rowDiv'  > লোহাগড়া সালাফী জামে মসজিদ </div>
+                <div class='col-3 rowDiv'  > দর্জিপাড়া (2 নং রোডের দক্ষিণ পাশে), আলুরঘাট, চট্টগ্রাম </div>
+                <div class='col-3 rowDiv'  > 01789656095, 01830323874</div>
+                
             </div>
             
             <div class="row">
@@ -336,13 +367,18 @@
                 <div class='col-3 rowDiv'  > </div>
             </div>
 
+            
+
         </div>
 
 
        
 
     </div>
-<script src="js/bootstrap.bundle.min.js"></script>	
-<script src="js/custom.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>	
+    <script   script src="js/custom.js"></script>
 </body>
 </html>
