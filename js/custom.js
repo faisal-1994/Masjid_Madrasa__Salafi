@@ -1,56 +1,3 @@
-// let body = document.getElementById("body");
-// let firstBtn =document.getElementById("night");
-// let secondBtn = document.getElementById("day");
-// let navBar = document.getElementById("navBar");
-// let titleRow = document.getElementById("headingRowID")
-// let header = document.getElementById("header")
-// let nav_title = document.getElementById("h1Title")
-// let tableBody = document.getElementById("table");
-
-
-
-
-
-
-// function night (){
-//     // body.classList.add("bg-dark");
-//     body.style.backgroundColor="rgb(54, 47, 47)"
-//     nav_title.classList.add("text-light");
-//     firstBtn.classList.add("d-none");
-//     secondBtn.classList.remove("d-none");
-//     header.style.color="white";
-//     secondBtn.style.marginRight="50px"
-//     navBar.style.backgroundColor="green";
-//     navBar.classList.remove('bg-info');
-//     body.classList.remove("text-dark");
-//     body.classList.add("text-light");
-//     tableBody.style.backgroundColor="green";
-//     tableBody.classList.add("text-light");
-//     tableBody.classList.remove("text-dark");
-//     titleRow.style.backgroundColor="rgba(37, 32, 32, .5)";
-//     titleRow.style.color="white"
-    
-
-// }
-
-// function day (){
-//     // body.classList.remove("bg-dark");
-//     body.style.backgroundColor="rgb(195, 216, 221)"
-//      nav_title.classList.remove("text-light");
-//     firstBtn.classList.remove("d-none");
-//     secondBtn.classList.add("d-none");
-//     header.style.color="black";
-//     navBar.classList.add('bg-info');
-//     body.classList.remove("text-light");
-//     body.classList.add("text-dark");
-//     tableBody.style.backgroundColor="rgba(10,200, 400, .7)";
-//     tableBody.classList.remove("text-light")
-//     tableBody.classList.add("text-dark");
-//     titleRow.style.backgroundColor="rgba(255, 255, 255, .5)"
-//     titleRow.style.color="black"
-
-
-// }
 
 let seeBtn = document.getElementById("seeBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -310,3 +257,37 @@ let sendMail = () => {
       console.error("EmailJS Error:", error);
     });
 };
+
+
+
+
+
+
+
+
+const files = ["dhaka.html", "dhaka2.html", "dhaka3.html", "dhaka4.html"]; // Add all HTML file names here
+const resultsDiv = document.getElementById("results");
+
+document.getElementById("searchInput").addEventListener("input", async function () {
+  const query = this.value.toLowerCase();
+  resultsDiv.innerHTML = ""; // Clear previous results
+
+  for (let file of files) {
+    try {
+      const response = await fetch(file);
+      const html = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+      const text = doc.body.innerText.toLowerCase();
+
+      if (text.includes(query)) {
+        const match = document.createElement("div");
+        match.innerHTML = `<strong>Found in:</strong> <a href="${file}" target="_blank">${file}</a>`;
+        resultsDiv.appendChild(match);
+      }
+    } catch (err) {
+      console.error("Error loading", file, err);
+    }
+  }
+});
+
