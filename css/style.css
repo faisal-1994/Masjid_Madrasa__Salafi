@@ -17,13 +17,16 @@ body{
 	background-color:rgb(195, 216, 221)
 }
 
-.home_body{
-	background: url("https://i.ibb.co/3sx2XjZ/newmasjid.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
-	height: 100vh;
-	width: 100vw;
+.home_body {
+    background: url("https://i.ibb.co/3sx2XjZ/newmasjid.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-attachment: fixed; no-repeat center center fixed; */
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .home_body a{
