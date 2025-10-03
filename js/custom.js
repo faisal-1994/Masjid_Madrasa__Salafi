@@ -291,3 +291,11 @@ document.getElementById("searchInput").addEventListener("input", async function 
   }
 });
 
+// to execute counter
+fetch('https://api.countapi.xyz/hit/salafimasjid/visits')
+          .then(res => res.json())
+          .then(res => {
+            document.getElementById('count').innerText = res.value;
+          })
+          .catch(err => console.log('Error:', err));
+

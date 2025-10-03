@@ -38,30 +38,27 @@
       <!-- ✅ Visitor Counter Section -->
       <div class="container text-center my-4">
         <p style="font-size:18px; font-weight:bold; color:darkgreen;">
-          Total Visitors: <span id="count">0</span>
+          Visitor: <span id="count">0</span>
         </p>
       </div>
       <!-- ✅ End Visitor Counter -->
 
       <div class="footer">
-        <div class="main_footer">     
+        <div class="main_footer text-center">     
           <h6>Copy right all reserved by ABU BAKAR SIDDIQ</h6>
+
+          <!-- ✅ Visitor Counter inside footer -->
+          <p style="font-size:18px; font-weight:bold; color:darkgreen; margin-top:10px;">
+            Total Visitors: <span id="count">0</span>
+          </p>
         </div>
+      </div>
+
       </div>
 
       <script src="js/bootstrap.bundle.min.js"></script>	
       <script src="js/custom.js"></script>
 
-      <!-- ✅ CountAPI Script -->
-      <script>
-        fetch('https://api.countapi.xyz/hit/salafimasjid/visits')
-          .then(res => res.json())
-          .then(res => {
-            document.getElementById('count').innerText = res.value;
-          })
-          .catch(err => console.log('Error:', err));
-      </script>
-      <!-- ✅ End Script -->
 
   </body>
 </html>
