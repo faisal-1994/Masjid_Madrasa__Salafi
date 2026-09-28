@@ -572,9 +572,80 @@
 			</div>
 
 			
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬০</div>
+				<div class='col-3 rowDiv'  > বাইতুল আমান জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > নোয়াবাড়ি, কালাকচুয়া, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬১</div>
+				<div class='col-3 rowDiv'  > বিরাম গাজী বাড়ী জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > পশ্চিম জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬২</div>
+				<div class='col-3 rowDiv'  > জগতপুর কেন্দ্রীয় জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৩</div>
+				<div class='col-3 rowDiv'  > উত্তর জগতপুর জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৪</div>
+				<div class='col-3 rowDiv'  > পূর্ব আসাদ নগর শব্দর হাজি বাড়ি জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৫</div>
+				<div class='col-3 rowDiv'  > কাজী পাড়া জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৬</div>
+				<div class='col-3 rowDiv'  > জগতপুর মুন্সি বাড়ি বাইতুল মামুর জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৭</div>
+				<div class='col-3 rowDiv'  > মসজিদে আবু বকর </div>
+				<div class='col-3 rowDiv'  > শরীফপুর, ময়নামতি, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭১</div>
+				<div class='col-3 rowDiv'  > কাকিয়ারচর মধ্যপাড়া জামে মসজিদ </div>
+				<div class='col-3 rowDiv'  > কাকিয়ারচর, বুড়িচং </div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭৪</div>
+				<div class='col-3 rowDiv'  > জগতপুর ভূঁইয়া বাড়ি জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
 
 		</div>
-		<nav class="d-flex justify-content-center gap-1 my-4" aria-label="Pagination">
+<nav class="d-flex justify-content-center gap-1 my-4" aria-label="Pagination">
 			<a class="btn btn-sm btn-primary" href="cumilla.html" aria-current="page">১</a>
 			<a class="btn btn-sm btn-outline-primary" href="cumilla2.html">২</a>
 		</nav>
@@ -611,6 +682,7 @@
 		];
 		const groupedRows = new Map(districts.map(({ name }) => [name, []]));
 		groupedRows.set("অন্যান্য এলাকা", []);
+		const burichongDistrict = districts.find(({ name }) => name === "বুড়িচং-ব্রাহ্মণপাড়া");
 
 		const toBanglaNumber = (number) =>
 			String(number).replace(/\d/g, (digit) => "০১২৩৪৫৬৭৮৯"[digit]);
@@ -621,7 +693,9 @@
 
 		recordRows.forEach((row) => {
 			const address = row.querySelectorAll(".rowDiv")[2].textContent;
-			const district = districts.find(({ matches }) => matches.test(address));
+			const district = burichongDistrict.matches.test(address)
+				? burichongDistrict
+				: districts.find(({ matches }) => matches.test(address));
 			groupedRows.get(district ? district.name : "অন্যান্য এলাকা").push(row);
 		});
 
