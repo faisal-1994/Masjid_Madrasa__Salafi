@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cumilla</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&family=Open+Sans:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+	
+<body id="body">
+
+	<div class="container">
+		
+		<nav id="navBar" class="navbar bg-body-tertiary fixed-top">
+
+			<div class="container">
+
+				<a id="nav_title" class="navbar-brand m-auto d-inline" href="#"><h1 id="h1Title text-dark">আহলে হাদীস মসজিদ ও মাদরাসা</h1></a>
+				<button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				
+					<div   div class="offcanvas-header">
+	
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ahle Hadis Masjid and Madrasa</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	
+					</div>
+	
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+		
+						<li class="nav-item">
+							<button onclick="location='index.html'">Home</button>
+						</li>
+		
+						
+						<li class="nav-item dropdown">
+						<!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+						</a> -->
+		
+				
+		
+						<select onchange="location = this.value;">
+							<option value="#">Dhaka </option>
+							<option value="dhaka.html">Dhaka</option>
+							<option value="faridpur.html">Faridpur</option>
+							<option value="gazipur.html">Gazipur</option>
+							<option value="gopalganj.html">Gopalganj</option>
+							<option value="kishoreganj.html">Kishoreganj</option>
+							<option value="madaripur.html">Madaripur</option>
+							<option value="manikganj.html">Manikganj</option>
+							<option value="munshiganj.html">Munshiganj</option>
+							<option value="narayanganj.html">Narayanganj</option>
+							<option value="narsingdi.html">Narsingdi</option>
+							<option value="rajbari.html">Rajbari</option>
+							<option value="shariatpur.html">Shariatpur</option>
+							<option value="tangail.html">Tangail</option>
+						</select>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li>
+							<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+						</li>
+		
+						<li class="nav-item dropdown">
+		
+							<select onchange="location = this.value;">
+								<option value="#">Barishal </option>
+								<option value="barguna.html">Barguna</option>
+								<option value="barishal.html">Barishal</option>
+								<option value="bhola.html">Bhola</option>
+								<option value="jhalokati.html">Jhalokati</option>
+								<option value="patuakhali.html">Patuakhali</option>
+								<option value="pirojpur.html">Pirojpur</option>
+							</select>
+		
+						</li>
+		
+						<li class="nav-item">
+		
+							<select onchange="location = this.value;">
+								<option value="#">Chattogram </option>
+								<option value="bandarban.html">Bandarban</option>
+								<option value="brahmanbaria.html">Brahmanbaria</option>
+								<option value="chandpur.html">Chandpur</option>
+								<option value="chattogram.html">Chattogram</option>
+								<option value="cumilla.html">Cumilla</option>
+								<option value="coxsbazar.html">Cox's Bazar</option>
+								<option value="feni.html">Feni</option>
+								<option value="khagrachhari.html">Khagrachhari</option>
+								<option value="lakshmipur.html">Lakshmipur</option>
+								<option value="noakhali.html">Noakhali</option>
+								<option value="rangamati.html">Rangamati</option>
+							</select>
+						</li>
+		
+						<li class="nav-item">
+							<select onchange="location = this.value;">
+								<option value="#">Khulna </option>
+								<option value="bagerhat.html">Bagerhat</option>
+								<option value="chuadanga.html">Chuadanga</option>
+								<option value="jashore.html">Jashore</option>
+								<option value="jhenaidah.html">Jhenaidah</option>
+								<option value="khulna.html">Khulna</option>
+								<option value="kushtia.html">Kushtia</option>
+								<option value="magura.html">Magura</option>
+								<option value="meherpur.html">Meherpur</option>
+								<option value="narail.html">Narail</option>
+								<option value="satkhira.html">Satkhira</option>
+							</select>
+						</li>
+		
+						<li class="nav-item">
+							<select onchange="location = this.value;">
+								<option value="#">Mymensingh </option>
+								<option value="jamalpur.html">Jamalpur</option>
+								<option value="mymensingh.html">Mymensingh</option>
+								<option value="netrokona.html">Netrokona</option>
+								<option value="sherpur.html">Sherpur</option>
+							</select>
+						</li>
+		
+						<li class="nav-item">
+							<select onchange="location = this.value;">
+								<option value="#">Rajshahi </option>
+								<option value="bogura.html">Bogura</option>
+								<option value="jaipurhat.html">Jaipurhat</option>
+								<option value="naogaon.html">Naogaon</option>
+								<option value="natore.html">Natore</option>
+								<option value="chapainawabganj.html">Chapainawabganj </option>
+								<option value="pabna.html">Pabna</option>
+								<option value="rajshahi.html">Rajshahi</option>
+								<option value="sirajganj.html">Sirajganj</option>
+							</select>
+						</li>
+		
+						<li class="nav-item">
+							<select onchange="location = this.value;">
+								<option value="#">Rangpur </option>
+								<option value="dinajpur.html">Dinajpur</option>
+								<option value="gaibandha.html">Gaibandha</option>
+								<option value="kurigram.html">Kurigram</option>
+								<option value="lalmonirhat.html">Lalmonirhat</option>
+								<option value="nilphamari.html">Nilphamari</option>
+								<option value="panchagarh.html">Panchagarh</option>
+								<option value="rangpur.html">Rangpur</option>
+								<option value="thakurgaon.html">Thakurgaon</option>
+							</select>
+						</li>
+		
+						<li class="nav-item">
+							<select onchange="location = this.value;">
+								<option value="#">Sylhet </option>
+								<option value="habiganj.html">Habiganj</option>
+								<option value="moulvibazar.html">Moulvibazar</option>
+								<option value="sunamganj.html">Sunamganj</option>
+								<option value="sylhet.html">Sylhet</option>
+							</select>
+						</li>
+		
+		
+						</ul>
+		
+					</div>
+				</div>
+
+				<button id="night" class="mode me-5 bg-dark" onclick="night()">🌚</button>
+				<button id="day" class="mode2 d-none " onclick="day()">☀ </button>
+				
+			</div>
+		</nav>
+
+		<!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+		
+		<h2 id="header" class="text-center header">কুমিল্লা</h2>
+
+		<div id="table" class="table">
+
+				
+			
+ 				<div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+                </div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫০</div>
+				<div class='col-3 rowDiv'  > বাইতুল ফালাহ জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > এলাহাবাদ, দেবিদ্বার, কুমিল্লা।</div>
+				<div class='col-3 rowDiv'  ></div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫১</div>
+				<div class='col-3 rowDiv'  > আবু হুরাইরা (রা) মসজিদ</div>
+				<div class='col-3 rowDiv'  > চান্দপুর পশ্চিমপাড়া, দেবিদ্বার</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫২</div>
+				<div class='col-3 rowDiv'  > বাইতুল হামদ জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > মঙ্গলকান্দি তাইজ উদ্দিন মুন্সি বাড়ি, তিতাস</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৩</div>
+				<div class='col-3 rowDiv'  > উত্তর টিলি আহলে হাদিস জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > পাঁচগাছিয়া,উত্তর টিলি,দাউদকান্দি</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৪</div>
+				<div class='col-3 rowDiv'  > মেটংঘর নূরে আমীর জামে মসজিদ </div>
+				<div class='col-3 rowDiv'  > মেটংঘর, মুরাদনগর</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৫</div>
+				<div class='col-3 rowDiv'  > জুরানপুর পূর্ব পাড়া বরারচর জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জুরানপুর, দাউদকান্দি</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৬</div>
+				<div class='col-3 rowDiv'  > ফুলতলী ভূইয়া বাড়ি আহলে হাদিস জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > ফুলতলী,দেবিদ্বার</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৭</div>
+				<div class='col-3 rowDiv'  > ছোটনা দোতলা আহলে হাদিস জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > ছোটনা, দেবিদ্বার</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৮</div>
+				<div class='col-3 rowDiv'  > এলাহাবাদ কেন্দ্রীয় আহলে হাদিস জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > এলাহাবাদ, দেবিদ্বার</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৫৯</div>
+				<div class='col-3 rowDiv'  > ফাতেমা তুজ জোহরা (রা) জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > ইউসুফপুর,দেবিদ্বার</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬০</div>
+				<div class='col-3 rowDiv'  > বাইতুল আমান জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > নোয়াবাড়ি, কালাকচুয়া, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬১</div>
+				<div class='col-3 rowDiv'  > বিরাম গাজী বাড়ী জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > পশ্চিম জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬২</div>
+				<div class='col-3 rowDiv'  > জগতপুর কেন্দ্রীয় জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৩</div>
+				<div class='col-3 rowDiv'  > উত্তর জগতপুর জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৪</div>
+				<div class='col-3 rowDiv'  > পূর্ব আসাদ নগর শব্দর হাজি বাড়ি জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৫</div>
+				<div class='col-3 rowDiv'  > কাজী পাড়া জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৬</div>
+				<div class='col-3 rowDiv'  > জগতপুর মুন্সি বাড়ি বাইতুল মামুর জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর,বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৭</div>
+				<div class='col-3 rowDiv'  > মসজিদে আবু বকর </div>
+				<div class='col-3 rowDiv'  > শরীফপুর, ময়নামতি, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৮</div>
+				<div class='col-3 rowDiv'  > বেতাগাঁও মধ্যপাড়া আল-আকসা জামে মসজিদ </div>
+				<div class='col-3 rowDiv'  > মধ্যপাড়া, বেতাগাঁও ১নং ওয়ার্ড, নাঙ্গলকোট, (প্রাইমারি স্কুলের কাছে) কুমিল্লা</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৬৯</div>
+				<div class='col-3 rowDiv'  > কাজিয়াতল খাঁন বাড়ি আহলে হাদীস জামে মসজিদ, </div>
+				<div class='col-3 rowDiv'  > কাজিয়াতল, মুরাদনগর</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭০</div>
+				<div class='col-3 rowDiv'  > কাজিয়াতল বড় বাড়ী বাইতুল আমান জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > কাজিয়াতল, মুরাদনগর</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div>
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭১</div>
+				<div class='col-3 rowDiv'  > কাকিয়ারচর মধ্যপাড়া জামে মসজিদ </div>
+				<div class='col-3 rowDiv'  > কাকিয়ারচর, বুড়িচং </div>
+				<div class='col-3 rowDiv'  > </div>
+			</div> 
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭২</div>
+				<div class='col-3 rowDiv'  > আল হেরা মডেল মাদ্রাসা। </div>
+				<div class='col-3 rowDiv'  > খিরাইকান্দি, মাধাইয়া বাজার, দেবিদ্বার </div>
+				<div class='col-3 rowDiv'  > 01789-646517</div>
+			</div>
+
+			 
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭৩</div>
+				<div class='col-3 rowDiv'  > আয়েশা (রা) জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > পশ্চিম ধন বাড়ি (পূর্ব পাড়া) মোল্লা কোনা রোড, (ফালগুন সরকারি প্রাথমিক বিদ্যালয়), চৌদ্দগ্রাম</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div> 
+
+			<div class="row">
+				<div class='col-3 rowDiv'  > ৭৪</div>
+				<div class='col-3 rowDiv'  > জগতপুর ভূঁইয়া বাড়ি জামে মসজিদ</div>
+				<div class='col-3 rowDiv'  > জগতপুর, বুড়িচং</div>
+				<div class='col-3 rowDiv'  > </div>
+			</div> 
+
+			<div class="row ">
+				<div class='col-3 rowDiv'> ৭৫</div>
+				<div class='col-3 rowDiv'>বায়তুস সালাম জামে মসজিদ</div>
+				<div class='col-3 rowDiv'>কড়ইবাড়ী বাস স্টেশন সংলগ্ন,মুরাদনগর, কুমিল্লা</div>
+				<div class='col-3 rowDiv'></div>
+			</div>
+
+			<div class="row ">
+				<div class='col-3 rowDiv'>৭৬</div>
+				<div class='col-3 rowDiv'>গাজীপুর পশ্চিমপাড়া জামে মসজিদ</div>
+				<div class='col-3 rowDiv'>গাজীপুর, মালাইবাঙ্গরা,কুমিল্লা</div>
+				<div class='col-3 rowDiv'></div>
+			</div>
+
+			<div class="row ">
+				<div class='col-3 rowDiv'>৭৭</div>
+				<div class='col-3 rowDiv'>ফয়জুদ্দীন বাড়ি সালাফি জামে মসজিদ</div>
+				<div class='col-3 rowDiv'>হাটাশ,বাঙ্গরা,মুরাদনগর, কুমিল্লা</div>
+				<div class='col-3 rowDiv'></div>
+			</div>
+
+
+		</div>
+		<nav class="d-flex justify-content-center gap-1 my-4" aria-label="Pagination">
+			<a class="btn btn-sm btn-outline-primary" href="cumilla.html">১</a>
+			<a class="btn btn-sm btn-primary" href="cumilla2.html" aria-current="page">২</a>
+		</nav>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+	<script   script src="js/custom.js"></script>
+	<script>
+		const table = document.getElementById("table");
+		const rows = Array.from(table.querySelectorAll(":scope > .row:not(#headingRowID)"));
+		const districts = [
+			{ name: "কুমিল্লা শহর", matches: /শাসনগাছা|সদর|ময়নামতি/ },
+			{ name: "বুড়িচং-ব্রাহ্মণপাড়া", matches: /বুড়িচং|বুড়িচং|ব্রাহ্মণপাড়া|কোরপাই/ },
+			{ name: "দেবিদ্বার", matches: /দেবিদ্বার/ },
+			{ name: "মুরাদনগর", matches: /মুরাদনগর|মুরাদ নগর|মালাইবাঙ্গরা|বাঙ্গরা/ },
+			{ name: "লাকসাম", matches: /লাকসাম/ },
+			{ name: "চৌদ্দগ্রাম", matches: /চৌদ্দগ্রাম/ },
+			{ name: "দাউদকান্দি", matches: /দাউদকান্দি/ },
+			{ name: "বড়ুরা", matches: /বড়ুরা|বরুড়া|বারুড়া/ },
+			{ name: "নাঙ্গলকোট", matches: /নাঙ্গলকোট|নাঙ্গলকোট/ },
+			{ name: "তিতাস", matches: /তিতাস/ },
+			{ name: "লালমাই", matches: /লালমাই/ },
+		];
+		const groupedRows = new Map(districts.map(({ name }) => [name, []]));
+		groupedRows.set("অন্যান্য এলাকা", []);
+
+		const toBanglaNumber = (number) =>
+			String(number).replace(/\d/g, (digit) => "০১২৩৪৫৬৭৮৯"[digit]);
+		const recordRows = rows.filter((row) =>
+			Array.from(row.querySelectorAll(".rowDiv")).some((cell) => cell.textContent.trim())
+		);
+		rows.filter((row) => !recordRows.includes(row)).forEach((row) => row.remove());
+
+		recordRows.forEach((row) => {
+			const address = row.querySelectorAll(".rowDiv")[2].textContent;
+			const district = districts.find(({ matches }) => matches.test(address));
+			groupedRows.get(district ? district.name : "অন্যান্য এলাকা").push(row);
+		});
+
+		let serial = 51;
+		groupedRows.forEach((districtRows, districtName) => {
+			if (!districtRows.length) return;
+
+			const heading = document.createElement("h3");
+			heading.className = "area-heading h4 text-center fw-bold py-2 my-2";
+			heading.textContent = districtName;
+			heading.style.fontFamily = "cursive";
+			table.appendChild(heading);
+
+			districtRows.forEach((row) => {
+				row.querySelector(".rowDiv").textContent = toBanglaNumber(serial++);
+				table.appendChild(row);
+			});
+		});
+
+		document.getElementById("searchInput").addEventListener("input", () => {
+			table.querySelectorAll(".area-heading").forEach((heading) => {
+				let row = heading.nextElementSibling;
+				let hasVisibleRows = false;
+
+				while (row && !row.classList.contains("area-heading")) {
+					if (row.classList.contains("row") && row.style.display !== "none") {
+						hasVisibleRows = true;
+						break;
+					}
+					row = row.nextElementSibling;
+				}
+
+				heading.style.display = hasVisibleRows ? "" : "none";
+			});
+		});
+	</script>
+</body>
+</html>
