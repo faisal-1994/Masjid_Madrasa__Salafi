@@ -795,5 +795,72 @@
 	<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>	
 	<script   script src="js/custom.js"></script>
+	<script>
+		const table = document.getElementById("table");
+		const rows = Array.from(table.querySelectorAll(":scope > .row:not(#headingRowID)"));
+		const districts = [
+			{ name: "কুমিল্লা শহর", matches: /শাসনগাছা|সদর|ময়নামতি/ },
+			{ name: "বুড়িচং-ব্রাহ্মণপাড়া", matches: /বুড়িচং|বুড়িচং|ব্রাহ্মণপাড়া|কোরপাই/ },
+			{ name: "দেবিদ্বার", matches: /দেবিদ্বার/ },
+			{ name: "মুরাদনগর", matches: /মুরাদনগর|মুরাদ নগর|মালাইবাঙ্গরা|বাঙ্গরা/ },
+			{ name: "লাকসাম", matches: /লাকসাম/ },
+			{ name: "চৌদ্দগ্রাম", matches: /চৌদ্দগ্রাম/ },
+			{ name: "দাউদকান্দি", matches: /দাউদকান্দি/ },
+			{ name: "বড়ুরা", matches: /বড়ুরা|বরুড়া|বারুড়া/ },
+			{ name: "নাঙ্গলকোট", matches: /নাঙ্গলকোট|নাঙ্গলকোট/ },
+			{ name: "তিতাস", matches: /তিতাস/ },
+			{ name: "লালমাই", matches: /লালমাই/ },
+		];
+		const groupedRows = new Map(districts.map(({ name }) => [name, []]));
+		groupedRows.set("অন্যান্য এলাকা", []);
+
+		const toBanglaNumber = (number) =>
+			String(number).replace(/\d/g, (digit) => "০১২৩৪৫৬৭৮৯"[digit]);
+		const recordRows = rows.filter((row) =>
+			Array.from(row.querySelectorAll(".rowDiv")).some((cell) => cell.textContent.trim())
+		);
+		rows.filter((row) => !recordRows.includes(row)).forEach((row) => row.remove());
+
+		recordRows.forEach((row) => {
+			const address = row.querySelectorAll(".rowDiv")[2].textContent;
+			const district = districts.find(({ matches }) => matches.test(address));
+			groupedRows.get(district ? district.name : "অন্যান্য এলাকা").push(row);
+		});
+
+		let serial = 1;
+		groupedRows.forEach((districtRows, districtName) => {
+			if (!districtRows.length) return;
+
+			const heading = document.createElement("h3");
+			heading.className = "area-heading h4 text-center fw-bold py-2 my-2";
+			heading.textContent = districtName;
+			heading.style.backgroundColor = "rgba(255, 255, 255, .5)";
+			heading.style.border = "1px solid black";
+			heading.style.fontFamily = "cursive";
+			table.appendChild(heading);
+
+			districtRows.forEach((row) => {
+				row.querySelector(".rowDiv").textContent = toBanglaNumber(serial++);
+				table.appendChild(row);
+			});
+		});
+
+		document.getElementById("searchInput").addEventListener("input", () => {
+			table.querySelectorAll(".area-heading").forEach((heading) => {
+				let row = heading.nextElementSibling;
+				let hasVisibleRows = false;
+
+				while (row && !row.classList.contains("area-heading")) {
+					if (row.classList.contains("row") && row.style.display !== "none") {
+						hasVisibleRows = true;
+						break;
+					}
+					row = row.nextElementSibling;
+				}
+
+				heading.style.display = hasVisibleRows ? "" : "none";
+			});
+		});
+	</script>
 </body>
 </html>
