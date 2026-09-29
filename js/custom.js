@@ -174,30 +174,22 @@ function day() {
 // search option to found data
 
 function ensureSearchResultCounter() {
-  const searchInput = document.getElementById("searchInput");
-  if (!searchInput || !searchInput.parentElement) return null;
+  const header = document.getElementById("header");
+  if (!header) return null;
 
-  const container = searchInput.parentElement;
-  container.style.display = "flex";
-  container.style.alignItems = "center";
-  container.style.gap = "10px";
-  container.style.width = "100%";
-
-  searchInput.style.flex = "1";
-  searchInput.style.minWidth = "0";
-
-  let counter = container.querySelector(".search-result-count");
-
+  let counter = document.getElementById("searchResultCount");
   if (!counter) {
     counter = document.createElement("div");
+    counter.id = "searchResultCount";
     counter.className = "search-result-count";
+    counter.style.textAlign = "center";
     counter.style.fontSize = "14px";
     counter.style.fontWeight = "700";
     counter.style.color = "#0d6efd";
-    counter.style.whiteSpace = "nowrap";
-    counter.style.flexShrink = "0";
+    counter.style.marginTop = "4px";
+    counter.style.marginBottom = "12px";
     counter.style.lineHeight = "1.2";
-    container.appendChild(counter);
+    header.parentNode.insertBefore(counter, header.nextSibling);
   }
 
   return counter;
@@ -205,83 +197,59 @@ function ensureSearchResultCounter() {
 
 function updateSearchResultCount() {
   const searchInput = document.getElementById("searchInput");
-  const counter = ensureSearchResultCounter();
   const table = document.getElementById("table");
+  const counter = ensureSearchResultCounter();
 
   if (!searchInput || !table || !counter) return;
 
-  const rows = table.querySelectorAll(".row");
   const filter = searchInput.value.trim().toLowerCase();
-
+  const rows = table.querySelectorAll(".row");
   let matchCount = 0;
 
   rows.forEach((row) => {
     if (row.id === "headingRowID" || row.id === "bottom") return;
-
-    if (!filter) {
-      if (row.style.display !== "none") {
-        matchCount += 1;
-      }
-      return;
-    }
-
     const text = row.innerText.toLowerCase();
-    const isMatch = text.includes(filter);
+    const isMatch = !filter || text.includes(filter);
     if (isMatch) matchCount += 1;
   });
 
-  counter.textContent = filter
-    ? `${matchCount}টি ম্যাচ` 
-    : `${matchCount}টি ডাটা`;
+  counter.textContent = filter ? `${matchCount}টি ম্যাচ` : `${matchCount}টি ডাটা`;
+  counter.style.display = "block";
 }
 
 function applyTableSearch() {
   const searchInput = document.getElementById("searchInput");
-  if (!searchInput) return;
+  const table = document.getElementById("table");
+  if (!searchInput || !table) return;
 
   const filter = searchInput.value.trim().toLowerCase();
-  const table = document.getElementById("table");
-  if (!table) return;
-
+  const rows = table.querySelectorAll(".row");
   const areaHeadings = table.querySelectorAll(".area-heading");
 
   if (areaHeadings.length) {
     areaHeadings.forEach((heading) => {
-      let row = heading.nextElementSibling;
-      let hasVisibleRows = false;
+      let next = heading.nextElementSibling;
+      let hasVisibleRow = false;
 
-      while (row && !row.classList.contains("area-heading")) {
-        if (row.classList.contains("row") && row.style.display !== "none") {
-          hasVisibleRows = true;
-          break;
+      while (next && !next.classList.contains("area-heading")) {
+        if (next.classList.contains("row")) {
+          const text = next.innerText.toLowerCase();
+          const show = !filter || text.includes(filter);
+          next.style.display = show ? "" : "none";
+          if (show) hasVisibleRow = true;
         }
-        row = row.nextElementSibling;
+        next = next.nextElementSibling;
       }
 
-      const headingMatches = heading.textContent.toLowerCase().includes(filter);
-      heading.style.display = headingMatches || hasVisibleRows ? "" : "none";
-      if (headingMatches || !filter) {
-        row = heading.nextElementSibling;
-        while (row && !row.classList.contains("area-heading")) {
-          if (row.classList.contains("row")) {
-            const text = row.innerText.toLowerCase();
-            row.style.display = !filter || text.includes(filter) ? "" : "none";
-          }
-          row = row.nextElementSibling;
-        }
-      }
+      heading.style.display = !filter || hasVisibleRow ? "" : "none";
     });
-
-    updateSearchResultCount();
-    return;
+  } else {
+    rows.forEach((row) => {
+      if (row.id === "headingRowID" || row.id === "bottom") return;
+      const text = row.innerText.toLowerCase();
+      row.style.display = !filter || text.includes(filter) ? "" : "none";
+    });
   }
-
-  const rows = table.querySelectorAll(".row");
-  rows.forEach((row) => {
-    if (row.id === "headingRowID" || row.id === "bottom") return;
-    const text = row.innerText.toLowerCase();
-    row.style.display = text.includes(filter) ? "" : "none";
-  });
 
   updateSearchResultCount();
 }
@@ -350,8 +318,11 @@ const searchInput = document.getElementById("searchInput");
 if (searchInput && !searchInput.dataset.tableSearchBound) {
   searchInput.dataset.tableSearchBound = "true";
   searchInput.addEventListener("input", applyTableSearch);
+  searchInput.addEventListener("keyup", applyTableSearch);
+  searchInput.addEventListener("search", applyTableSearch);
 }
 
+ensureSearchResultCounter();
 updateSearchResultCount();
 
                      //sent data //
