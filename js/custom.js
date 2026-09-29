@@ -173,21 +173,186 @@ function day() {
 
 // search option to found data
 
+function ensureSearchResultCounter() {
+  const searchInput = document.getElementById("searchInput");
+  if (!searchInput || !searchInput.parentElement) return null;
 
-  document.getElementById("searchInput").addEventListener("input", function () {
-  let filter = this.value.toLowerCase();
-  let rows = document.querySelectorAll("#table .row");
+  const container = searchInput.parentElement;
+  container.style.display = "flex";
+  container.style.alignItems = "center";
+  container.style.gap = "10px";
+  container.style.width = "100%";
+
+  searchInput.style.flex = "1";
+  searchInput.style.minWidth = "0";
+
+  let counter = container.querySelector(".search-result-count");
+
+  if (!counter) {
+    counter = document.createElement("div");
+    counter.className = "search-result-count";
+    counter.style.fontSize = "14px";
+    counter.style.fontWeight = "700";
+    counter.style.color = "#0d6efd";
+    counter.style.whiteSpace = "nowrap";
+    counter.style.flexShrink = "0";
+    counter.style.lineHeight = "1.2";
+    container.appendChild(counter);
+  }
+
+  return counter;
+}
+
+function updateSearchResultCount() {
+  const searchInput = document.getElementById("searchInput");
+  const counter = ensureSearchResultCounter();
+  const table = document.getElementById("table");
+
+  if (!searchInput || !table || !counter) return;
+
+  const rows = table.querySelectorAll(".row");
+  const filter = searchInput.value.trim().toLowerCase();
+
+  let matchCount = 0;
 
   rows.forEach((row) => {
     if (row.id === "headingRowID" || row.id === "bottom") return;
 
-    let text = row.innerText.toLowerCase();
+    if (!filter) {
+      if (row.style.display !== "none") {
+        matchCount += 1;
+      }
+      return;
+    }
+
+    const text = row.innerText.toLowerCase();
+    const isMatch = text.includes(filter);
+    if (isMatch) matchCount += 1;
+  });
+
+  counter.textContent = filter
+    ? `${matchCount}টি ম্যাচ` 
+    : `${matchCount}টি ডাটা`;
+}
+
+function applyTableSearch() {
+  const searchInput = document.getElementById("searchInput");
+  if (!searchInput) return;
+
+  const filter = searchInput.value.trim().toLowerCase();
+  const table = document.getElementById("table");
+  if (!table) return;
+
+  const areaHeadings = table.querySelectorAll(".area-heading");
+
+  if (areaHeadings.length) {
+    areaHeadings.forEach((heading) => {
+      let row = heading.nextElementSibling;
+      let hasVisibleRows = false;
+
+      while (row && !row.classList.contains("area-heading")) {
+        if (row.classList.contains("row") && row.style.display !== "none") {
+          hasVisibleRows = true;
+          break;
+        }
+        row = row.nextElementSibling;
+      }
+
+      const headingMatches = heading.textContent.toLowerCase().includes(filter);
+      heading.style.display = headingMatches || hasVisibleRows ? "" : "none";
+      if (headingMatches || !filter) {
+        row = heading.nextElementSibling;
+        while (row && !row.classList.contains("area-heading")) {
+          if (row.classList.contains("row")) {
+            const text = row.innerText.toLowerCase();
+            row.style.display = !filter || text.includes(filter) ? "" : "none";
+          }
+          row = row.nextElementSibling;
+        }
+      }
+    });
+
+    updateSearchResultCount();
+    return;
+  }
+
+  const rows = table.querySelectorAll(".row");
+  rows.forEach((row) => {
+    if (row.id === "headingRowID" || row.id === "bottom") return;
+    const text = row.innerText.toLowerCase();
     row.style.display = text.includes(filter) ? "" : "none";
   });
-});
 
+  updateSearchResultCount();
+}
 
+function initializeCumillaAreaGrouping({ startSerial = 1 } = {}) {
+  const table = document.getElementById("table");
+  if (!table) return;
 
+  const rows = Array.from(table.querySelectorAll(":scope > .row:not(#headingRowID)"));
+  if (!rows.length) return;
+
+  const districts = [
+    { name: "কুমিল্লা শহর", matches: /শাসনগাছা|সদর|ময়নামতি/ },
+    { name: "বুড়িচং-ব্রাহ্মণপাড়া", matches: /বুড়িচং|বুড়িচং|ব্রাহ্মণপাড়া|কোরপাই/ },
+    { name: "দেবিদ্বার", matches: /দেবিদ্বার/ },
+    { name: "মুরাদনগর", matches: /মুরাদনগর|মুরাদ নগর|মালাইবাঙ্গরা|বাঙ্গরা/ },
+    { name: "লাকসাম", matches: /লাকসাম/ },
+    { name: "চৌদ্দগ্রাম", matches: /চৌদ্দগ্রাম/ },
+    { name: "দাউদকান্দি", matches: /দাউদকান্দি/ },
+    { name: "বড়ুরা", matches: /বড়ুরা|বরুড়া|বারুড়া/ },
+    { name: "নাঙ্গলকোট", matches: /নাঙ্গলকোট|নাঙ্গলকোট/ },
+    { name: "তিতাস", matches: /তিতাস/ },
+    { name: "লালমাই", matches: /লালমাই/ },
+  ];
+
+  const groupedRows = new Map(districts.map(({ name }) => [name, []]));
+  groupedRows.set("অন্যান্য এলাকা", []);
+  const burichongDistrict = districts.find(({ name }) => name === "বুড়িচং-ব্রাহ্মণপাড়া");
+
+  const toBanglaNumber = (number) =>
+    String(number).replace(/\d/g, (digit) => "০১২৩৪৫৬৭৮৯"[digit]);
+
+  const recordRows = rows.filter((row) =>
+    Array.from(row.querySelectorAll(".rowDiv")).some((cell) => cell.textContent.trim())
+  );
+
+  rows.filter((row) => !recordRows.includes(row)).forEach((row) => row.remove());
+
+  recordRows.forEach((row) => {
+    const address = row.querySelectorAll(".rowDiv")[2].textContent.trim();
+    const district = burichongDistrict.matches.test(address)
+      ? burichongDistrict
+      : districts.find(({ matches }) => matches.test(address));
+    groupedRows.get(district ? district.name : "অন্যান্য এলাকা").push(row);
+  });
+
+  let serial = startSerial;
+  groupedRows.forEach((districtRows, districtName) => {
+    if (!districtRows.length) return;
+
+    const heading = document.createElement("h3");
+    heading.className = "area-heading h4 text-center fw-bold py-2 my-2";
+    heading.textContent = districtName;
+    heading.style.fontFamily = "cursive";
+    table.appendChild(heading);
+
+    districtRows.forEach((row) => {
+      const firstCell = row.querySelector(".rowDiv");
+      if (firstCell) firstCell.textContent = toBanglaNumber(serial++);
+      table.appendChild(row);
+    });
+  });
+}
+
+const searchInput = document.getElementById("searchInput");
+if (searchInput && !searchInput.dataset.tableSearchBound) {
+  searchInput.dataset.tableSearchBound = "true";
+  searchInput.addEventListener("input", applyTableSearch);
+}
+
+updateSearchResultCount();
 
                      //sent data //
 
