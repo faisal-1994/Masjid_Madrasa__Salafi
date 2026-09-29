@@ -177,19 +177,43 @@ function ensureSearchResultCounter() {
   const header = document.getElementById("header");
   if (!header) return null;
 
+  let wrapper = document.getElementById("headerWithSearchCount");
   let counter = document.getElementById("searchResultCount");
+
+  if (!wrapper) {
+    wrapper = document.createElement("div");
+    wrapper.id = "headerWithSearchCount";
+    wrapper.style.display = "flex";
+    wrapper.style.alignItems = "center";
+    wrapper.style.justifyContent = "flex-start";
+    wrapper.style.gap = "10px";
+    wrapper.style.marginTop = "8px";
+    wrapper.style.marginBottom = "12px";
+    wrapper.style.width = "100%";
+
+    const parent = header.parentNode;
+    if (parent) {
+      parent.insertBefore(wrapper, header);
+    }
+  }
+
   if (!counter) {
     counter = document.createElement("div");
     counter.id = "searchResultCount";
     counter.className = "search-result-count";
-    counter.style.textAlign = "center";
     counter.style.fontSize = "14px";
     counter.style.fontWeight = "700";
     counter.style.color = "#0d6efd";
-    counter.style.marginTop = "4px";
-    counter.style.marginBottom = "12px";
+    counter.style.whiteSpace = "nowrap";
     counter.style.lineHeight = "1.2";
-    header.parentNode.insertBefore(counter, header.nextSibling);
+  }
+
+  if (counter.parentNode !== wrapper) {
+    wrapper.insertBefore(counter, wrapper.firstChild);
+  }
+
+  if (header.parentNode !== wrapper) {
+    wrapper.appendChild(header);
   }
 
   return counter;
@@ -394,38 +418,6 @@ let sendMail = () => {
     });
 };
 
-
-
-
-
-
-
-
-const files = ["dhaka.html", "dhaka2.html", "dhaka3.html", "dhaka4.html"]; // Add all HTML file names here
-const resultsDiv = document.getElementById("results");
-
-document.getElementById("searchInput").addEventListener("input", async function () {
-  const query = this.value.toLowerCase();
-  resultsDiv.innerHTML = ""; // Clear previous results
-
-  for (let file of files) {
-    try {
-      const response = await fetch(file);
-      const html = await response.text();
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, "text/html");
-      const text = doc.body.innerText.toLowerCase();
-
-      if (text.includes(query)) {
-        const match = document.createElement("div");
-        match.innerHTML = `<strong>Found in:</strong> <a href="${file}" target="_blank">${file}</a>`;
-        resultsDiv.appendChild(match);
-      }
-    } catch (err) {
-      console.error("Error loading", file, err);
-    }
-  }
-});
 
 // to execute counter
 // fetch('https://api.countapi.xyz/hit/salafimasjid/visits')
