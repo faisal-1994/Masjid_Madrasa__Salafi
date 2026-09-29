@@ -174,57 +174,19 @@ function day() {
 // search option to found data
 
 function ensureSearchResultCounter() {
-  const header = document.getElementById("header");
-  if (!header) return null;
-
-  let wrapper = document.getElementById("headerWithSearchCount");
-  let counter = document.getElementById("searchResultCount");
-
-  if (!wrapper) {
-    wrapper = document.createElement("div");
-    wrapper.id = "headerWithSearchCount";
-    wrapper.style.display = "flex";
-    wrapper.style.alignItems = "center";
-    wrapper.style.justifyContent = "flex-start";
-    wrapper.style.gap = "10px";
-    wrapper.style.marginTop = "8px";
-    wrapper.style.marginBottom = "12px";
-    wrapper.style.width = "100%";
-
-    const parent = header.parentNode;
-    if (parent) {
-      parent.insertBefore(wrapper, header);
-    }
+  const counter = document.getElementById("searchResultCount");
+  if (counter) {
+    counter.remove();
   }
-
-  if (!counter) {
-    counter = document.createElement("div");
-    counter.id = "searchResultCount";
-    counter.className = "search-result-count";
-    counter.style.fontSize = "14px";
-    counter.style.fontWeight = "700";
-    counter.style.color = "#0d6efd";
-    counter.style.whiteSpace = "nowrap";
-    counter.style.lineHeight = "1.2";
-  }
-
-  if (counter.parentNode !== wrapper) {
-    wrapper.insertBefore(counter, wrapper.firstChild);
-  }
-
-  if (header.parentNode !== wrapper) {
-    wrapper.appendChild(header);
-  }
-
-  return counter;
+  return null;
 }
 
 function updateSearchResultCount() {
   const searchInput = document.getElementById("searchInput");
   const table = document.getElementById("table");
-  const counter = ensureSearchResultCounter();
+  const counter = document.getElementById("searchResultCount");
 
-  if (!searchInput || !table || !counter) return;
+  if (!searchInput || !table) return;
 
   const filter = searchInput.value.trim().toLowerCase();
   const rows = table.querySelectorAll(".row");
@@ -237,8 +199,10 @@ function updateSearchResultCount() {
     if (isMatch) matchCount += 1;
   });
 
-  counter.textContent = filter ? `${matchCount}টি ম্যাচ` : `${matchCount}টি ডাটা`;
-  counter.style.display = "block";
+  if (counter) {
+    counter.textContent = filter ? `${matchCount}টি ম্যাচ` : `${matchCount}টি ডাটা`;
+    counter.style.display = "block";
+  }
 }
 
 function applyTableSearch() {
@@ -346,7 +310,11 @@ if (searchInput && !searchInput.dataset.tableSearchBound) {
   searchInput.addEventListener("search", applyTableSearch);
 }
 
-ensureSearchResultCounter();
+const existingCounter = document.getElementById("searchResultCount");
+if (existingCounter) {
+  existingCounter.remove();
+}
+
 updateSearchResultCount();
 
                      //sent data //
