@@ -300,7 +300,7 @@ select option{
 	background-color: rgb(41, 38, 38);	
 }
 
-/* .pageHolder{
+.pageHolder{
 	height: 50px;
 	width: 20%;
 	background-color: transparent;
@@ -313,7 +313,7 @@ select option{
 	justify-content:center;
 	align-items: center;
 	margin: auto;
-}  */
+} 
 
 .page{
 	height: 35px;
@@ -390,12 +390,12 @@ select option{
 }
 
 /* submit_button */
-#submitBtn{
+/* #submitBtn{
 position:absolute;
 right: 30px;
 top: 166px;
 
-}
+} */
 
 /* search */
 

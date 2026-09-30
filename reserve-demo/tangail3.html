@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tangail 3</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&family=Open+Sans:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+	
+    <body id="body">
+        
+        <!-- to scroll down -->
+    
+        <div class="topScroll">
+            <a class="top" href="#bottom">🔻</a>
+        </div>
+
+        <div class="container">
+            
+            <nav id="navBar" class="navbar bg-body-tertiary fixed-top">
+        
+                <div class="container">
+        
+                    <a id="nav_title" class="navbar-brand m-auto d-inline" href="#"><h1 id="h1Title text-dark">আহলে হাদীস মসজিদ ও মাদরাসা</h1></a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                        <div   div class="offcanvas-header">
+        
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ahle Hadis Masjid and Madrasa</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        
+                        </div>
+        
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                            <li class="nav-item">
+                                <button onclick="location='index.html'">Home</button>
+                            </li>
+            
+                            
+                            <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a> -->
+            
+                    
+            
+                            <select onchange="location = this.value;">
+                                <option value="#">Dhaka </option>
+                                <option value="dhaka.html">Dhaka</option>
+                                <option value="faridpur.html">Faridpur</option>
+                                <option value="gazipur.html">Gazipur</option>
+                                <option value="gopalganj.html">Gopalganj</option>
+                                <option value="kishoreganj.html">Kishoreganj</option>
+                                <option value="madaripur.html">Madaripur</option>
+                                <option value="manikganj.html">Manikganj</option>
+                                <option value="munshiganj.html">Munshiganj</option>
+                                <option value="narayanganj.html">Narayanganj</option>
+                                <option value="narsingdi.html">Narsingdi</option>
+                                <option value="rajbari.html">Rajbari</option>
+                                <option value="shariatpur.html">Shariatpur</option>
+                                <option value="tangail.html">Tangail</option>
+                            </select>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </li>
+            
+                            <li class="nav-item dropdown">
+            
+                                <select onchange="location = this.value;">
+                                    <option value="#">Barishal </option>
+                                    <option value="barguna.html">Barguna</option>
+                                    <option value="barishal.html">Barishal</option>
+                                    <option value="bhola.html">Bhola</option>
+                                    <option value="jhalokati.html">Jhalokati</option>
+                                    <option value="patuakhali.html">Patuakhali</option>
+                                    <option value="pirojpur.html">Pirojpur</option>
+                                </select>
+            
+                            </li>
+            
+                            <li class="nav-item">
+            
+                                <select onchange="location = this.value;">
+                                    <option value="#">Chattogram </option>
+                                    <option value="bandarban.html">Bandarban</option>
+                                    <option value="brahmanbaria.html">Brahmanbaria</option>
+                                    <option value="chandpur.html">Chandpur</option>
+                                    <option value="chattogram.html">Chattogram</option>
+                                    <option value="cumilla.html">Cumilla</option>
+                                    <option value="coxsbazar.html">Cox's Bazar</option>
+                                    <option value="feni.html">Feni</option>
+                                    <option value="khagrachhari.html">Khagrachhari</option>
+                                    <option value="lakshmipur.html">Lakshmipur</option>
+                                    <option value="noakhali.html">Noakhali</option>
+                                    <option value="rangamati.html">Rangamati</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Khulna </option>
+                                    <option value="bagerhat.html">Bagerhat</option>
+                                    <option value="chuadanga.html">Chuadanga</option>
+                                    <option value="jashore.html">Jashore</option>
+                                    <option value="jhenaidah.html">Jhenaidah</option>
+                                    <option value="khulna.html">Khulna</option>
+                                    <option value="kushtia.html">Kushtia</option>
+                                    <option value="magura.html">Magura</option>
+                                    <option value="meherpur.html">Meherpur</option>
+                                    <option value="narail.html">Narail</option>
+                                    <option value="satkhira.html">Satkhira</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Mymensingh </option>
+                                    <option value="jamalpur.html">Jamalpur</option>
+                                    <option value="mymensingh.html">Mymensingh</option>
+                                    <option value="netrokona.html">Netrokona</option>
+                                    <option value="sherpur.html">Sherpur</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Rajshahi </option>
+                                    <option value="bogura.html">Bogura</option>
+                                    <option value="jaipurhat.html">Jaipurhat</option>
+                                    <option value="naogaon.html">Naogaon</option>
+                                    <option value="natore.html">Natore</option>
+                                    <option value="chapainawabganj.html">Chapainawabganj </option>
+                                    <option value="pabna.html">Pabna</option>
+                                    <option value="rajshahi.html">Rajshahi</option>
+                                    <option value="sirajganj.html">Sirajganj</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Rangpur </option>
+                                    <option value="dinajpur.html">Dinajpur</option>
+                                    <option value="gaibandha.html">Gaibandha</option>
+                                    <option value="kurigram.html">Kurigram</option>
+                                    <option value="lalmonirhat.html">Lalmonirhat</option>
+                                    <option value="nilphamari.html">Nilphamari</option>
+                                    <option value="panchagarh.html">Panchagarh</option>
+                                    <option value="rangpur.html">Rangpur</option>
+                                    <option value="thakurgaon.html">Thakurgaon</option>
+                                </select>
+                            </li>
+            
+                            <li class="nav-item">
+                                <select onchange="location = this.value;">
+                                    <option value="#">Sylhet </option>
+                                    <option value="habiganj.html">Habiganj</option>
+                                    <option value="moulvibazar.html">Moulvibazar</option>
+                                    <option value="sunamganj.html">Sunamganj</option>
+                                    <option value="sylhet.html">Sylhet</option>
+                                </select>
+                            </li>
+            
+            
+                            </ul>
+            
+                        </div>
+                    </div>
+        
+                    <button id="night" class="mode me-5 bg-dark" onclick="night()">🌚</button>
+                    <button id="day" class="mode2 d-none " onclick="day()">☀ </button>
+                    
+                </div>
+            </nav>
+
+
+        <!-- search option -->
+         
+        <div class="input-group mb-3 mt-5">
+                <input type="text" class="mt-5" id="searchInput" class="form-control" placeholder="Search here...">
+        </div>
+          
+      
+        <h2 id="header" class="text-center header">টাঙ্গাইল</h2>
+        
+        <div id="table" class="table">
+            
+            <div id="headingRowID" class="row headingRow">
+                    <div class="headingDiv headingDiv1">ক্রমিক নাম্বার</div>
+
+                    <div class="headingDiv headingDiv2">
+                    নাম
+                    <textarea id="orgInput" class="form-control" rows="1" placeholder="নাম যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv3">
+                    ঠিকানা
+                    <textarea id="addressInput" class="form-control" rows="1" placeholder="ঠিকানা যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class="headingDiv headingDiv4">
+                    যোগাযোগের নাম্বার
+                    <textarea id="contactInput" class="form-control" rows="1" placeholder="যোগাযোগের নাম্বার যুক্ত করুন"></textarea>
+                    </div>
+
+                    <div class=" pt-2">
+                        <button onclick="sendMail()" id="submitBtn" class="btn btn-success ">যোগ করুন</button>
+                    </div>
+            </div>
+
+
+                <h3 class="location-title h5 text-center fw-bold my-2">মির্জাপুর</h3>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২১</div>
+                    <div class='col-3 rowDiv'  >ধানচালা কেন্দ্রীয় আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২২</div>
+                    <div class='col-3 rowDiv'  >ধানচালা পূর্বপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৩</div>
+                    <div class='col-3 rowDiv'  >দড়ানীপাড়া কেন্দ্রীয় আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৪</div>
+                    <div class='col-3 rowDiv'  >পাথরঘাটা বাজার আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৫</div>
+                    <div class='col-3 rowDiv'  >তক্তারচালা বাজার আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৬</div>
+                    <div class='col-3 rowDiv'  >ডৌহাতলী পশ্চিমপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৭</div>
+                    <div class='col-3 rowDiv'  >ডৌহাতলী পশ্চিমপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৮</div>
+                    <div class='col-3 rowDiv'  > ডৌহাতলী পূর্বপাড়া আহলে হাদীছ জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  > তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১২৯</div>
+                    <div class='col-3 rowDiv'  >ডৌহাতলী (বানিয়াপাড়া) কেন্দ্রীয় আহলে হাদীছ জামে মসজিদ।  </div>
+                    <div class='col-3 rowDiv'  > তরফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩০</div>
+                    <div class='col-3 rowDiv'  >স্বল্প মহেড়া কেন্দ্রীয় আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >মহেড়া,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩১</div>
+                    <div class='col-3 rowDiv'  >স্বল্প মহেড়া পশ্চিমপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >মহেড়া,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩২</div>
+                    <div class='col-3 rowDiv'  >আদাবাড়ী কেন্দ্রীয় আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >মহেড়া,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৩</div>
+                    <div class='col-3 rowDiv'  >আদাবাড়ি চরপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >মহেড়া,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৪</div>
+                    <div class='col-3 rowDiv'  >গোড়াই আত-তাক্বওয়া জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >গোড়াই,পূর্ব নাজিরপাড়া,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৫</div>
+                    <div class='col-3 rowDiv'  >ফিরিংগি পারা পশ্চিমপাড়া জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >ত্রিমোহন,লতিফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৬</div>
+                    <div class='col-3 rowDiv'  >ফিরিংগি পারা পূর্বপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >ত্রিমোহন,লতিফপুর,মির্জাপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৭</div>
+                    <div class='col-3 rowDiv'  >গোঁড়াকী উত্তর পাড়া জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'  >মির্জাপুর, টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <h3 class="location-title h5 text-center fw-bold my-2">ঘাটাইল</h3>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৮</div>
+                    <div class='col-3 rowDiv'  > লোকেরপাড়া কেন্দ্রীয় আহলে হাদিস জামে মসজিদ </div>
+                    <div class='col-3 rowDiv'  >লোকেরপাড়া, ঘাটাইল, টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৩৯</div>
+                    <div class='col-3 rowDiv'  > মধ্য লোকেরপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >লোকেরপাড়া,ঘাটাইল,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪০</div>
+                    <div class='col-3 rowDiv'  > পূর্ব লোকেরপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >লোকেরপাড়া,ঘাটাইল,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪১</div>
+                    <div class='col-3 rowDiv'  >শিয়ালকোল হাট আহলে হাদিস জামে মসজিদ। </div>
+                    <div class='col-3 rowDiv'  >লোকেরপাড়া,ঘাটাইল,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪২</div>
+                    <div class='col-3 rowDiv'  >পুকুরিয়া শিয়ালকোল আহলে হাদিস জামে মসজিদ। </div>
+                    <div class='col-3 rowDiv'  >লোকেরপাড়া,ঘাটাইল,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪৩</div>
+                    <div class='col-3 rowDiv'  > গৌরিসর আহলে হাদিস জামে মসজিদ। </div>
+                    <div class='col-3 rowDiv'  >লোকেরপাড়া,ঘাটাইল,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row ">
+                    <div class='col-3 rowDiv'>১৪৪</div>
+                    <div class='col-3 rowDiv'> লোকের পাড়া কেন্দ্রীয় আহলে হাদিস জামে মসজিদ</div>
+                    <div class='col-3 rowDiv'> লোকের পাড়া, ঘাটাইল, টাংগাইল</div>
+                    <div class='col-3 rowDiv'> </div>
+                </div>
+
+                <h3 class="location-title h5 text-center fw-bold my-2">গোপালপুর</h3>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪৫</div>
+                    <div class='col-3 rowDiv'  >ভাদুড়ীর চর আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হাদিরা,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >মোহাম্মদ অজুউল্লাহ</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪৬</div>
+                    <div class='col-3 rowDiv'  >ভাদুড়ীর চর দক্ষিণপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হাদিরা,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >আজহার উদ্দিন</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪৭</div>
+                    <div class='col-3 rowDiv'  >ভাদুড়ীর চর মধ্যপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হাদিরা,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >আব্দুল খালেক</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪৮</div>
+                    <div class='col-3 rowDiv'  >হাদিরা আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হাদিরা,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >নুরুল আমিন</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৪৯</div>
+                    <div class='col-3 rowDiv'  >পলশিয়া পূর্বপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হাদিরা,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫০</div>
+                    <div class='col-3 rowDiv'  >ভোলারপাড়া বাইতুন নূর আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হেমনগর,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >দেলোয়ার হোসেন</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫১</div>
+                    <div class='col-3 rowDiv'  >বড় কুমুল্লি উত্তরপাড়া কলা বাগান আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >হেমনগর,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >হাবিবুর রহমান</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫২</div>
+                    <div class='col-3 rowDiv'  >বালোবাড়ি আহলে হাদীছ জামে মসজিদ।  </div>
+                    <div class='col-3 rowDiv'  >হেমনগর,গোপালপুর, টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫৩</div>
+                    <div class='col-3 rowDiv'  > ভোলারপাড়া বাইতুন নূর আহলে হাদীছ জামে মসজিদ। </div>
+                    <div class='col-3 rowDiv'  >হেমনগর,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫৪</div>
+                    <div class='col-3 rowDiv'  >মাইজবাড়ী ঘোনাপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >শিমলা,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >জুনায়েদ হোসেন</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫৫</div>
+                    <div class='col-3 rowDiv'  > কুমুল্লি আহলে হাদীছ জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >আলমনগর,গোপালপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫৬</div>
+                    <div class='col-3 rowDiv'  >বসুবাড়ি আহলে হাদীছ জামে মসজিদ।  </div>
+                    <div class='col-3 rowDiv'  >গোপালপুর, টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row ">
+                    <div class='col-3 rowDiv'>১৫৭</div>
+                    <div class='col-3 rowDiv'>পশ্চিম গোপালপুর রামদেববাড়ী সংলগ্ন সালাফি মসজিদ</div>
+                    <div class='col-3 rowDiv'>গোপালপুর,টাংগাইল</div>
+                    <div class='col-3 rowDiv'></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫৮</div>
+                    <div class='col-3 rowDiv'  >ভাদুড়ীরচর কেন্দ্রীয় গোরাবায়ে আহলেহাদীস জামে মসজিদ </div>
+                    <div class='col-3 rowDiv'  >ভাদুড়ীরচর গোপালপুর, টাঙ্গাইল </div>
+                    <div class='col-3 rowDiv'  > </div>
+                </div>
+
+                <h3 class="location-title h5 text-center fw-bold my-2">ভুয়াপুর</h3>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৫৯</div>
+                    <div class='col-3 rowDiv'  >আকালু মাদরাসাপাড়া (নয়াপাড়া) আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >অলোয়া,ভুয়াপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬০</div>
+                    <div class='col-3 rowDiv'  >আকালু উত্তরপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >অলোয়া,ভুয়াপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬১</div>
+                    <div class='col-3 rowDiv'  >আকালু দক্ষিণপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >অলোয়া,ভুয়াপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬২</div>
+                    <div class='col-3 rowDiv'  >আকালু মধ্যপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >অলোয়া,ভুয়াপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬৩</div>
+                    <div class='col-3 rowDiv'  >ভারই উত্তরপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >অলোয়া,ভুয়াপুর,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <h3 class="location-title h5 text-center fw-bold my-2">দেলদুয়ার</h3>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬৪</div>
+                    <div class='col-3 rowDiv'  >ভবানীপুর দক্ষিণ পাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >লাউহাটী,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬৫</div>
+                    <div class='col-3 rowDiv'  >ভবানীপুর পশ্চিমপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >লাউহাটী,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row" >
+                    <div class='col-3 rowDiv'  >১৬৬</div>
+                    <div class='col-3 rowDiv'  >ভবানীপুর উত্তরপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >লাউহাটী,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬৭</div>
+                    <div class='col-3 rowDiv'  >হেরন্ডপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >লাউহাটী,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬৮</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার উত্তরপাড়া বায়তুল আমান আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৬৯</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার জমিদার বাড়ি আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭০</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার উত্তরপাড়া আবু বকর (রাঃ) জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭১</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার মৌলভিপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭২</div>
+                    <div class='col-3 rowDiv'  >মাদারকুল নূরের আলো আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >মাদারকুল,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৩</div>
+                    <div class='col-3 rowDiv'  >মাদারকুল পশ্চিমপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >মাদারকুল,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৪</div>
+                    <div class='col-3 rowDiv'  >নাটিয়াপাড়া কেন্দ্রীয় আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >নাটিয়াপাড়া,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৫</div>
+                    <div class='col-3 rowDiv'  >পুটিয়াজানি পশ্চিমপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >ফাজিলহাটী,দেলদুয়ার,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৬</div>
+                    <div class='col-3 rowDiv'  >পুটিয়াজানি দক্ষিণপাড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >ফাজিলহাটী,দেলদুয়ার,টাঙ্গাইল</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৭</div>
+                    <div class='col-3 rowDiv'  >ধুলটিয়া কেন্দ্রীয় আহলে হাদীছ জামে মসজিদ। </div>
+                    <div class='col-3 rowDiv'  >ধুলটিয়া (করোটিয়া সংলগ্ন),দেলদুয়ার,টাঙ্গাইল</div>
+                    <div class='col-3 rowDiv'  ></div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৮</div>
+                    <div class='col-3 rowDiv'  > মাদরাসাতুল কোরআন আসসুন্নাহ</div>
+                    <div class='col-3 rowDiv'  > মাদারকুল, দেলদুয়ার, টাংগাইল</div>
+                    <div class='col-3 rowDiv'  > </div>
+                </div>
+
+                <h3 class="location-title h5 text-center fw-bold my-2">ধনবাড়ি</h3>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৭৯</div>
+                    <div class='col-3 rowDiv'  >বরমপুর আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >বরমপুর,ধনবাড়ি,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >আব্দুল মজিদ</div>
+                </div>
+
+                <div class="row">
+                    <div class='col-3 rowDiv'  >১৮০</div>
+                    <div class='col-3 rowDiv'  >বন্দহাওড়া আহলে হাদিস জামে মসজিদ।</div>
+                    <div class='col-3 rowDiv'  >বন্দহাওড়া,ধনবাড়ি,টাঙ্গাইল।</div>
+                    <div class='col-3 rowDiv'  >আজিম উদ্দীন</div>
+                </div>
+</div>
+
+        </div>
+
+
+        <div class="bottomScroll">
+            <a class="bottom" onclick="bottom()" href="#top">🔺</a>
+        </div>
+
+        <!-- <div class="pageHolder" id="bottom">
+            <div class="page firtstPage"><a href="tangail.html">1</a></div>
+            <div class="page secondPage"><a href="tangail2.html">2</a></div>
+            <div class="page thirdPage bg-dark"><p class="text-light" href="tangail3.html">3</p></div>
+            <div class="page fourthPage"><a href="tangail4.html">4</a></div>
+            <div class="page fifthPage"><a href="tangail5.html">5</a></div>
+        </div> -->
+
+        <nav class="pageHolder " id="bottom" aria-label="Pagination">
+			<a class="btn btn-sm btn-outline-primary" href="tangail.html" >১</a>
+            <a class="btn btn-sm btn-outline-primary" href="tangail2.html">২</a>
+			<a class="btn text-light bg-dark btn-sm btn-outline-primary" href="tangail3.html" aria-current="page">৩</a>
+            <a class="btn btn-sm btn-outline-primary" href="tangail4.html">৪</a>
+		</nav>
+
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>	
+        <script   script src="js/custom.js"></script>
+
+    </body>
+
+</html>
