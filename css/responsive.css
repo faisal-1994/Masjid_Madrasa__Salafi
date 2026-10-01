@@ -322,7 +322,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -644,7 +644,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -981,7 +981,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -1241,7 +1241,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -1487,7 +1487,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -1548,7 +1548,7 @@ z-index: 1;
 
     #submitBtn{
         position:absolute;
-        right: -25px;
+        right: 0;
         top: 173px;
         color:black;
         background-color: azure;
@@ -1705,7 +1705,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -1866,7 +1866,7 @@ z-index: 1;
 
     .pageHolder{
         height: 20px;
-        width:100vw;
+        width:100%;
         background-color: transparent;
     }
 
@@ -2025,4 +2025,3 @@ z-index: 1;
 
 
 }
-
